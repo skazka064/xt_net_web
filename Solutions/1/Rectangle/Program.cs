@@ -8,12 +8,12 @@ namespace Rectangle
         static void Main(string[] args)
         {
             int a = int.Parse(Console.ReadLine());
-            if (a<0 || a == 0)
+            if ( a<=0 )
             {
                 Console.WriteLine("Вы ввели некорректное значение");
             }
             int b = int.Parse(Console.ReadLine());
-            if (b < 0 || b == 0)
+            if (b <= 0)
             {
                 Console.WriteLine("Вы ввели некорректное значение");
             }
