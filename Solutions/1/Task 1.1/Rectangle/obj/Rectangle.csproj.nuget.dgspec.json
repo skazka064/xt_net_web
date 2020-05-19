@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Rectangle\\Rectangle.csproj": {}
+    "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Task 1.1\\Rectangle\\Rectangle.csproj": {}
   },
   "projects": {
-    "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Rectangle\\Rectangle.csproj": {
+    "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Task 1.1\\Rectangle\\Rectangle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Rectangle\\Rectangle.csproj",
+        "projectUniqueName": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Task 1.1\\Rectangle\\Rectangle.csproj",
         "projectName": "Rectangle",
-        "projectPath": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Rectangle\\Rectangle.csproj",
+        "projectPath": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Task 1.1\\Rectangle\\Rectangle.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Rectangle\\obj\\",
+        "outputPath": "C:\\distrib\\Epam\\xt_net_web\\Solutions\\1\\Task 1.1\\Rectangle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

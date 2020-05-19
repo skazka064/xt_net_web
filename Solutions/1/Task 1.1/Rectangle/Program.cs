@@ -8,7 +8,7 @@ namespace Rectangle
         static void Main(string[] args)
         {
             int a = int.Parse(Console.ReadLine());
-            if ( a<=0 )
+            if (a <= 0)
             {
                 Console.WriteLine("Вы ввели некорректное значение");
             }
@@ -19,7 +19,7 @@ namespace Rectangle
             }
 
 
-            Console.WriteLine(a*b);
+            Console.WriteLine(a * b);
         }
     }
 }
