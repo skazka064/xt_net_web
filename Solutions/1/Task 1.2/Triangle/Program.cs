@@ -11,16 +11,25 @@ namespace Triangle
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int i = 0;
-          
-            while(i < n){                
-                    
-                Console.Write("*");
+            for(int i = 0; i < n; i++)
+            {
+                for(int j = 0; j < n; j++)
+                {
+                    if (i < j)
+                    {
+                        Console.Write("");
 
-                i++;
-            
+                    }
+                    else
+                    {
+                        Console.Write("*");
+                    }
+                }
+                Console.WriteLine();
+
             }
-                Console.WriteLine("");
+          
+          
             
 
         }
