@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F6C1448-FFA4-44BF-B76A-CB4863604EDC}</ProjectGuid>
+    <ProjectGuid>{37BA6450-130D-4A5A-84C6-BAE9F94AD015}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ANOTHER_TRIANGLE</RootNamespace>
-    <AssemblyName>ANOTHER TRIANGLE</AssemblyName>
+    <RootNamespace>RECTANGLE</RootNamespace>
+    <AssemblyName>RECTANGLE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

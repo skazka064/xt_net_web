@@ -1,7 +1,0 @@
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\bin\Debug\Triangle.exe.config
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\bin\Debug\Triangle.exe
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\bin\Debug\Triangle.pdb
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\obj\Debug\Triangle.csprojAssemblyReference.cache
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\obj\Debug\Triangle.csproj.CoreCompileInputs.cache
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\obj\Debug\Triangle.exe
-C:\distrib\Epam\xt_net_web\Solutions\1\Task 1.2\Triangle\obj\Debug\Triangle.pdb
