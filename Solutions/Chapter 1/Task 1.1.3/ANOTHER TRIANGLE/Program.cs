@@ -10,24 +10,30 @@ namespace ANOTHER_TRIANGLE
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            string input = System.Console.ReadLine();
+
+            int n = Convert.ToInt32(input);
+
+
+            for (int y = 0; y < n; y++)
             {
-                for (int j = 0; j < n; j++)
+                int c = 1;
+                for (int q = 0; q < n - y; q++)
                 {
-                    if (i < j)
-                    {
-                        Console.Write("");
-
-                    }
-                    else
-                    {
-                        Console.Write("*");
-                    }
+                    System.Console.Write("   ");
                 }
-                Console.WriteLine();
 
+                for (int x = 0; x <= y; x++)
+                {
+                    System.Console.Write("   * ", c);
+                    c = c * (y - x) / (x + 1);
+                }
+                System.Console.WriteLine();
+                System.Console.WriteLine();
             }
+            System.Console.WriteLine();
         }
     }
-}
+
+        
+    }
