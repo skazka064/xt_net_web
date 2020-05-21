@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\bin\Debug\RECTANGLE.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\bin\Debug\RECTANGLE.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\bin\Debug\RECTANGLE.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\obj\Debug\RECTANGLE.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\obj\Debug\RECTANGLE.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\obj\Debug\RECTANGLE.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.1\RECTANGLE\obj\Debug\RECTANGLE.pdb
