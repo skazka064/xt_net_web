@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\bin\Debug\2D ARRAY.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\bin\Debug\2D ARRAY.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\bin\Debug\2D ARRAY.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\obj\Debug\2D ARRAY.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\obj\Debug\2D ARRAY.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\obj\Debug\2D ARRAY.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.10\2D ARRAY\obj\Debug\2D ARRAY.pdb
