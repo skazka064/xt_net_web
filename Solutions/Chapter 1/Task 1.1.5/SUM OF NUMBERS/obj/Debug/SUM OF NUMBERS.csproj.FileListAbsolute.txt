@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\bin\Debug\SUM OF NUMBERS.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\bin\Debug\SUM OF NUMBERS.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\bin\Debug\SUM OF NUMBERS.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\obj\Debug\SUM OF NUMBERS.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\obj\Debug\SUM OF NUMBERS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\obj\Debug\SUM OF NUMBERS.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.5\SUM OF NUMBERS\obj\Debug\SUM OF NUMBERS.pdb
