@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\bin\Debug\ARRAY PROCESSING.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\bin\Debug\ARRAY PROCESSING.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\bin\Debug\ARRAY PROCESSING.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\obj\Debug\ARRAY PROCESSING.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\obj\Debug\ARRAY PROCESSING.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\obj\Debug\ARRAY PROCESSING.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.7\ARRAY PROCESSING\obj\Debug\ARRAY PROCESSING.pdb

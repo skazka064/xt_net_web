@@ -37,6 +37,7 @@ namespace SUM_OF_NUMBERS
 
             Console.Write(sum3+sum5);
             Console.WriteLine();
+            Console.ReadLine();
                           
                 
       
