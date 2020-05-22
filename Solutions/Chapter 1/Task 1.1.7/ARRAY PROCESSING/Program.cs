@@ -60,6 +60,7 @@ namespace ARRAY_PROCESSING
             Console.WriteLine();
             Console.Write(min);
             Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
