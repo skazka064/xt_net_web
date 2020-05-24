@@ -23,6 +23,7 @@ namespace RECTANGLE
 
 
             Console.WriteLine(a * b);
+            Console.ReadLine();
         }
     }
 }

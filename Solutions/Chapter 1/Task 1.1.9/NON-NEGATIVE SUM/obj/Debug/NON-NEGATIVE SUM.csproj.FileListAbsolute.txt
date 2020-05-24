@@ -5,3 +5,10 @@ C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE 
 C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.csproj.CoreCompileInputs.cache
 C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.exe
 C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\bin\Debug\NON-NEGATIVE SUM.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\bin\Debug\NON-NEGATIVE SUM.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\bin\Debug\NON-NEGATIVE SUM.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.1.9\NON-NEGATIVE SUM\obj\Debug\NON-NEGATIVE SUM.pdb

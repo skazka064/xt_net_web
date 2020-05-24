@@ -10,24 +10,24 @@ namespace _2D_ARRAY
     {
         static void Main(string[] args)
         {
-            int[,] array = new int[,] { { 1, 2 ,3} , { 4, 5,6 } };
+            int[,] array = new int[2,3] { { 1, 2 ,3} , { 4, 5,6 } };
             int count = 0;
-            Console.Write(array.Rank);
-            Console.WriteLine();
-            Console.WriteLine();
-
-            for (int i = 0; i<array.Length; i++)
+            for (int i = 0; i <=1; i++)
             {
-                for(int j =0; j<array.Length; j++)
+                for (int j = 0; j <=2; j++)
                 {
-                    
+                    if ((i+j)%2==0)
+                    {
+                       count= count+ array[i, j];
+                       
+                    }
 
-                        Console.Write(j);
-                        Console.WriteLine();
-                    
                 }
 
             }
+                        Console.Write(count);
+                        Console.WriteLine();
+            
         }
     }
 }
