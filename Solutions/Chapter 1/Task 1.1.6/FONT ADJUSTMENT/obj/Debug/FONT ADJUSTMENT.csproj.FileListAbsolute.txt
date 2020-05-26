@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\bin\Debug\FONT ADJUSTMENT.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\bin\Debug\FONT ADJUSTMENT.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\bin\Debug\FONT ADJUSTMENT.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\obj\Debug\FONT ADJUSTMENT.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\obj\Debug\FONT ADJUSTMENT.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\obj\Debug\FONT ADJUSTMENT.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.6\FONT ADJUSTMENT\obj\Debug\FONT ADJUSTMENT.pdb
