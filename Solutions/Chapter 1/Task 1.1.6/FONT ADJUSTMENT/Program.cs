@@ -21,7 +21,16 @@ namespace FONT_ADJUSTMENT
         }
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Параметры надписи: None" );
+            Console.WriteLine();
+            Console.WriteLine("Введите: ");
+            Console.WriteLine();
+            Console.WriteLine("1: bold");
+            Console.WriteLine();
+            Console.WriteLine("2: italic");
+            Console.WriteLine();
+            Console.WriteLine("3: underline");
+            Console.WriteLine();
 
 
 
