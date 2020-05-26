@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVERAGES", "AVERAGES.csproj", "{ADF50656-9A59-42C9-9ECF-FB7D3D3343E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADF50656-9A59-42C9-9ECF-FB7D3D3343E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF50656-9A59-42C9-9ECF-FB7D3D3343E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF50656-9A59-42C9-9ECF-FB7D3D3343E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF50656-9A59-42C9-9ECF-FB7D3D3343E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95D89519-DA1E-4FAE-853E-CEFDFCCAF82C}
+	EndGlobalSection
+EndGlobal
