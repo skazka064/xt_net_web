@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\bin\Debug\DOUBLER.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\bin\Debug\DOUBLER.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\bin\Debug\DOUBLER.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\obj\Debug\DOUBLER.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\obj\Debug\DOUBLER.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\obj\Debug\DOUBLER.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.2.2\DOUBLER\obj\Debug\DOUBLER.pdb
