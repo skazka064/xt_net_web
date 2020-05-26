@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\bin\Debug\X-MAS TREE.exe.config
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\bin\Debug\X-MAS TREE.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\bin\Debug\X-MAS TREE.pdb
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\obj\Debug\X-MAS TREE.csprojAssemblyReference.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\obj\Debug\X-MAS TREE.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\obj\Debug\X-MAS TREE.exe
+C:\Users\admin\Documents\xt_net_web\Solutions\Chapter 1\Task 1.1.4\X-MAS TREE\obj\Debug\X-MAS TREE.pdb
