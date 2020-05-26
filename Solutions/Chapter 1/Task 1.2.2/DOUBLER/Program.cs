@@ -10,6 +10,9 @@ namespace DOUBLER
     {
         static void Main(string[] args)
         {
+            String str1 = "написать программу, которая";
+            String str2 = "описание";
+
         }
     }
 }
