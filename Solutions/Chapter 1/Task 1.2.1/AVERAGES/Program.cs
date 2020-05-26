@@ -12,6 +12,8 @@ namespace AVERAGES
         {
             String str = "Викентий хорошо отметил день рождения: покушал пиццу, посмотрел кино, пообщался со студентами в чате";
 
+            str = str.Replace(':', ' ');
+            str = str.Trim();
             String[] words = str.Split( new char[] {' ', ','});
             int count = 0;
             foreach (var value in words)
