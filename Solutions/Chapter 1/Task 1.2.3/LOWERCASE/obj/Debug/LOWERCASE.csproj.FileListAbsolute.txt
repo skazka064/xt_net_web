@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\bin\Debug\LOWERCASE.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\bin\Debug\LOWERCASE.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\bin\Debug\LOWERCASE.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\obj\Debug\LOWERCASE.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\obj\Debug\LOWERCASE.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\obj\Debug\LOWERCASE.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 1\Task 1.2.3\LOWERCASE\obj\Debug\LOWERCASE.pdb
