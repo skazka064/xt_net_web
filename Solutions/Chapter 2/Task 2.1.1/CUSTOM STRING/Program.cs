@@ -27,7 +27,7 @@ namespace CUSTOM_STRING
         public string MyFind(char ch)
         {        
 
-            string mess = "Символ не найден"; 
+            string mess = ""; 
             foreach( char x in myChars)
             {
                 if (x == ch)
