@@ -12,34 +12,38 @@ namespace CUSTOM_STRING
         {
 
             StringAsArrayChar stringOne = new StringAsArrayChar("myString");
-            Console.WriteLine(stringOne.MyFind('S')); 
+            Console.WriteLine(stringOne.MyFind('q')); 
             
         }
     }
     class StringAsArrayChar
     {
         char[] myChars;
+         public StringAsArrayChar(string s)
+            {
+                this.myChars = s.ToCharArray();
 
-        public char MyFind(char ch)
-        {
-            char myF = ' ';
+            }
+        public string MyFind(char ch)
+        {        
+
+            string mess = "Символ не найден"; 
             foreach( char x in myChars)
             {
                 if (x == ch)
                 {
-                    myF=x;
+                    mess = $"Символ {ch} найден";
+                }
+                else
+                {
+                    mess = $"Символ {ch} не найден";
                 }
             }
 
-            return myF;
+            return mess;
         }
        
-        public StringAsArrayChar(string s) {
-
-
-            this.myChars = s.ToCharArray();
-
-        }
+       
          
     }
 }
