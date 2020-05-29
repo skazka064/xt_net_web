@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\bin\Debug\CUSTOM STRING.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\bin\Debug\CUSTOM STRING.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\bin\Debug\CUSTOM STRING.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\obj\Debug\CUSTOM STRING.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\obj\Debug\CUSTOM STRING.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\obj\Debug\CUSTOM STRING.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.1\CUSTOM STRING\obj\Debug\CUSTOM STRING.pdb

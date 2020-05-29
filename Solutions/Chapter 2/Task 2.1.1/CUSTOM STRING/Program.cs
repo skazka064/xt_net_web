@@ -10,6 +10,17 @@ namespace CUSTOM_STRING
     {
         static void Main(string[] args)
         {
+
+            StringAsArrayChar stringOne = new StringAsArrayChar("myString");
         }
+    }
+    class StringAsArrayChar
+    {
+        
+        public StringAsArrayChar(string s) {
+        
+
+        }
+         
     }
 }
