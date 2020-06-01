@@ -17,10 +17,13 @@ namespace CUSTOM_STRING
           
             // проверка сравнения двух строк
             MyStringAsArrayChar s1 = new MyStringAsArrayChar("Строка");
-            Console.Write(s1.MyEquals("Строка2"));
+            Console.Write(s1.MyEquals("Строка"));
             Console.WriteLine();
             // проверка реализации конкатенации
-            Console.WriteLine(s1);
+
+            MyStringAsArrayChar sTestConcat = new MyStringAsArrayChar("Строка");
+            Console.WriteLine(sTestConcat.MyConcat("ЕщеОднаСтрока"));
+            
             
 
 
