@@ -10,38 +10,83 @@ namespace CUSTOM_STRING
     {
         static void Main(string[] args)
         {
-
-            StringAsArrayChar stringOne = new StringAsArrayChar("myString");
-            Console.WriteLine(stringOne.MyFind('q')); 
+            // проверка поиска символа
+            MyStringAsArrayChar stringOne = new MyStringAsArrayChar("myString");
+            Console.WriteLine(stringOne.MyFind('S'));
+            Console.WriteLine();
+          
+            // проверка сравнения двух строк
+            MyStringAsArrayChar s1 = new MyStringAsArrayChar("Строка");
+            Console.Write(s1.MyEquals("Строка2"));
+            Console.WriteLine();
+            // проверка реализации конкатенации
+            Console.WriteLine(s1);
             
+
+
         }
     }
-    class StringAsArrayChar
+    class MyStringAsArrayChar
     {
         char[] myChars;
-         public StringAsArrayChar(string s)
+
+        
+        public MyStringAsArrayChar(string s)
             {
                 this.myChars = s.ToCharArray();
 
             }
-        public string MyFind(char ch)
+
+       //Реализация конкатенации
+
+            public void MyConcatenation(string s)
+        {
+            
+            char[] outChars = s.ToCharArray();
+
+            foreach( char outChar in outChars)
+            {
+                Console.WriteLine(outChar);
+            }
+            
+            
+
+        }
+       
+        
+        //Реализация сравнения двух строк
+        public bool MyEquals(string s)
+        {
+            char[] outChars = s.ToCharArray();
+            
+            bool isEqual = Enumerable.SequenceEqual(myChars, outChars);
+            return isEqual;
+        }
+       
+        //Реализация поиска символа в строке
+        public string MyFind(char outChar)
         {        
 
             string mess = ""; 
             foreach( char x in myChars)
             {
-                if (x == ch)
+                if (outChar == x)
                 {
-                    mess = $"Символ {ch} найден";
+                    mess = $"Символ {outChar} найден";
+                    break;
                 }
                 else
                 {
-                    mess = $"Символ {ch} не найден";
+                    mess = $"Символ {outChar} не найден";
                 }
             }
 
             return mess;
         }
+
+        //Реализация конкатенации
+
+
        
        
          
