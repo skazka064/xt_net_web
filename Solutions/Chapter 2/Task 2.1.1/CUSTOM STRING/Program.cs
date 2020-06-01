@@ -60,6 +60,7 @@ namespace CUSTOM_STRING
             char[] outChars = s.ToCharArray();
             
             bool isEqual = Enumerable.SequenceEqual(myChars, outChars);
+            
             return isEqual;
         }
        
@@ -85,7 +86,17 @@ namespace CUSTOM_STRING
         }
 
         //Реализация конкатенации
+        public char[] MyConcat(string s)
+        {
+            char[] outChars = s.ToCharArray();
+            string inString = String.Concat(myChars);
+            string outString = String.Concat(outChars);
+            string r = inString + outString;
+            char[] rezult = r.ToCharArray();
 
+            return rezult;
+
+        }
 
        
        
