@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\bin\Debug\CUSTOM PAINT.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\bin\Debug\CUSTOM PAINT.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\bin\Debug\CUSTOM PAINT.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\obj\Debug\CUSTOM PAINT.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\obj\Debug\CUSTOM PAINT.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\obj\Debug\CUSTOM PAINT.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 2\Task 2.1.2\CUSTOM PAINT\obj\Debug\CUSTOM PAINT.pdb

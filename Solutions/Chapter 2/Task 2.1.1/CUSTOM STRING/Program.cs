@@ -60,8 +60,6 @@ namespace CUSTOM_STRING
 
         }
 
-
-
         //Реализация сравнения двух строк
         public bool MyEquals(string s)
         {
@@ -126,10 +124,6 @@ namespace CUSTOM_STRING
             
             return s;
         }
-
-
-       
-       
          
     }
 }
