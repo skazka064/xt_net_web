@@ -10,11 +10,13 @@ namespace GAME
     {
         static void Main(string[] args)
         {
-            Sum(1, 2);
-            Sum(new int[]{ 1,2});
+            SpaceShip spaceShip   = new SpaceShip();
+            SpaceShip spaceShip1 = new Fighter();
+            Fighter spaceShip2 = new Fighter();
 
         }
 
+        #region OVERLOAD
         public static int Sum(int x, int y) => x + y;
        
         public static int Sum(int[] mass)
@@ -25,6 +27,26 @@ namespace GAME
                 res += item;
            
             return res;
+        }
+
+        #endregion
+    }
+
+    public class SpaceShip
+    {
+        public void Fly()
+        {
+            Console.WriteLine("Я Лечу");
+
+        }
+    }
+
+    public class Fighter : SpaceShip
+    {
+        public new void Fly()
+        {
+            Console.WriteLine("Я Лечу");
+            Console.WriteLine("Я ищу врагов");
         }
     }
 }
