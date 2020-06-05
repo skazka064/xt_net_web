@@ -10,6 +10,7 @@ namespace CUSTOM_PAINT
     {
         static void Main(string[] args)
         {
+
        
     }
 
@@ -36,6 +37,38 @@ namespace CUSTOM_PAINT
 
         public double GetTotalLenght() => (2 * Math.PI * radius) + (2 * Math.PI * innerRadius);
     } 
+
+    class Square
+    {
+        public int a;
+        public double GetArea() => a * a;
+    }
+
+    class Rectangle
+    {
+        public int a;
+        public int b;
+        public double GetArea() => a * b;
+    }
+    class Triangle
+    {
+        public int a;
+        public int b;
+        public int c;
+
+        public double halfPerimetr() => (a + b + c) / 2;        
+        public double GetArea() => Math.Sqrt(halfPerimetr() * (halfPerimetr() - a) * (halfPerimetr() - b) * (halfPerimetr() - c));
+
+
+    }
+
+    class Line
+    {
+        public int a;
+        public int b;
+
+    }
+
 
 }
 
