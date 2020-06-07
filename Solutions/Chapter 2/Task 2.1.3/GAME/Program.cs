@@ -10,9 +10,15 @@ namespace GAME
     {
         static void Main(string[] args)
         {
-            SpaceShip spaceShip   = new SpaceShip();
-            SpaceShip spaceShip1 = new Fighter();
+            BasicShip spaceShip   = new BasicShip();
+            BasicShip spaceShip1 = new Fighter();
             Fighter spaceShip2 = new Fighter();
+           
+            Console.WriteLine("---");
+            spaceShip.Fly();
+            spaceShip1.Fly();
+            spaceShip2.Fly();
+
 
         }
 
@@ -32,7 +38,7 @@ namespace GAME
         #endregion
     }
 
-    public class SpaceShip
+    public class BasicShip
     {
         public void Fly()
         {
@@ -40,13 +46,32 @@ namespace GAME
 
         }
     }
+  
+    public class MotherShip
+    {
+        public BasicShip createSpaceShip()
+        {
 
-    public class Fighter : SpaceShip
+        }
+    }
+
+    public class Fighter : BasicShip
     {
         public new void Fly()
         {
             Console.WriteLine("Я Лечу");
             Console.WriteLine("Я ищу врагов");
         }
+
+        public void Shoot()
+        {
+            Console.WriteLine("Boom!");
+        }
+    }
+
+    public enum SpaceShipType
+    {
+        SpaceShip,
+        Fighter
     }
 }
