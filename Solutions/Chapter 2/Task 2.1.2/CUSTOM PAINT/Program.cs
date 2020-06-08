@@ -18,6 +18,7 @@ namespace CUSTOM_PAINT
     }
 }
    
+    // Родительский класс Просто круглый предмет, предназначенный для Круга и Кольца
     class RoundShape
     {
         public int x;
@@ -25,6 +26,7 @@ namespace CUSTOM_PAINT
         public int radius;
     }
 
+    // Дочерний класс Круг, унаследованнный от Просто круглого предмета
     class Circle : RoundShape
     {
         public double GetArea() => Math.PI * radius * radius;
@@ -32,6 +34,7 @@ namespace CUSTOM_PAINT
 
     }
 
+    // Дочерний класс Кольцо, унаследованный от Просто круглого предмета
     class Ring : RoundShape
     {
         public int innerRadius;
@@ -40,6 +43,7 @@ namespace CUSTOM_PAINT
         public double GetTotalLenght() => (2 * Math.PI * radius) + (2 * Math.PI * innerRadius);
     } 
 
+    // Клас Линия, предназначенный для рисования Линии с Методом Подсчет длины отрезка
     class Line
     {
         public int x1;
@@ -49,6 +53,7 @@ namespace CUSTOM_PAINT
         public double GetLengh() => Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
 
     }
+    // Класс Квадрат, предназначенный для отображения Квадрата, включающий Методы для Рассчета Длины Отрезка и Расчета Площади
     class Square
     {
         public int x1;
@@ -70,6 +75,7 @@ namespace CUSTOM_PAINT
         }
     }
    
+    // класс Прямоугольник, предназначен для отображения фигуры Прямоугольник и включающий Методы для рассцета Длины отрезка и Площади
     class Rectangle
     {
         public int x1;
@@ -95,7 +101,7 @@ namespace CUSTOM_PAINT
     }
     
     
-    
+   // Класс Треугольник , предназначен для отображения треугольника и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника
     class Triangle
     {
         public int x1;
