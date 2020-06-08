@@ -12,11 +12,15 @@ namespace CUSTOM_PAINT
         static void Main(string[] args)
         {
 
-            
-           
+            Circle circle = new Circle();
+            circle.x = 1;
+            circle.y = 1;
+            circle.radius = 11;
+            Console.WriteLine(circle.GetArea());
        
     }
 }
+   
    
     // Родительский класс Просто круглый предмет, предназначенный для Круга и Кольца
     class RoundShape
@@ -53,8 +57,9 @@ namespace CUSTOM_PAINT
         public double GetLengh() => Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
 
     }
-    // Класс Квадрат, предназначенный для отображения Квадрата, включающий Методы для Рассчета Длины Отрезка и Расчета Площади
-    class Square
+    
+    // Родительский класс для прямоугольных фигур
+    class SimpleRectangle
     {
         public int x1;
         public int y1;
@@ -64,6 +69,14 @@ namespace CUSTOM_PAINT
         public int y3;
         public int x4;
         public int y4;
+
+    }
+    
+     /*Дочерний класс Квадрат, унаследованный от SimpleRectangle, предназначенный для отображения Квадрата, 
+    включающий Методы для Рассчета Длины Отрезка и Расчета Площади*/
+    class Square : SimpleRectangle
+    {
+        
         public double GetLengh()
         {
             return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
@@ -75,17 +88,11 @@ namespace CUSTOM_PAINT
         }
     }
    
-    // класс Прямоугольник, предназначен для отображения фигуры Прямоугольник и включающий Методы для рассцета Длины отрезка и Площади
-    class Rectangle
+    /*Дочерний  класс Прямоугольник, унаследованный от SimpleRectangle, предназначен для отображения фигуры Прямоугольник 
+    и включающий Методы для рассцета Длины отрезка и Площади*/
+    class Rectangle : SimpleRectangle
     {
-        public int x1;
-        public int y1;
-        public int x2;
-        public int y2;
-        public int x3;
-        public int y3;
-        public int x4;
-        public int y4;
+       
         public double GetLenghA()
         {
             return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
@@ -101,7 +108,8 @@ namespace CUSTOM_PAINT
     }
     
     
-   // Класс Треугольник , предназначен для отображения треугольника и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника
+    /*Класс Треугольник , предназначен для отображения треугольника
+    и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника*/
     class Triangle
     {
         public int x1;
