@@ -9,17 +9,28 @@ namespace CUSTOM_PAINT
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
-            Circle circle = new Circle();
+            /*Circle circle = new Circle();
             circle.x = 1;
             circle.y = 1;
             circle.radius = 11;
-            Console.WriteLine(circle.GetArea());
-       
+            Console.WriteLine(circle.GetArea());*/
+
+            int x = 5;
+            object obj = x;
+            Type t = obj.GetType();
+            if (obj.Equals(x))
+            {
+                Console.WriteLine("eq");
+            }
+            Console.ReadLine();
+
+
+        }
     }
-}
    
    
     // Родительский класс Просто круглый предмет, предназначенный для Круга и Кольца
