@@ -9,25 +9,63 @@ namespace CUSTOM_PAINT
 {
     class Program
     {
-
+        enum Act : byte
+        {
+            Добавить_фигуру,
+            Вывести_фигуры,
+            Очистить_холст,
+            Выход
+        }
+        enum TypeFigure : byte
+        {
+            Линия,
+            Квадрат,
+            Прямоугольник,
+            Треугольник,
+            Круг,
+            Кольцо
+        }
+       
         static void Main(string[] args)
         {
+            Act act = Act.Добавить_фигуру;
+            Array enumData = Enum.GetValues(act.GetType());
+            Console.WriteLine("Выберите действие");
+            for (int i = 0; i < enumData.Length; i++)
+            {
+                Console.WriteLine($"{enumData.GetValue(i):D}.{enumData.GetValue(i)}");
+            }
 
+
+
+
+            /*Console.WriteLine("***********Func with Enum ***********");
+            Act act = Act.Добавить_фигуру;
+            Console.WriteLine($"Вы выбрали имя переменной перечисления: {act.ToString()} ");
+            
+            Console.WriteLine($"Значение переменной перечисления: {(byte)act}") ;
+            Console.WriteLine($"Тип данных : {Enum.GetUnderlyingType(act.GetType())}");
+            Console.WriteLine($"Информация о: {act.GetType().Name}");
+            Array enumData = Enum.GetValues(act.GetType());
+            Console.WriteLine($"Это перечисление имеет {enumData.Length} члена");
+            for(int i=0; i<enumData.Length; i++)
+            {
+                Console.WriteLine($"Имя: {enumData.GetValue(i)} Значение: {enumData.GetValue(i):D}"); 
+            }*/
             /*Circle circle = new Circle();
             circle.x = 1;
             circle.y = 1;
             circle.radius = 11;
             Console.WriteLine(circle.GetArea());*/
 
-            int x = 5;
+            /*int x = 5;
             object obj = x;
             Type t = obj.GetType();
             if (obj.Equals(x))
             {
                 Console.WriteLine("eq");
             }
-            Console.ReadLine();
-
+            Console.ReadLine();*/
 
         }
     }
@@ -100,7 +138,7 @@ namespace CUSTOM_PAINT
     }
    
     /*Дочерний  класс Прямоугольник, унаследованный от SimpleRectangle, предназначен для отображения фигуры Прямоугольник 
-    и включающий Методы для рассцета Длины отрезка и Площади*/
+    и включающий Методы для рассчета Длины отрезка и Площади*/
     class Rectangle : SimpleRectangle
     {
        

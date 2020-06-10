@@ -14,10 +14,10 @@ namespace FONT_ADJUSTMENT
         [Flags]
         enum Fonts : byte
         {
-            None = 0,
-            Bold = 1,
-            Italic = 2,
-            Underline = 4
+            None = 1,
+            Bold = 2,
+            Italic = 4,
+            Underline = 8
         }
         static void Main(string[] args)
         {
