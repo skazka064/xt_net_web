@@ -11,13 +11,15 @@ namespace CUSTOM_PAINT
     {
         enum Act : byte
         {
+            None,
             Добавить_фигуру,
             Вывести_фигуры,
             Очистить_холст,
-            Выход
+            Выход   
         }
         enum TypeFigure : byte
         {
+            None,
             Линия,
             Квадрат,
             Прямоугольник,
@@ -28,15 +30,64 @@ namespace CUSTOM_PAINT
        
         static void Main(string[] args)
         {
-            Act act = Act.Добавить_фигуру;
+            /*Act act = Act.Добавить_фигуру;
             Array enumData = Enum.GetValues(act.GetType());
             Console.WriteLine("Выберите действие");
             for (int i = 0; i < enumData.Length; i++)
             {
                 Console.WriteLine($"{enumData.GetValue(i):D}.{enumData.GetValue(i)}");
+            }*/
+
+
+            Console.WriteLine("Выберите действие");
+            Console.WriteLine("1. Добавить фигуру");
+            Console.WriteLine("2. Вывести фигуры");
+            Console.WriteLine("3. Очистить холст");
+            Console.WriteLine("4. Выход");
+
+            var str = Console.ReadLine();
+            var actType = (byte)Enum.Parse(typeof(Act),  str);
+            switch (actType)
+            {
+                case 1:
+                    Console.WriteLine("Выберите тип фигуры");
+                    Console.WriteLine("1. Линия");
+                    Console.WriteLine("2. Квадрат");
+                    Console.WriteLine("3. Прямоугольник");
+                    Console.WriteLine("4. Треугольник");
+                    Console.WriteLine("5. Круг");
+                    Console.WriteLine("6. Кольцо");
+                    Console.WriteLine("7. Выход");
+                    var str1 = Console.ReadLine();
+                    var figureType = (byte)Enum.Parse(typeof(TypeFigure), str1);
+                  
+                    Console.WriteLine(figureType);
+
+                    switch (figureType)
+                    {
+                        case 1:
+                            Console.WriteLine("Введите параметры фигуры Линия");
+                            Console.WriteLine("Введите координаты x1");
+                            int x1 = Int32.Parse(Console.ReadLine()) ;
+                            Console.WriteLine("Введите координаты y1");
+                            int y1 = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Введите координаты x2");
+                            int x2 = Int32.Parse(Console.ReadLine());
+                            Console.WriteLine("Введите координаты y2");
+                            int y2 = Int32.Parse(Console.ReadLine());
+                            Line l = new Line(x1,y1,x2,y2);
+                             Console.WriteLine(l.GetLengh());
+                            Console.WriteLine("Фигура Линия создана");
+                            
+                           
+                            break;
+                    }
+                    
+                    
+                    break;
+
+                    
             }
-
-
 
 
             /*Console.WriteLine("***********Func with Enum ***********");
@@ -70,6 +121,11 @@ namespace CUSTOM_PAINT
         }
     }
    
+    class MenuAct
+    {
+
+
+    }
    
     // Родительский класс Просто круглый предмет, предназначенный для Круга и Кольца
     class RoundShape
@@ -103,7 +159,19 @@ namespace CUSTOM_PAINT
         public int y1;
         public int x2;
         public int y2;
-        public double GetLengh() => Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+        public Line(int x1, int y1, int x2, int y2)
+        {
+            this.x1 = x1;
+            this.y1 = y1;
+            this.x2 = x2;
+            this.y2 = y2;
+        }
+
+        public double GetLengh() 
+        {
+            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+        }
+           
 
     }
     
