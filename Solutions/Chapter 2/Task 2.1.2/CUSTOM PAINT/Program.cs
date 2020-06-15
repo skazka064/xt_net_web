@@ -31,7 +31,7 @@ namespace CUSTOM_PAINT
         static void Main(string[] args)
         {
           
-            // Создаем массивы для размещения созданных фигур
+            // Создаем List для размещения созданных фигур
             List<Line> myLine = new List<Line>();
             List<Square> mySquare = new List<Square>();
             List<Rectangle> myRectangle = new List<Rectangle>();
@@ -81,7 +81,7 @@ namespace CUSTOM_PAINT
                                 int yLine2 = Int32.Parse(Console.ReadLine());
                                 Line line = new Line(xLine1, yLine1, xLine2, yLine2);
                                                              
-                                Console.WriteLine("Фигура Линия создана");
+                                Console.WriteLine("Фигура Линия создана!");
                                 myLine.Add(line);
 
                                 break;
@@ -106,6 +106,7 @@ namespace CUSTOM_PAINT
                                 Console.WriteLine("Введите координаты y4");
                                 int ySquare4 = Int32.Parse(Console.ReadLine());
                                 Square square = new Square(xSquare1, ySquare1, xSquare2, ySquare2, xSquare3, ySquare3, xSquare4, ySquare4);
+                                Console.WriteLine("Фигура Квадрат создана!");
                                 mySquare.Add(square);
 
                                 break;
@@ -131,7 +132,7 @@ namespace CUSTOM_PAINT
                                 int yRectangle4 = Int32.Parse(Console.ReadLine());
                                 Rectangle rectangle = new Rectangle(xRectangle1, yRectangle1, xRectangle2, yRectangle2, xRectangle3, yRectangle3, xRectangle4, yRectangle4);
                                 myRectangle.Add(rectangle);
-
+                                Console.WriteLine("Фигура Прямоугольник создана!");
 
                                 break;
 
@@ -152,7 +153,7 @@ namespace CUSTOM_PAINT
                                
                                 Triangle triangle = new Triangle(xTriangle1, yTriangle1, xTriangle2, yTriangle2, xTriangle3, yTriangle3);
                                 myTriangle.Add(triangle);
-
+                                Console.WriteLine("Фигура Треугольник создана!");
                                 break;
 
                             case 5:
@@ -166,7 +167,7 @@ namespace CUSTOM_PAINT
 
                                 Circle circle = new Circle(xCircle1, yCircle1, rCircle);
                                 myCircle.Add(circle);
-
+                                Console.WriteLine("Фигура Круг создана!");
                                 break;
 
                             case 6:
@@ -183,7 +184,7 @@ namespace CUSTOM_PAINT
 
                                 Ring ring = new Ring(xRing1, yRing1, rRadius, rInnerRadius);
                                 myRing.Add(ring);
-
+                                Console.WriteLine("Фигура Кольцо создана!");
                                 break;
 
 
