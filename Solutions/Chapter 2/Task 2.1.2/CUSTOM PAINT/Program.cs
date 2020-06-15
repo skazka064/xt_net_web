@@ -30,100 +30,280 @@ namespace CUSTOM_PAINT
        
         static void Main(string[] args)
         {
-            /*Act act = Act.Добавить_фигуру;
-            Array enumData = Enum.GetValues(act.GetType());
-            Console.WriteLine("Выберите действие");
-            for (int i = 0; i < enumData.Length; i++)
+          
+            // Создаем массивы для размещения созданных фигур
+            List<Line> myLine = new List<Line>();
+            List<Square> mySquare = new List<Square>();
+            List<Rectangle> myRectangle = new List<Rectangle>();
+            List<Triangle> myTriangle = new List<Triangle>();
+            List<Circle> myCircle = new List<Circle>();
+            List<Ring> myRing = new List<Ring>();
+            int i = 0;
+            while (i==0)
             {
-                Console.WriteLine($"{enumData.GetValue(i):D}.{enumData.GetValue(i)}");
-            }*/
+                
+
+                Console.WriteLine("Выберите действие");
+                Console.WriteLine("1. Добавить фигуру");
+                Console.WriteLine("2. Вывести фигуры");
+                Console.WriteLine("3. Очистить холст");
+                Console.WriteLine("4. Выход");
+
+                var str = Console.ReadLine();
+                var actType = (byte)Enum.Parse(typeof(Act), str);
+                switch (actType)
+                {
+                    case 1:
+                        Console.WriteLine("Выберите тип фигуры");
+                        Console.WriteLine("1. Линия");
+                        Console.WriteLine("2. Квадрат");
+                        Console.WriteLine("3. Прямоугольник");
+                        Console.WriteLine("4. Треугольник");
+                        Console.WriteLine("5. Круг");
+                        Console.WriteLine("6. Кольцо");
+                        Console.WriteLine("7. Выход");
+                        var str1 = Console.ReadLine();
+                        var figureType = (byte)Enum.Parse(typeof(TypeFigure), str1);
+
+                        Console.WriteLine(figureType);
+                        switch (figureType)
+                        {
+                            case 1:
+
+                                Console.WriteLine("Введите параметры фигуры Линия");
+                                Console.WriteLine("Введите координаты x1");
+                                int xLine1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y1");
+                                int yLine1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x2");
+                                int xLine2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y2");
+                                int yLine2 = Int32.Parse(Console.ReadLine());
+                                Line line = new Line(xLine1, yLine1, xLine2, yLine2);
+                                                             
+                                Console.WriteLine("Фигура Линия создана");
+                                myLine.Add(line);
+
+                                break;
+
+                            case 2:
+
+                                Console.WriteLine("Введите параметры фигуры Квадрат");
+                                Console.WriteLine("Введите координаты x1");
+                                int xSquare1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y1");
+                                int ySquare1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x2");
+                                int xSquare2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y2");
+                                int ySquare2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x3");
+                                int xSquare3 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y3");
+                                int ySquare3 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x4");
+                                int xSquare4 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y4");
+                                int ySquare4 = Int32.Parse(Console.ReadLine());
+                                Square square = new Square(xSquare1, ySquare1, xSquare2, ySquare2, xSquare3, ySquare3, xSquare4, ySquare4);
+                                mySquare.Add(square);
+
+                                break;
+
+                            case 3:
+
+                                Console.WriteLine("Введите параметры фигуры Прямоугольник");
+                                Console.WriteLine("Введите координаты x1");
+                                int xRectangle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y1");
+                                int yRectangle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x2");
+                                int xRectangle2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y2");
+                                int yRectangle2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x3");
+                                int xRectangle3 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y3");
+                                int yRectangle3 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x4");
+                                int xRectangle4 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y4");
+                                int yRectangle4 = Int32.Parse(Console.ReadLine());
+                                Rectangle rectangle = new Rectangle(xRectangle1, yRectangle1, xRectangle2, yRectangle2, xRectangle3, yRectangle3, xRectangle4, yRectangle4);
+                                myRectangle.Add(rectangle);
 
 
-            Console.WriteLine("Выберите действие");
-            Console.WriteLine("1. Добавить фигуру");
-            Console.WriteLine("2. Вывести фигуры");
-            Console.WriteLine("3. Очистить холст");
-            Console.WriteLine("4. Выход");
+                                break;
 
-            var str = Console.ReadLine();
-            var actType = (byte)Enum.Parse(typeof(Act),  str);
-            switch (actType)
-            {
-                case 1:
-                    Console.WriteLine("Выберите тип фигуры");
-                    Console.WriteLine("1. Линия");
-                    Console.WriteLine("2. Квадрат");
-                    Console.WriteLine("3. Прямоугольник");
-                    Console.WriteLine("4. Треугольник");
-                    Console.WriteLine("5. Круг");
-                    Console.WriteLine("6. Кольцо");
-                    Console.WriteLine("7. Выход");
-                    var str1 = Console.ReadLine();
-                    var figureType = (byte)Enum.Parse(typeof(TypeFigure), str1);
-                  
-                    Console.WriteLine(figureType);
+                            case 4:
+                                Console.WriteLine("Введите параметры фигуры Треугольник");
+                                Console.WriteLine("Введите координаты x1");
+                                int xTriangle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y1");
+                                int yTriangle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x2");
+                                int xTriangle2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y2");
+                                int yTriangle2 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты x3");
+                                int xTriangle3 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты y3");
+                                int yTriangle3 = Int32.Parse(Console.ReadLine());
+                               
+                                Triangle triangle = new Triangle(xTriangle1, yTriangle1, xTriangle2, yTriangle2, xTriangle3, yTriangle3);
+                                myTriangle.Add(triangle);
 
-                    switch (figureType)
-                    {
-                        case 1:
-                            Console.WriteLine("Введите параметры фигуры Линия");
-                            Console.WriteLine("Введите координаты x1");
-                            int x1 = Int32.Parse(Console.ReadLine()) ;
-                            Console.WriteLine("Введите координаты y1");
-                            int y1 = Int32.Parse(Console.ReadLine());
-                            Console.WriteLine("Введите координаты x2");
-                            int x2 = Int32.Parse(Console.ReadLine());
-                            Console.WriteLine("Введите координаты y2");
-                            int y2 = Int32.Parse(Console.ReadLine());
-                            Line l = new Line(x1,y1,x2,y2);
-                             Console.WriteLine(l.GetLengh());
-                            Console.WriteLine("Фигура Линия создана");
-                            
-                           
-                            break;
-                    }
-                    
-                    
-                    break;
+                                break;
 
-                    
+                            case 5:
+                                Console.WriteLine("Введите параметры фигуры Круг");
+                                Console.WriteLine("Введите координаты центра x1");
+                                int xCircle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты центра y1");
+                                int yCircle1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите радиус окружности");
+                                int rCircle = Int32.Parse(Console.ReadLine());
+
+                                Circle circle = new Circle(xCircle1, yCircle1, rCircle);
+                                myCircle.Add(circle);
+
+                                break;
+
+                            case 6:
+
+                                Console.WriteLine("Введите параметры фигуры Кольцо");
+                                Console.WriteLine("Введите координаты центра x1");
+                                int xRing1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите координаты центра y1");
+                                int yRing1 = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите радиус внешней окружности");
+                                int rRadius = Int32.Parse(Console.ReadLine());
+                                Console.WriteLine("Введите радиус внутренней окружности");
+                                int rInnerRadius = Int32.Parse(Console.ReadLine());
+
+                                Ring ring = new Ring(xRing1, yRing1, rRadius, rInnerRadius);
+                                myRing.Add(ring);
+
+                                break;
+
+
+                        }
+
+                        break;
+
+
+                    case 2:
+                        // Вывести фигуры
+
+                        if (myLine.Count > 0)
+                        {                            
+                         foreach (Line l in myLine)
+                            {
+                                Console.WriteLine("Фигура Линия");
+                                Console.WriteLine($" X1 = {l.x1}");
+                                Console.WriteLine($" Y1 = {l.y1}");
+                                Console.WriteLine($" X2 = {l.x2}");
+                                Console.WriteLine($" Y2 = {l.y2}");
+                             }
+                        }
+                        if (mySquare.Count > 0)
+                        {
+                            foreach(Square sq in mySquare)
+                            {
+                                Console.WriteLine("Фигура Квадрат");
+                                Console.WriteLine($" X1 = {sq.x1}");
+                                Console.WriteLine($" Y1 = {sq.y1}");
+                                Console.WriteLine($" X2 = {sq.x2}");
+                                Console.WriteLine($" Y2 = {sq.y2}");
+                                Console.WriteLine($" X3 = {sq.x3}");
+                                Console.WriteLine($" Y3 = {sq.y3}");
+                                Console.WriteLine($" X4 = {sq.x4}");
+                                Console.WriteLine($" Y4 = {sq.y4}");
+
+                            }
+                        }
+                        if (myRectangle.Count > 0)
+                        {
+                            foreach (Rectangle rc in myRectangle)
+                            {
+                                Console.WriteLine("Фигура Прямоугольник");
+                                Console.WriteLine($" X1 = {rc.x1}");
+                                Console.WriteLine($" Y1 = {rc.y1}");
+                                Console.WriteLine($" X2 = {rc.x2}");
+                                Console.WriteLine($" Y2 = {rc.y2}");
+                                Console.WriteLine($" X3 = {rc.x3}");
+                                Console.WriteLine($" Y3 = {rc.y3}");
+                                Console.WriteLine($" X4 = {rc.x4}");
+                                Console.WriteLine($" Y4 = {rc.y4}");
+
+                            }
+                        }
+                        if (myTriangle.Count > 0)
+                        {
+                            foreach (Triangle tri in myTriangle)
+                            {
+                                Console.WriteLine("Фигура Треугольник");
+                                Console.WriteLine($" X1 = {tri.x1}");
+                                Console.WriteLine($" Y1 = {tri.y1}");
+                                Console.WriteLine($" X2 = {tri.x2}");
+                                Console.WriteLine($" Y2 = {tri.y2}");
+                                Console.WriteLine($" X3 = {tri.x3}");
+                                Console.WriteLine($" Y3 = {tri.y3}");
+                            }
+                        }
+
+                        if (myCircle.Count > 0)
+                        {
+                            foreach (Circle cir in myCircle)
+                            {
+                                Console.WriteLine("Фигура Круг");
+                                Console.WriteLine($" X = {cir.x}");
+                                Console.WriteLine($" Y = {cir.y}");
+                                Console.WriteLine($" Radius = {cir.radius}");
+                            }
+                        }
+
+                        if (myRing.Count > 0)
+                        {
+                            foreach (Ring rin in myRing)
+                            {
+                                Console.WriteLine("Фигура Кольцо");
+                                Console.WriteLine($" X = {rin.x}");
+                                Console.WriteLine($" Y = {rin.y}");
+                                Console.WriteLine($" OuterRadius = {rin.radius}");
+                                Console.WriteLine($" InnerRadius = {rin.innerRadius}");
+                            }
+                        }
+
+
+
+                        break;
+
+                    case 3:
+
+                        //Очищаем Холст
+                        myLine.Clear();
+                        mySquare.Clear();
+                        myRectangle.Clear();
+                        myTriangle.Clear();
+                        myCircle.Clear();
+                        myRing.Clear();
+                        break;
+
+                    // Выход
+                    case 4:
+
+                        i = 1;
+
+                        break; 
+
+
+                }
+
+              
+
             }
-
-
-            /*Console.WriteLine("***********Func with Enum ***********");
-            Act act = Act.Добавить_фигуру;
-            Console.WriteLine($"Вы выбрали имя переменной перечисления: {act.ToString()} ");
-            
-            Console.WriteLine($"Значение переменной перечисления: {(byte)act}") ;
-            Console.WriteLine($"Тип данных : {Enum.GetUnderlyingType(act.GetType())}");
-            Console.WriteLine($"Информация о: {act.GetType().Name}");
-            Array enumData = Enum.GetValues(act.GetType());
-            Console.WriteLine($"Это перечисление имеет {enumData.Length} члена");
-            for(int i=0; i<enumData.Length; i++)
-            {
-                Console.WriteLine($"Имя: {enumData.GetValue(i)} Значение: {enumData.GetValue(i):D}"); 
-            }*/
-            /*Circle circle = new Circle();
-            circle.x = 1;
-            circle.y = 1;
-            circle.radius = 11;
-            Console.WriteLine(circle.GetArea());*/
-
-            /*int x = 5;
-            object obj = x;
-            Type t = obj.GetType();
-            if (obj.Equals(x))
-            {
-                Console.WriteLine("eq");
-            }
-            Console.ReadLine();*/
-
         }
-    }
-   
-    class MenuAct
-    {
-
 
     }
    
@@ -138,6 +318,12 @@ namespace CUSTOM_PAINT
     // Дочерний класс Круг, унаследованнный от Просто круглого предмета
     class Circle : RoundShape
     {
+        public Circle(int x, int y, int radius)
+        {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
         public double GetArea() => Math.PI * radius * radius;
         public double GetСircumscribedСircle() => 2 * Math.PI * radius;
 
@@ -147,6 +333,15 @@ namespace CUSTOM_PAINT
     class Ring : RoundShape
     {
         public int innerRadius;
+        public Ring(int x, int y, int radius, int innerRadius)
+        {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.innerRadius = innerRadius;
+                
+        }
+        
         public double GetArea() => Math.PI * (radius * radius - innerRadius * innerRadius);
 
         public double GetTotalLenght() => (2 * Math.PI * radius) + (2 * Math.PI * innerRadius);
@@ -193,6 +388,17 @@ namespace CUSTOM_PAINT
     включающий Методы для Рассчета Длины Отрезка и Расчета Площади*/
     class Square : SimpleRectangle
     {
+        public Square(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
+        {
+            this.x1 = x1;
+            this.y1 = y1;
+            this.x2 = x2;
+            this.y2 = y2;
+            this.x3 = x3;
+            this.y3 = y3;
+            this.x4 = x4;
+            this.y4 = y4;
+        }
         
         public double GetLengh()
         {
@@ -209,6 +415,18 @@ namespace CUSTOM_PAINT
     и включающий Методы для рассчета Длины отрезка и Площади*/
     class Rectangle : SimpleRectangle
     {
+        public Rectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
+        {
+            this.x1 = x1;
+            this.y1 = y1;
+            this.x2 = x2;
+            this.y2 = y2;
+            this.x3 = x3;
+            this.y3 = y3;
+            this.x4 = x4;
+            this.y4 = y4;
+
+        }
        
         public double GetLenghA()
         {
@@ -235,6 +453,16 @@ namespace CUSTOM_PAINT
         public int y2;
         public int x3;
         public int y3;
+        public Triangle(int x1, int y1, int x2, int y2, int x3, int y3)
+        {
+            this.x1 = x1;
+            this.y1 = y1;
+            this.x2 = x2;
+            this.y2 = y2;
+            this.x3 = x3;
+            this.y3 = y3;
+
+        }
 
         public double GetLenghA()
         {
@@ -260,8 +488,4 @@ namespace CUSTOM_PAINT
 
     }
 
-   
-
-
 }
-
