@@ -312,7 +312,7 @@ namespace CUSTOM_PAINT
 
     }
    
-    // *********************************Родительский абстрактный класс Просто круглый предмет, предназначенный для Круга и Кольца
+    // *********************************Родительский абстрактный класс "Просто круглый предмет", предназначенный для Круга и Кольца
     abstract class RoundShape
     {
         private int _x;
@@ -337,7 +337,7 @@ namespace CUSTOM_PAINT
             get { return _inner_radius; }
             set
             {
-                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным", nameof(value));
+                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным");
                 _inner_radius = value;
             }
         }
@@ -346,7 +346,7 @@ namespace CUSTOM_PAINT
             get { return _outer_radius; }
             set 
             {
-                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным", nameof(value));
+                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным");
                 _outer_radius = value; 
             }
         }
@@ -355,7 +355,7 @@ namespace CUSTOM_PAINT
 
     }
 
-    // **********************************Дочерний класс Круг, унаследованнный от Просто круглого предмета
+    // **********************************Дочерний класс Круг, унаследованнный от "Просто круглого предмета"
     class Circle : RoundShape
     {
         public Circle(int x, int y, int outR)
@@ -369,7 +369,7 @@ namespace CUSTOM_PAINT
 
     }
 
-    // **********************************Дочерний класс Кольцо, унаследованный от Просто круглого предмета
+    // **********************************Дочерний класс Кольцо, унаследованный от "Просто круглого предмета"
     class Ring : RoundShape
     {
        
@@ -410,9 +410,9 @@ namespace CUSTOM_PAINT
            
 
     }
-    
-    //**************************************** Родительский класс для прямоугольных фигур
-   abstract class SimpleRectangle
+
+    //**************************************** Родительский класс SimpleRectangle для прямоугольных фигур
+    abstract class SimpleRectangle
     {
         public int x1;
         public int y1;
