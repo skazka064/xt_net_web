@@ -31,13 +31,15 @@ namespace CUSTOM_PAINT
         static void Main(string[] args)
         {
           
-            // Создаем List для размещения созданных фигур
+            // ********************Создаем List для размещения созданных фигур
             List<Line> myLine = new List<Line>();
             List<Square> mySquare = new List<Square>();
             List<Rectangle> myRectangle = new List<Rectangle>();
             List<Triangle> myTriangle = new List<Triangle>();
             List<Circle> myCircle = new List<Circle>();
             List<Ring> myRing = new List<Ring>();
+            
+            //******************** Создаем меню
             int i = 0;
             while (i==0)
             {
@@ -194,7 +196,7 @@ namespace CUSTOM_PAINT
 
 
                     case 2:
-                        // Вывести фигуры
+                        //************** Вывести фигуры
 
                         if (myLine.Count > 0)
                         {                            
@@ -205,6 +207,7 @@ namespace CUSTOM_PAINT
                                 Console.WriteLine($" Y1 = {l.y1}");
                                 Console.WriteLine($" X2 = {l.x2}");
                                 Console.WriteLine($" Y2 = {l.y2}");
+                                Console.WriteLine($"Длина Линии = {l.GetLengh()}");
                              }
                         }
                         if (mySquare.Count > 0)
@@ -220,6 +223,7 @@ namespace CUSTOM_PAINT
                                 Console.WriteLine($" Y3 = {sq.y3}");
                                 Console.WriteLine($" X4 = {sq.x4}");
                                 Console.WriteLine($" Y4 = {sq.y4}");
+                                Console.WriteLine($" Площадь = {sq.GetArea() }");
 
                             }
                         }
@@ -236,6 +240,7 @@ namespace CUSTOM_PAINT
                                 Console.WriteLine($" Y3 = {rc.y3}");
                                 Console.WriteLine($" X4 = {rc.x4}");
                                 Console.WriteLine($" Y4 = {rc.y4}");
+                                Console.WriteLine($" Площадь = {rc.GetArea()}");
 
                             }
                         }
@@ -250,6 +255,7 @@ namespace CUSTOM_PAINT
                                 Console.WriteLine($" Y2 = {tri.y2}");
                                 Console.WriteLine($" X3 = {tri.x3}");
                                 Console.WriteLine($" Y3 = {tri.y3}");
+                                Console.WriteLine($" Площадь = {tri.GetArea()}");
                             }
                         }
 
@@ -258,9 +264,11 @@ namespace CUSTOM_PAINT
                             foreach (Circle cir in myCircle)
                             {
                                 Console.WriteLine("Фигура Круг");
-                                Console.WriteLine($" X = {cir.x}");
-                                Console.WriteLine($" Y = {cir.y}");
-                                Console.WriteLine($" Radius = {cir.radius}");
+                                Console.WriteLine($" X = {cir.X}");
+                                Console.WriteLine($" Y = {cir.Y}");
+                                Console.WriteLine($" Радиус = {cir.outerRadius}");
+                                Console.WriteLine($" Площадь = {cir.GetArea()}");
+                                Console.WriteLine($" Длина окружности  = {cir.GetСircumscribedСircle()}");
                             }
                         }
 
@@ -269,10 +277,11 @@ namespace CUSTOM_PAINT
                             foreach (Ring rin in myRing)
                             {
                                 Console.WriteLine("Фигура Кольцо");
-                                Console.WriteLine($" X = {rin.x}");
-                                Console.WriteLine($" Y = {rin.y}");
-                                Console.WriteLine($" OuterRadius = {rin.radius}");
+                                Console.WriteLine($" X = {rin.X}");
+                                Console.WriteLine($" Y = {rin.Y}");
+                                Console.WriteLine($" OuterRadius = {rin.outerRadius}");
                                 Console.WriteLine($" InnerRadius = {rin.innerRadius}");
+                                Console.WriteLine($" Площадь =  {rin.GetArea()}");
                             }
                         }
 
@@ -282,7 +291,7 @@ namespace CUSTOM_PAINT
 
                     case 3:
 
-                        //Очищаем Холст
+                        //****************Очищаем Холст
                         myLine.Clear();
                         mySquare.Clear();
                         myRectangle.Clear();
@@ -291,64 +300,95 @@ namespace CUSTOM_PAINT
                         myRing.Clear();
                         break;
 
-                    // Выход
+                    //***************** Выход
                     case 4:
 
                         i = 1;
 
                         break; 
-
-
                 }
-
-              
-
             }
         }
 
     }
    
-    // Родительский класс Просто круглый предмет, предназначенный для Круга и Кольца
-    class RoundShape
+    // *********************************Родительский абстрактный класс Просто круглый предмет, предназначенный для Круга и Кольца
+    abstract class RoundShape
     {
-        public int x;
-        public int y;
-        public int radius;
-    }
+        private int _x;
+        private int _y;
+        private int _inner_radius;
+        private int _outer_radius;
 
-    // Дочерний класс Круг, унаследованнный от Просто круглого предмета
-    class Circle : RoundShape
-    {
-        public Circle(int x, int y, int radius)
+        public int X
         {
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-        }
-        public double GetArea() => Math.PI * radius * radius;
-        public double GetСircumscribedСircle() => 2 * Math.PI * radius;
-
-    }
-
-    // Дочерний класс Кольцо, унаследованный от Просто круглого предмета
-    class Ring : RoundShape
-    {
-        public int innerRadius;
-        public Ring(int x, int y, int radius, int innerRadius)
-        {
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-            this.innerRadius = innerRadius;
-                
+            get { return _x; }
+            set { _x = value; }
         }
         
-        public double GetArea() => Math.PI * (radius * radius - innerRadius * innerRadius);
+        public int Y
+        {
+            get { return _y; }
+            set { _y = value; }
+        }
 
-        public double GetTotalLenght() => (2 * Math.PI * radius) + (2 * Math.PI * innerRadius);
+        public int innerRadius
+        {
+            get { return _inner_radius; }
+            set
+            {
+                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным", nameof(value));
+                _inner_radius = value;
+            }
+        }
+        public int outerRadius
+        {
+            get { return _outer_radius; }
+            set 
+            {
+                if (value <= 0) throw new ArgumentException("Радиус должен быть позитивным", nameof(value));
+                _outer_radius = value; 
+            }
+        }
+
+
+
+    }
+
+    // **********************************Дочерний класс Круг, унаследованнный от Просто круглого предмета
+    class Circle : RoundShape
+    {
+        public Circle(int x, int y, int outR)
+        {
+            X = x;
+            Y = y;
+            outerRadius = outR;
+        }
+        public double GetArea() => Math.PI * outerRadius * outerRadius;
+        public double GetСircumscribedСircle() => 2 * Math.PI * outerRadius;
+
+    }
+
+    // **********************************Дочерний класс Кольцо, унаследованный от Просто круглого предмета
+    class Ring : RoundShape
+    {
+       
+        public Ring(int x, int y, int outR, int innerR)
+        {
+            X = x;
+            Y = y;
+            outerRadius = outR;
+            innerRadius = innerR;
+            if(innerRadius>= outerRadius) throw new ArgumentException("Внутренний радиус не должен быть больше или равен внешнему радиусу!");
+
+        }
+        
+        public double GetArea() => Math.PI * (outerRadius * outerRadius - innerRadius * innerRadius);
+
+        public double GetTotalLenght() => (2 * Math.PI * outerRadius) + (2 * Math.PI * innerRadius);
     } 
 
-    // Клас Линия, предназначенный для рисования Линии с Методом Подсчет длины отрезка
+    //******************************* Класс Линия, предназначенный для рисования Линии с Методом Подсчет длины отрезка
     class Line
     {
         public int x1;
@@ -371,8 +411,8 @@ namespace CUSTOM_PAINT
 
     }
     
-    // Родительский класс для прямоугольных фигур
-    class SimpleRectangle
+    //**************************************** Родительский класс для прямоугольных фигур
+   abstract class SimpleRectangle
     {
         public int x1;
         public int y1;
@@ -385,7 +425,7 @@ namespace CUSTOM_PAINT
 
     }
     
-     /*Дочерний класс Квадрат, унаследованный от SimpleRectangle, предназначенный для отображения Квадрата, 
+     /************************************Дочерний класс Квадрат, унаследованный от SimpleRectangle, предназначенный для отображения Квадрата, 
     включающий Методы для Рассчета Длины Отрезка и Расчета Площади*/
     class Square : SimpleRectangle
     {
@@ -412,7 +452,7 @@ namespace CUSTOM_PAINT
         }
     }
    
-    /*Дочерний  класс Прямоугольник, унаследованный от SimpleRectangle, предназначен для отображения фигуры Прямоугольник 
+    /********************************Дочерний  класс Прямоугольник, унаследованный от SimpleRectangle, предназначен для отображения фигуры Прямоугольник 
     и включающий Методы для рассчета Длины отрезка и Площади*/
     class Rectangle : SimpleRectangle
     {
@@ -444,7 +484,7 @@ namespace CUSTOM_PAINT
     }
     
     
-    /*Класс Треугольник , предназначен для отображения треугольника
+    /************************************Класс Треугольник , предназначен для отображения треугольника
     и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника*/
     class Triangle
     {
