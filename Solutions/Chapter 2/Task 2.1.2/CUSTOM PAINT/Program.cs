@@ -203,10 +203,10 @@ namespace CUSTOM_PAINT
                          foreach (Line l in myLine)
                             {
                                 Console.WriteLine("Фигура Линия");
-                                Console.WriteLine($" X1 = {l.x1}");
-                                Console.WriteLine($" Y1 = {l.y1}");
-                                Console.WriteLine($" X2 = {l.x2}");
-                                Console.WriteLine($" Y2 = {l.y2}");
+                                Console.WriteLine($" X1 = {l.X1}");
+                                Console.WriteLine($" Y1 = {l.Y1}");
+                                Console.WriteLine($" X2 = {l.X2}");
+                                Console.WriteLine($" Y2 = {l.Y2}");
                                 Console.WriteLine($"Длина Линии = {l.GetLengh()}");
                              }
                         }
@@ -215,14 +215,14 @@ namespace CUSTOM_PAINT
                             foreach(Square sq in mySquare)
                             {
                                 Console.WriteLine("Фигура Квадрат");
-                                Console.WriteLine($" X1 = {sq.x1}");
-                                Console.WriteLine($" Y1 = {sq.y1}");
-                                Console.WriteLine($" X2 = {sq.x2}");
-                                Console.WriteLine($" Y2 = {sq.y2}");
-                                Console.WriteLine($" X3 = {sq.x3}");
-                                Console.WriteLine($" Y3 = {sq.y3}");
-                                Console.WriteLine($" X4 = {sq.x4}");
-                                Console.WriteLine($" Y4 = {sq.y4}");
+                                Console.WriteLine($" X1 = {sq.X1}");
+                                Console.WriteLine($" Y1 = {sq.Y1}");
+                                Console.WriteLine($" X2 = {sq.X2}");
+                                Console.WriteLine($" Y2 = {sq.Y2}");
+                                Console.WriteLine($" X3 = {sq.X3}");
+                                Console.WriteLine($" Y3 = {sq.Y3}");
+                                Console.WriteLine($" X4 = {sq.X4}");
+                                Console.WriteLine($" Y4 = {sq.Y4}");
                                 Console.WriteLine($" Площадь = {sq.GetArea() }");
 
                             }
@@ -232,14 +232,14 @@ namespace CUSTOM_PAINT
                             foreach (Rectangle rc in myRectangle)
                             {
                                 Console.WriteLine("Фигура Прямоугольник");
-                                Console.WriteLine($" X1 = {rc.x1}");
-                                Console.WriteLine($" Y1 = {rc.y1}");
-                                Console.WriteLine($" X2 = {rc.x2}");
-                                Console.WriteLine($" Y2 = {rc.y2}");
-                                Console.WriteLine($" X3 = {rc.x3}");
-                                Console.WriteLine($" Y3 = {rc.y3}");
-                                Console.WriteLine($" X4 = {rc.x4}");
-                                Console.WriteLine($" Y4 = {rc.y4}");
+                                Console.WriteLine($" X1 = {rc.X1}");
+                                Console.WriteLine($" Y1 = {rc.Y1}");
+                                Console.WriteLine($" X2 = {rc.X2}");
+                                Console.WriteLine($" Y2 = {rc.Y2}");
+                                Console.WriteLine($" X3 = {rc.X3}");
+                                Console.WriteLine($" Y3 = {rc.Y3}");
+                                Console.WriteLine($" X4 = {rc.X4}");
+                                Console.WriteLine($" Y4 = {rc.Y4}");
                                 Console.WriteLine($" Площадь = {rc.GetArea()}");
 
                             }
@@ -249,13 +249,17 @@ namespace CUSTOM_PAINT
                             foreach (Triangle tri in myTriangle)
                             {
                                 Console.WriteLine("Фигура Треугольник");
-                                Console.WriteLine($" X1 = {tri.x1}");
-                                Console.WriteLine($" Y1 = {tri.y1}");
-                                Console.WriteLine($" X2 = {tri.x2}");
-                                Console.WriteLine($" Y2 = {tri.y2}");
-                                Console.WriteLine($" X3 = {tri.x3}");
-                                Console.WriteLine($" Y3 = {tri.y3}");
-                                Console.WriteLine($" Площадь = {tri.GetArea()}");
+                                Console.WriteLine($" X1 = {tri.X1}");
+                                Console.WriteLine($" Y1 = {tri.Y1}");
+                                Console.WriteLine($" X2 = {tri.X2}");
+                                Console.WriteLine($" Y2 = {tri.Y2}");
+                                Console.WriteLine($" X3 = {tri.X3}");
+                                Console.WriteLine($" Y3 = {tri.Y3}");
+                                Console.WriteLine($" Длина А = {tri.GetLenghA()}");
+                                Console.WriteLine($" Длина В = {tri.GetLenghB()}");
+                                Console.WriteLine($" Длина С = {tri.GetLenghC()}");
+                                Console.WriteLine($" Полупериметр = {tri.halfPerimetr()}");
+                               Console.WriteLine($" Площадь = {tri.GetArea()}");
                             }
                         }
 
@@ -312,26 +316,77 @@ namespace CUSTOM_PAINT
 
     }
    
-    // *********************************Родительский абстрактный класс "Просто круглый предмет", предназначенный для Круга и Кольца
-    abstract class RoundShape
+    // *********************************Родительский абстрактный класс "простая Фигура"
+    abstract class SimpleFigure
     {
-        private int _x;
-        private int _y;
-        private int _inner_radius;
-        private int _outer_radius;
+        private int _x1;
+        public int X1
+        {
+            get { return _x1; }
+            set { _x1 = value; }
+        }
 
+        private int _y1;
+        public int Y1
+        {
+            get { return _y1; }
+            set { _y1 = value; }
+        }
+
+        private int _x2;
+        public int X2
+        {
+            get { return _x2; }
+            set { _x2 = value; }
+        }
+
+        private int _y2;
+        public int Y2
+        {
+            get { return _y2; }
+            set { _y2 = value; }
+        }
+
+        private int _x3;
+        public int X3
+        {
+            get { return _x3; }
+            set { _x3 = value; }
+        }
+
+        private int _y3;
+        public int Y3
+        {
+            get { return _y3; }
+            set { _y3 = value; }
+        }
+
+        private int _x4;
+        public int X4
+        {
+            get { return _x4; }
+            set { _x4 = value; }
+        }
+
+        private int _y4;
+        public int Y4
+        {
+            get { return _y4; }
+            set { _y4 = value; }
+        }
+        private int _x;
         public int X
         {
             get { return _x; }
             set { _x = value; }
         }
-        
+        private int _y;
         public int Y
         {
             get { return _y; }
             set { _y = value; }
         }
-
+        private int _inner_radius;
         public int innerRadius
         {
             get { return _inner_radius; }
@@ -341,6 +396,7 @@ namespace CUSTOM_PAINT
                 _inner_radius = value;
             }
         }
+        private int _outer_radius;
         public int outerRadius
         {
             get { return _outer_radius; }
@@ -354,9 +410,10 @@ namespace CUSTOM_PAINT
 
 
     }
+    
 
     // **********************************Дочерний класс Круг, унаследованнный от "Просто круглого предмета"
-    class Circle : RoundShape
+    class Circle : SimpleFigure
     {
         public Circle(int x, int y, int outR)
         {
@@ -370,7 +427,7 @@ namespace CUSTOM_PAINT
     }
 
     // **********************************Дочерний класс Кольцо, унаследованный от "Просто круглого предмета"
-    class Ring : RoundShape
+    class Ring : SimpleFigure
     {
        
         public Ring(int x, int y, int outR, int innerR)
@@ -389,61 +446,46 @@ namespace CUSTOM_PAINT
     } 
 
     //******************************* Класс Линия, предназначенный для рисования Линии с Методом Подсчет длины отрезка
-    class Line
-    {
-        public int x1;
-        public int y1;
-        public int x2;
-        public int y2;
+    class Line : SimpleFigure
+    { 
+        
         public Line(int x1, int y1, int x2, int y2)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
+            X1 = x1;
+            Y1 = y1;
+            X2 = x2;
+            Y2 = y2;
         }
 
         public double GetLengh() 
         {
-            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            return Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
         }
            
 
     }
 
-    //**************************************** Родительский класс SimpleRectangle для прямоугольных фигур
-    abstract class SimpleRectangle
-    {
-        public int x1;
-        public int y1;
-        public int x2;
-        public int y2;
-        public int x3;
-        public int y3;
-        public int x4;
-        public int y4;
-
-    }
+   
     
      /************************************Дочерний класс Квадрат, унаследованный от SimpleRectangle, предназначенный для отображения Квадрата, 
     включающий Методы для Рассчета Длины Отрезка и Расчета Площади*/
-    class Square : SimpleRectangle
+    class Square : SimpleFigure
     {
         public Square(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
-            this.x3 = x3;
-            this.y3 = y3;
-            this.x4 = x4;
-            this.y4 = y4;
+            X1 = x1;
+            Y1 = y1;
+            X2 = x2;
+            Y2 = y2;
+            X3 = x3;
+            Y3 = y3;
+            X4 = x4;
+            Y4 = y4;
         }
         
         public double GetLengh()
         {
-            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            return Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
         }
 
         public double GetArea()
@@ -454,29 +496,29 @@ namespace CUSTOM_PAINT
    
     /********************************Дочерний  класс Прямоугольник, унаследованный от SimpleRectangle, предназначен для отображения фигуры Прямоугольник 
     и включающий Методы для рассчета Длины отрезка и Площади*/
-    class Rectangle : SimpleRectangle
+    class Rectangle : SimpleFigure
     {
         public Rectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
-            this.x3 = x3;
-            this.y3 = y3;
-            this.x4 = x4;
-            this.y4 = y4;
+            X1 = x1;
+            Y1 = y1;
+            X2 = x2;
+            Y2 = y2;
+            X3 = x3;
+            Y3 = y3;
+            X4 = x4;
+            Y4 = y4;
 
         }
        
         public double GetLenghA()
         {
-            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            return Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
         }
 
         public double GetLenghB()
         {
-            return Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
+            return Math.Sqrt(Math.Pow((X4 - X3), 2) + Math.Pow((Y4 - Y3), 2));
         }
 
 
@@ -486,38 +528,33 @@ namespace CUSTOM_PAINT
     
     /************************************Класс Треугольник , предназначен для отображения треугольника
     и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника*/
-    class Triangle
+    class Triangle : SimpleFigure
     {
-        public int x1;
-        public int y1;
-        public int x2;
-        public int y2;
-        public int x3;
-        public int y3;
+           
         public Triangle(int x1, int y1, int x2, int y2, int x3, int y3)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
-            this.x3 = x3;
-            this.y3 = y3;
+            X1 = x1;
+            Y1 = y1;
+            X2 = x2;
+            Y2 = y2;
+            X3 = x3;
+            Y3 = y3;
 
         }
 
         public double GetLenghA()
         {
-            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            return Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
         }
 
         public double GetLenghB()
         {
-            return Math.Sqrt(Math.Pow((x2 - x3), 2) + Math.Pow((y2 - y3), 2));
+            return Math.Sqrt(Math.Pow((X2 - X3), 2) + Math.Pow((Y2 - Y3), 2));
         }
 
         public double GetLenghC()
         {
-            return Math.Sqrt(Math.Pow((x3 - x1), 2) + Math.Pow((y3 - y1), 2));
+            return Math.Sqrt(Math.Pow((X3 - X1), 2) + Math.Pow((Y3 - Y1), 2));
         }
 
         public double halfPerimetr()
@@ -525,7 +562,13 @@ namespace CUSTOM_PAINT
           return  (GetLenghA() + GetLenghB() + GetLenghC()) / 2;
         }           
                     
-        public double GetArea() => Math.Sqrt(halfPerimetr() * (halfPerimetr() - GetLenghA()) * (halfPerimetr() - GetLenghB()) * (halfPerimetr() - GetLenghC()));
+        public double GetArea()
+        {
+
+            return Math.Sqrt(halfPerimetr() * (halfPerimetr() - GetLenghA()) * (halfPerimetr() - GetLenghB()) * (halfPerimetr() - GetLenghC()));
+
+        }
+            
 
     }
 
