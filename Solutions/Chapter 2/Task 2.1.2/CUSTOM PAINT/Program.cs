@@ -268,8 +268,8 @@ namespace CUSTOM_PAINT
                             foreach (Circle cir in myCircle)
                             {
                                 Console.WriteLine("Фигура Круг");
-                                Console.WriteLine($" X = {cir.X}");
-                                Console.WriteLine($" Y = {cir.Y}");
+                                Console.WriteLine($" X = {cir.X1}");
+                                Console.WriteLine($" Y = {cir.Y1}");
                                 Console.WriteLine($" Радиус = {cir.outerRadius}");
                                 Console.WriteLine($" Площадь = {cir.GetArea()}");
                                 Console.WriteLine($" Длина окружности  = {cir.GetСircumscribedСircle()}");
@@ -281,8 +281,8 @@ namespace CUSTOM_PAINT
                             foreach (Ring rin in myRing)
                             {
                                 Console.WriteLine("Фигура Кольцо");
-                                Console.WriteLine($" X = {rin.X}");
-                                Console.WriteLine($" Y = {rin.Y}");
+                                Console.WriteLine($" X = {rin.X1}");
+                                Console.WriteLine($" Y = {rin.Y1}");
                                 Console.WriteLine($" OuterRadius = {rin.outerRadius}");
                                 Console.WriteLine($" InnerRadius = {rin.innerRadius}");
                                 Console.WriteLine($" Площадь =  {rin.GetArea()}");
@@ -374,18 +374,7 @@ namespace CUSTOM_PAINT
             get { return _y4; }
             set { _y4 = value; }
         }
-        private int _x;
-        public int X
-        {
-            get { return _x; }
-            set { _x = value; }
-        }
-        private int _y;
-        public int Y
-        {
-            get { return _y; }
-            set { _y = value; }
-        }
+       
         private int _inner_radius;
         public int innerRadius
         {
@@ -417,8 +406,8 @@ namespace CUSTOM_PAINT
     {
         public Circle(int x, int y, int outR)
         {
-            X = x;
-            Y = y;
+            X1 = x;
+            Y1 = y;
             outerRadius = outR;
         }
         public double GetArea() => Math.PI * outerRadius * outerRadius;
@@ -432,8 +421,8 @@ namespace CUSTOM_PAINT
        
         public Ring(int x, int y, int outR, int innerR)
         {
-            X = x;
-            Y = y;
+            X1 = x;
+            Y1 = y;
             outerRadius = outR;
             innerRadius = innerR;
             if(innerRadius>= outerRadius) throw new ArgumentException("Внутренний радиус не должен быть больше или равен внешнему радиусу!");
@@ -529,8 +518,7 @@ namespace CUSTOM_PAINT
     /************************************Класс Треугольник , предназначен для отображения треугольника
     и включает в себя методы по рассчету Длинн отрезков, Полупериметра и Площади треугольника*/
     class Triangle : SimpleFigure
-    {
-           
+    {           
         public Triangle(int x1, int y1, int x2, int y2, int x3, int y3)
         {
             X1 = x1;
