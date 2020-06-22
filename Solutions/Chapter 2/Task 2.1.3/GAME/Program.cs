@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,20 +19,9 @@ namespace GAME
 
     public class Player
     {
-        private int _x;
+       public int X { get; set; }
+       public int Y { get; set; }
 
-        public int X
-        {
-            get { return _x; }
-            set { _x = value; }
-        }
-        private int _y;
-
-        public int Y
-        {
-            get { return _y; }
-            set { _y = value; }
-        }
 
         public Player(int x, int y)
         {
@@ -45,22 +35,11 @@ namespace GAME
     }
     public class Monster
     {
-        private int _x;
+        public int  X{ get;set;}
+        public int Y { get; set; }
 
-        public int X
-        {
-            get { return _x; }
-            set { _x = value; }
-        }
-        
-        private int _y;
-                public int Y
-        {
-            get { return _y; }
-            set { _y = value; }
-        }
 
-        public Monster(int x, int y)
+        public  Monster(int x, int y)
         {
             X = x;
             Y = y;
@@ -72,6 +51,25 @@ namespace GAME
         }
         
     }
+
+    public class Monster1 
+    {
+        
+    }
+
+    public class Monster2
+    {
+    
+    }
+        
+ 
+
+    public class Monster3
+    {
+
+
+    }
+ 
 
     public class Stone 
     {
@@ -86,5 +84,13 @@ namespace GAME
     public class Died
     {
         // если координаты Monster совпадут с координатами Player, то Player = died
+    }
+
+    public enum MonsterType
+    {
+        None,
+        Monster1,
+        Monster2,
+        Monster3
     }
 }
