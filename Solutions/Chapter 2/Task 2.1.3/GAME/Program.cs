@@ -17,23 +17,36 @@ namespace GAME
         }
     }
 
-    public class Player
+   public abstract class Unit
+    {
+         int X { get; set; }
+         int Y { get; set; }
+         public abstract void Runing();
+       
+
+    }
+
+    public class Player : Unit
     {
        public int X { get; set; }
        public int Y { get; set; }
-
 
         public Player(int x, int y)
         {
             X = x;
             Y = y;
         }
-        public void Runing()
+        // Если нашел банан, то скорость увеличилась на 2
+        // Если нашел вишенку, то могу стрелять двумя патронами
+        // С одного патрона можно убить одного монстра 
+       
+
+        public override void Runing()
         {
-            Console.WriteLine("Я бегу от монстра");
+            Console.WriteLine("Я бегу от монстра скорость 10");
         }
     }
-    public class Monster
+    public class Monster : Unit
     {
         public int  X{ get;set;}
         public int Y { get; set; }
@@ -44,9 +57,13 @@ namespace GAME
             X = x;
             Y = y;
         }
+        public override void Runing()
+        {
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 11");
+        }
        public void Finding()
         {
-                Console.WriteLine("Я ищу Игрока");
+                Console.WriteLine("Я ищу Игрока и ближе трех, начинаю его преследовать");
 
         }
         
@@ -76,7 +93,12 @@ namespace GAME
         // Препятствия
     }
 
-    public class Apple
+    public class Banan
+    {
+        // Бонусы
+    }
+
+    public class Cherry
     {
         // Бонусы
     }
