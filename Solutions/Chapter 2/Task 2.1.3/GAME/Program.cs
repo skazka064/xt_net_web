@@ -12,11 +12,15 @@ namespace GAME
         static void Main(string[] args)
         {
             var player = new Player(1,1);
-            var kickSpirit = new KickSpirit(2, 2);
+            var greaterMommy = new GreaterMommy(2, 2);
+            Console.WriteLine("Please , write type of Monster:");
+            var str = Console.ReadLine();
+            var type = (MonsterType)Enum.Parse(typeof(MonsterType), str);
+            var monster = greaterMommy.CreateAbstractMonster(type);
+            monster.Finding();
 
         }
     }
-
 
    public abstract class AbstractMonster
     {
@@ -79,6 +83,24 @@ namespace GAME
         {
             Console.WriteLine("Я ищу Игрока и ближе 10, начинаю его преследовать");
         }
+
+        public AbstractMonster CreateAbstractMonster(MonsterType type)
+        {
+            switch (type)
+            {
+                case MonsterType.CloudOfChaos:
+                    return new CloudOfChaos(30, 20);
+                case MonsterType.HoundPlant:
+                    return new HoundPlant(12, 35);
+                case MonsterType.KickSpirit:
+                    return new KickSpirit(11, 11);
+                case MonsterType.SpaceOgre:
+                    return new SpaceOgre(12, 12);
+                default: return null;
+            }
+        }
+
+         
     }
     public class KickSpirit : AbstractMonster
     {
