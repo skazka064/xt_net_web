@@ -81,7 +81,7 @@ namespace GAME
         }
         public override void Finding()
         {
-            Console.WriteLine("Я ищу Игрока и ближе 10, начинаю его преследовать");
+            Console.WriteLine("Я ищу Игрока и ближе 10 метров, начинаю его преследовать");
         }
 
         public AbstractMonster CreateAbstractMonster(MonsterType type)
@@ -96,6 +96,8 @@ namespace GAME
                     return new KickSpirit(11, 11);
                 case MonsterType.SpaceOgre:
                     return new SpaceOgre(12, 12);
+                case MonsterType.GreaterMommy:
+                    return new GreaterMommy(2, 8);
                 default: return null;
             }
         }
@@ -120,7 +122,7 @@ namespace GAME
         }
        public override void Finding()
         {
-                Console.WriteLine("Я ищу Игрока и ближе 5, начинаю его преследовать");
+                Console.WriteLine("Я ищу Игрока и ближе 5 метров, начинаю его преследовать");
         }        
     }
 
@@ -141,7 +143,7 @@ namespace GAME
         }
         public override void Finding()
         {
-            Console.WriteLine("Я ищу Игрока и ближе 4, начинаю его преследовать");
+            Console.WriteLine("Я ищу Игрока и ближе 4 метров, начинаю его преследовать");
         }
     }
 
@@ -162,7 +164,7 @@ namespace GAME
         }
         public override void Finding()
         {
-            Console.WriteLine("Я ищу Игрока и ближе 7, начинаю его преследовать");
+            Console.WriteLine("Я ищу Игрока и ближе 7 метров, начинаю его преследовать");
         }
     } 
     public class HoundPlant : AbstractMonster
@@ -184,7 +186,7 @@ namespace GAME
         }
         public override void Finding()
         {
-            Console.WriteLine("Я ищу Игрока и ближе 3, начинаю его преследовать");
+            Console.WriteLine("Я ищу Игрока и ближе 3 метров, начинаю его преследовать");
         }
 
     } 
