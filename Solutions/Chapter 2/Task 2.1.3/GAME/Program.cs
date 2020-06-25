@@ -17,10 +17,17 @@ namespace GAME
         }
     }
 
+
    public abstract class AbstractMonster
     {
          int X { get; set; }
          int Y { get; set; }
+        public  AbstractMonster(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
          public abstract void Runing();
         public abstract void Finding();       
 
@@ -51,11 +58,8 @@ namespace GAME
         public int X { get; set; }
         public int Y { get; set; }
 
-        public GreaterMommy(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        public GreaterMommy(int x, int y) : base(x, y) { }
+       
         public override void Runing()
         {
             Console.WriteLine("Я тоже бегу, но за игроком скорость 3");
@@ -70,11 +74,8 @@ namespace GAME
         public int  X{ get;set;}
         public int Y { get; set; }
 
-        public  KickSpirit(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        public KickSpirit(int x, int y) : base(x, y) { }
+       
         public override void Runing()
         {
             Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
@@ -90,11 +91,8 @@ namespace GAME
         public int X { get; set; }
         public int Y { get; set; }
 
-        public SpaceOgre(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        public SpaceOgre(int x, int y) : base(x, y) { }
+      
         public override void Runing()
         {
             Console.WriteLine("Я тоже бегу, но за игроком скорость 9");
@@ -110,11 +108,8 @@ namespace GAME
         public int X { get; set; }
         public int Y { get; set; }
 
-        public CloudOfChaos(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        public CloudOfChaos(int x, int y) : base(x, y) { }
+        
         public override void Runing()
         {
             Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
@@ -130,11 +125,8 @@ namespace GAME
         public int Y { get; set; }
 
 
-        public HoundPlant(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        public HoundPlant(int x, int y) : base(x, y) { }
+        
         public override void Runing()
         {
             Console.WriteLine("Я тоже бегу, но за игроком скорость 12");
@@ -151,6 +143,49 @@ namespace GAME
         // Препятствия
         public int X { get; set; }
         public int Y { get; set; }
+           public Stone(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+    public class Water
+    {
+        // Препятствия
+        public int X { get; set; }
+        public int Y { get; set; }
+        public Water(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+    public class Tree
+    {
+        // Препятствия
+        public int X { get; set; }
+        public int Y { get; set; }
+    
+        public Tree(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+    public class House
+    {
+        // Препятствия
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public House( int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
     }
 
     public class Banan
@@ -158,6 +193,12 @@ namespace GAME
         // Бонусы
         public int X { get; set; }
         public int Y { get; set; }
+        public Banan(int x, int y)
+        {
+
+            X = x;
+            Y = y;
+        }
     }
 
     public class Cherry
@@ -165,6 +206,12 @@ namespace GAME
         // Бонусы
         public int X { get; set; }
         public int Y { get; set; }
+        public Cherry(int x, int y)
+        {
+            X = x;
+            Y = y;
+
+        }
     }
 
     public class Died
