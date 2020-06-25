@@ -62,7 +62,7 @@ namespace GAME
        
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 3");
+            Console.WriteLine("Я  бегу,  за игроком скорость 3");
         }
         public override void Finding()
         {
@@ -78,7 +78,7 @@ namespace GAME
        
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
+            Console.WriteLine("Я  бегу, за игроком скорость 8");
         }
        public override void Finding()
         {
@@ -95,7 +95,7 @@ namespace GAME
       
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 9");
+            Console.WriteLine("Я  бегу,  за игроком скорость 9");
         }
         public override void Finding()
         {
@@ -112,7 +112,7 @@ namespace GAME
         
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
+            Console.WriteLine("Я  бегу,  за игроком скорость 8");
         }
         public override void Finding()
         {
@@ -129,7 +129,7 @@ namespace GAME
         
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 12");
+            Console.WriteLine("Я  бегу,  за игроком скорость 12");
         }
         public override void Finding()
         {
