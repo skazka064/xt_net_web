@@ -28,8 +28,14 @@ namespace GAME
             Y = y;
         }
 
+        //Бег
          public abstract void Runing();
-        public abstract void Finding();       
+       
+        // Поиск Игрока
+        public abstract void Finding();
+       
+        //Сканирование местности
+        public abstract void TerrainScaning();
 
     }
 
@@ -59,7 +65,12 @@ namespace GAME
         public int Y { get; set; }
 
         public GreaterMommy(int x, int y) : base(x, y) { }
-       
+
+        public override void TerrainScaning()
+        {
+            Console.WriteLine("Я вижу все, даже за Препятствиями");
+           
+        }
         public override void Runing()
         {
             Console.WriteLine("Я  бегу,  за игроком скорость 3");
@@ -75,7 +86,12 @@ namespace GAME
         public int Y { get; set; }
 
         public KickSpirit(int x, int y) : base(x, y) { }
-       
+
+        public override void TerrainScaning()
+        {
+            Console.WriteLine("Я не вижу Игрока за любым Препятствием");
+            
+        }
         public override void Runing()
         {
             Console.WriteLine("Я  бегу, за игроком скорость 8");
@@ -92,7 +108,11 @@ namespace GAME
         public int Y { get; set; }
 
         public SpaceOgre(int x, int y) : base(x, y) { }
-      
+
+        public override void TerrainScaning()
+        {
+            Console.WriteLine("Я не вижу Игрока за любым Препятствием");
+        }
         public override void Runing()
         {
             Console.WriteLine("Я  бегу,  за игроком скорость 9");
@@ -109,7 +129,11 @@ namespace GAME
         public int Y { get; set; }
 
         public CloudOfChaos(int x, int y) : base(x, y) { }
-        
+        public override void TerrainScaning()
+        {
+            Console.WriteLine("Я не вижу Игрока за препятствиями, кроме Tree и Water");
+        }
+
         public override void Runing()
         {
             Console.WriteLine("Я  бегу,  за игроком скорость 8");
@@ -130,6 +154,11 @@ namespace GAME
         public override void Runing()
         {
             Console.WriteLine("Я  бегу,  за игроком скорость 12");
+        }
+
+        public override void TerrainScaning()
+        {
+            Console.WriteLine("Я не вижу Игрока за препятствиями, кроме Tree и Water");
         }
         public override void Finding()
         {
