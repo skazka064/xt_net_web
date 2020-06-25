@@ -12,21 +12,21 @@ namespace GAME
         static void Main(string[] args)
         {
             var player = new Player(1,1);
-            var monster = new Monster(2, 2);
+            var kickSpirit = new KickSpirit(2, 2);
 
         }
     }
 
-   public abstract class Unit
+   public abstract class AbstractMonster
     {
          int X { get; set; }
          int Y { get; set; }
          public abstract void Runing();
-       
+        public abstract void Finding();       
 
     }
 
-    public class Player : Unit
+    public class Player 
     {
        public int X { get; set; }
        public int Y { get; set; }
@@ -38,69 +38,133 @@ namespace GAME
         }
         // Если нашел банан, то скорость увеличилась на 2
         // Если нашел вишенку, то могу стрелять двумя патронами
-        // С одного патрона можно убить одного монстра 
-       
+        // С одного патрона можно убить одного монстра        
 
-        public override void Runing()
+        public  void Runing()
         {
             Console.WriteLine("Я бегу от монстра скорость 10");
         }
-    }
-    public class Monster : Unit
+    }    
+    
+    public class GreaterMommy : AbstractMonster
     {
-        public int  X{ get;set;}
+        public int X { get; set; }
         public int Y { get; set; }
 
-
-        public  Monster(int x, int y)
+        public GreaterMommy(int x, int y)
         {
             X = x;
             Y = y;
         }
         public override void Runing()
         {
-            Console.WriteLine("Я тоже бегу, но за игроком скорость 11");
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 3");
         }
-       public void Finding()
+        public override void Finding()
         {
-                Console.WriteLine("Я ищу Игрока и ближе трех, начинаю его преследовать");
-
+            Console.WriteLine("Я ищу Игрока и ближе 10, начинаю его преследовать");
         }
-        
     }
-
-    public class Monster1 
+    public class KickSpirit : AbstractMonster
     {
-        
+        public int  X{ get;set;}
+        public int Y { get; set; }
+
+        public  KickSpirit(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public override void Runing()
+        {
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
+        }
+       public override void Finding()
+        {
+                Console.WriteLine("Я ищу Игрока и ближе 5, начинаю его преследовать");
+        }        
     }
 
-    public class Monster2
+    public class SpaceOgre : AbstractMonster
     {
-    
-    }
-        
- 
+        public int X { get; set; }
+        public int Y { get; set; }
 
-    public class Monster3
+        public SpaceOgre(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public override void Runing()
+        {
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 9");
+        }
+        public override void Finding()
+        {
+            Console.WriteLine("Я ищу Игрока и ближе 4, начинаю его преследовать");
+        }
+    }
+
+    public class CloudOfChaos: AbstractMonster
     {
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public CloudOfChaos(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public override void Runing()
+        {
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 8");
+        }
+        public override void Finding()
+        {
+            Console.WriteLine("Я ищу Игрока и ближе 7, начинаю его преследовать");
+        }
+    } 
+    public class HoundPlant : AbstractMonster
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
 
 
-    }
- 
+        public HoundPlant(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public override void Runing()
+        {
+            Console.WriteLine("Я тоже бегу, но за игроком скорость 12");
+        }
+        public override void Finding()
+        {
+            Console.WriteLine("Я ищу Игрока и ближе 3, начинаю его преследовать");
+        }
+
+    } 
 
     public class Stone 
     {
         // Препятствия
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 
     public class Banan
     {
         // Бонусы
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 
     public class Cherry
     {
         // Бонусы
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 
     public class Died
@@ -111,8 +175,10 @@ namespace GAME
     public enum MonsterType
     {
         None,
-        Monster1,
-        Monster2,
-        Monster3
+        KickSpirit,
+        SpaceOgre,
+        HoundPlant,
+        CloudOfChaos,
+        GreaterMommy
     }
 }
