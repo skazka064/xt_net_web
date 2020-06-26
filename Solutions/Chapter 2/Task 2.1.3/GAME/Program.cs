@@ -12,7 +12,7 @@ namespace GAME
         static void Main(string[] args)
         {
             var player = new Player(1,1);
-            var greaterMommy = new GreaterMommy(2, 2);
+            var greaterMommy = new GreaterMommy(2,2,2);
             Console.WriteLine("Please , write type of Monster:");
             var str = Console.ReadLine();
             var type = (MonsterType)Enum.Parse(typeof(MonsterType), str);
@@ -22,18 +22,27 @@ namespace GAME
         }
     }
 
-   public abstract class AbstractMonster
+    // Реализация Интерфейса Двигаться
+    public interface IMovable
     {
-         int X { get; set; }
-         int Y { get; set; }
-        public  AbstractMonster(int x, int y)
-        {
-            X = x;
-            Y = y;
-        }
+        int Speed { get; }
+        void Move();
+    }
+   public abstract class AbstractMonster : IMovable
+    {
+        public virtual int X { get; set; }
+        public virtual int Y { get; set; }
 
-        //Бег
-         public abstract void Runing();
+        public  int _speed;
+        
+         public virtual int Speed =>_speed;
+        public  AbstractMonster()
+        {
+                      
+        }
+        public abstract void Move();
+
+       
        
         // Поиск Игрока
         public abstract void Finding();
@@ -41,6 +50,7 @@ namespace GAME
         //Сканирование местности
         public abstract void TerrainScaning();
 
+        
     }
 
     public class Player 
@@ -65,20 +75,26 @@ namespace GAME
     
     public class GreaterMommy : AbstractMonster
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
-        public GreaterMommy(int x, int y) : base(x, y) { }
+        public override int X { get; set; }
+        public override int Y { get; set; }
+        private new int _speed;
+        public GreaterMommy(int x, int y, int speed)
+        {
+            X = x;
+            Y = y;
+            _speed = speed;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Я двигаюсь со скоростью {0}", _speed);
+        }
 
         public override void TerrainScaning()
         {
             Console.WriteLine("Я вижу все, даже за Препятствиями");
            
         }
-        public override void Runing()
-        {
-            Console.WriteLine("Я  бегу,  за игроком скорость 3");
-        }
+       
         public override void Finding()
         {
             Console.WriteLine("Я ищу Игрока и ближе 10 метров, начинаю его преследовать");
@@ -89,37 +105,44 @@ namespace GAME
             switch (type)
             {
                 case MonsterType.CloudOfChaos:
-                    return new CloudOfChaos(30, 20);
+                    return new CloudOfChaos(30, 20,5);
                 case MonsterType.HoundPlant:
-                    return new HoundPlant(12, 35);
+                    return new HoundPlant(12, 35,9);
                 case MonsterType.KickSpirit:
-                    return new KickSpirit(11, 11);
+                    return new KickSpirit(11, 11,10);
                 case MonsterType.SpaceOgre:
-                    return new SpaceOgre(12, 12);
+                    return new SpaceOgre(12, 12,10);
                 case MonsterType.GreaterMommy:
-                    return new GreaterMommy(2, 8);
+                    return new GreaterMommy(2, 8,3);
                 default: return null;
             }
         }
 
-         
+        
     }
     public class KickSpirit : AbstractMonster
     {
-        public int  X{ get;set;}
-        public int Y { get; set; }
 
-        public KickSpirit(int x, int y) : base(x, y) { }
+        public override int X { get; set; }
+        public override int Y { get; set; }
+        private new int _speed;
+        public KickSpirit(int x, int y, int speed)
+        {
+            X = x;
+            Y = y;
+            _speed = speed;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Я двигаюсь со скоростью {0}", _speed);
+        }
 
         public override void TerrainScaning()
         {
             Console.WriteLine("Я не вижу Игрока за любым Препятствием");
             
         }
-        public override void Runing()
-        {
-            Console.WriteLine("Я  бегу, за игроком скорость 8");
-        }
+        
        public override void Finding()
         {
                 Console.WriteLine("Я ищу Игрока и ближе 5 метров, начинаю его преследовать");
@@ -128,19 +151,25 @@ namespace GAME
 
     public class SpaceOgre : AbstractMonster
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
-        public SpaceOgre(int x, int y) : base(x, y) { }
+        public override int X { get; set; }
+        public override int Y { get; set; }
+        private new int _speed;
+        public SpaceOgre(int x, int y, int speed)
+        {
+            X = x;
+            Y = y;
+            _speed = speed;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Я двигаюсь со скоростью {0}", _speed);
+        }
 
         public override void TerrainScaning()
         {
             Console.WriteLine("Я не вижу Игрока за любым Препятствием");
         }
-        public override void Runing()
-        {
-            Console.WriteLine("Я  бегу,  за игроком скорость 9");
-        }
+       
         public override void Finding()
         {
             Console.WriteLine("Я ищу Игрока и ближе 4 метров, начинаю его преследовать");
@@ -149,19 +178,25 @@ namespace GAME
 
     public class CloudOfChaos: AbstractMonster
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
-        public CloudOfChaos(int x, int y) : base(x, y) { }
+        public override int X { get; set; }
+        public override int Y { get; set; }
+        private new int _speed;
+        public CloudOfChaos(int x, int y, int speed)
+        {
+            X = x;
+            Y = y;
+            _speed = speed;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Я двигаюсь со скоростью {0}", _speed);
+        }
         public override void TerrainScaning()
         {
             Console.WriteLine("Я не вижу Игрока за препятствиями, кроме Tree и Water");
         }
 
-        public override void Runing()
-        {
-            Console.WriteLine("Я  бегу,  за игроком скорость 8");
-        }
+        
         public override void Finding()
         {
             Console.WriteLine("Я ищу Игрока и ближе 7 метров, начинаю его преследовать");
@@ -169,15 +204,18 @@ namespace GAME
     } 
     public class HoundPlant : AbstractMonster
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
-
-        public HoundPlant(int x, int y) : base(x, y) { }
-        
-        public override void Runing()
+        public override int X { get; set; }
+        public override int Y { get; set; }
+        private new int _speed;
+        public HoundPlant(int x, int y, int speed)
         {
-            Console.WriteLine("Я  бегу,  за игроком скорость 12");
+            X = x;
+            Y = y;
+            _speed = speed;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Я двигаюсь со скоростью {0}", _speed);
         }
 
         public override void TerrainScaning()
