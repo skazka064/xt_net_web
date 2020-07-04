@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GAME
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -41,8 +41,6 @@ namespace GAME
                       
         }
         public abstract void Move();
-
-       
        
         // Поиск Игрока
         public abstract void Finding();
