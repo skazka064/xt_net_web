@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\obj\Debug\DYNAMIC ARRAY.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\obj\Debug\DYNAMIC ARRAY.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\bin\Debug\DYNAMIC ARRAY.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\bin\Debug\DYNAMIC ARRAY.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\bin\Debug\DYNAMIC ARRAY.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\obj\Debug\DYNAMIC ARRAY.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\DYNAMIC ARRAY\obj\Debug\DYNAMIC ARRAY.pdb

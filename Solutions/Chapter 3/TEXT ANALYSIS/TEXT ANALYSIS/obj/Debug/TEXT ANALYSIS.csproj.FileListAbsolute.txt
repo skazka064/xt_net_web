@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\obj\Debug\TEXT ANALYSIS.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\obj\Debug\TEXT ANALYSIS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\bin\Debug\TEXT ANALYSIS.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\bin\Debug\TEXT ANALYSIS.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\bin\Debug\TEXT ANALYSIS.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\obj\Debug\TEXT ANALYSIS.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\TEXT ANALYSIS\TEXT ANALYSIS\obj\Debug\TEXT ANALYSIS.pdb
