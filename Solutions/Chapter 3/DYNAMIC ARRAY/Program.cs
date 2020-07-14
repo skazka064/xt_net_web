@@ -15,6 +15,15 @@ namespace DYNAMIC_ARRAY
         {
             Arr = new T[8];
         }
+        public DynamicArray(int n)
+        {
+            Arr = new T[n];
+        }
+
+        public DynamicArray()
+        {
+
+        }
         public object Clone()
         {
             throw new NotImplementedException();
