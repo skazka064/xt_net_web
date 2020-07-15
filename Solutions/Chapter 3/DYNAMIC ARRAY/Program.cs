@@ -20,9 +20,16 @@ namespace DYNAMIC_ARRAY
             Arr = new T[n];
         }
 
-        public DynamicArray()
+        public DynamicArray(IEnumerable<T> myCollection)
         {
-
+            int Size = myCollection.Count();
+            Arr = new T[Size];
+            int i = 0;
+            foreach(var myC in myCollection)
+            {
+                Arr[i] = myC;
+                i++;
+            }
         }
         public object Clone()
         {
