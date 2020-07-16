@@ -11,48 +11,48 @@ namespace MyTest
     {
         static void Main(string[] args)
         {
-            Inventory<Item> inventoryItem = new Inventory<Item>(new Item[] { });
-            Inventory<Book> inventoryBook = new Inventory<Book>(new Book[] { });
-            Inventory<Ork> inventoryOrk = new Inventory<Ork>(new Ork[] {new Ork(), new Ork() });
-            Inventory inventory = new Inventory();
-
-            Inventory<Item>.A= 10;
-            Console.WriteLine(Inventory<Item>.A);
-            Console.WriteLine(Inventory<Book>.A);
+            
         }
     }
-    public class Inventory<T> : IEnumerable
+  
+    public abstract class AbstractSpaceshipFactory
     {
-        public static int A=5;
-        public T[] Items { get; private set; }
-        public Inventory(T[] items)
+        public abstract AbstractSpaceShip CreateShip();
+    }
+
+    public class MashineGunShipFactory : AbstractSpaceshipFactory
+    {
+        public override AbstractSpaceShip CreateShip()
         {
-            Items = items;
+            return new MachineGunFighter();
         }
+    }
 
-        public IEnumerator GetEnumerator()
+    public class EngineerFactory : AbstractSpaceshipFactory
+    {
+        public override AbstractSpaceShip CreateShip()
         {
-            throw new NotImplementedException();
+            return new Engineer();
         }
     }
-    public class Inventory
+
+    public abstract  class AbstractSpaceShip
+    {
+
+    }
+    public abstract class AbstractFighter : AbstractSpaceShip
     {
 
     }
 
-    public class Item
+    public class Engineer : AbstractSpaceShip
     {
 
     }
 
-    public class Book
+    public class MachineGunFighter : AbstractFighter
     {
 
-    }
-
-    public class Ork 
-    {
-        
     }
 
 }
