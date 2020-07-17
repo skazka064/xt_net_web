@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Dynamic;
 using System.Linq;
 using System.Text;
@@ -10,27 +11,34 @@ namespace DYNAMIC_ARRAY
 {
     public class DynamicArray<T> : IEnumerable<T>, IEnumerable, ICloneable
     {
-        private T[] Arr { get; set; }
+        private T[] MyArr { get; set; }
         public DynamicArray()
         {
-            Arr = new T[8];
+            MyArr = new T[8];
         }
         public DynamicArray(int n)
         {
-            Arr = new T[n];
+            MyArr = new T[n];
         }
 
         public DynamicArray(IEnumerable<T> myCollection)
         {
             int Size = myCollection.Count();
-            Arr = new T[Size];
+            MyArr = new T[Size];
             int i = 0;
             foreach(var myC in myCollection)
             {
-                Arr[i] = myC;
+                MyArr[i] = myC;
                 i++;
             }
         }
+
+        public void  Add(T item)
+        {
+                        
+
+        }
+
         public object Clone()
         {
             throw new NotImplementedException();
