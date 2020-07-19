@@ -14,30 +14,42 @@ namespace MyTest
 
         static void Main(string[] args)
         {
-            string path=  Console.ReadLine();
-            FileManager fm = new FileManager();
-             
-            Console.WriteLine(fm.GetContent(path));
+            
         }
     }
     
-    public class FileManager
+    public class SpaceShipFactory<T> where T : AbsrtactSpaceShip, new()
     {
-        private readonly Encoding _defaultEncoding = Encoding.GetEncoding(1251);
-        
-        public string GetContent(string filePath)
+        public T CreateShip()
         {
-            return GetContent(filePath, _defaultEncoding);
+            return new T();
         }
+    }
 
-        public string GetContent( string filePath, Encoding encoding)
-        {
-            string content = File.ReadAllText(filePath, encoding);
-            return content;
-        }
-
+    public abstract class AbsrtactSpaceShip
+    {
 
     }
-    
+    public abstract  class AbstractFighter: AbsrtactSpaceShip
+    {
+
+    }
+    public class MachineGunFighter : AbsrtactSpaceShip
+    {
+
+    }
+    public class MachineGunComander : MachineGunFighter
+    {
+
+    }
+    public class Engineer: AbsrtactSpaceShip
+    {
+
+    }
+
+    public interface IShipFactory<T>
+    {
+        T CreateShip();
+    }
 
 }

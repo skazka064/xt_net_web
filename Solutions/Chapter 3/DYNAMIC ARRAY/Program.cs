@@ -11,31 +11,43 @@ namespace DYNAMIC_ARRAY
 {
     public class DynamicArray<T> : IEnumerable<T>, IEnumerable, ICloneable
     {
-        private T[] MyArr { get; set; }
+        private T[] MyArray { get; set; }
+        public int Length { get; set; }
+        public int Capacity
+        {
+            get
+            {
+                return MyArray.Length;
+            }
+            set
+            {
+                MyArray = new T[value];
+            }
+        }
         public DynamicArray()
         {
-            MyArr = new T[8];
+            MyArray = new T[8];
         }
         public DynamicArray(int n)
         {
-            MyArr = new T[n];
+            MyArray = new T[n];
         }
 
         public DynamicArray(IEnumerable<T> myCollection)
         {
             int Size = myCollection.Count();
-            MyArr = new T[Size];
+            MyArray = new T[Size];
             int i = 0;
             foreach(var myC in myCollection)
             {
-                MyArr[i] = myC;
+                MyArray[i] = myC;
                 i++;
             }
         }
 
         public void  Add(T item)
         {
-                        
+                if Lenght == Capacity
 
         }
 
@@ -55,25 +67,15 @@ namespace DYNAMIC_ARRAY
         }
     }
 
-
+    
 
     class Program
     {
-        static void PrintCollection<T>(T[] mass)
-        {
-            Console.WriteLine("Дженерик");
-            Console.WriteLine(mass[0]);
-        }
-        /*static void PrintCollection(int[] mass)
-        {
-            Console.WriteLine("Обычный метод");
-            Console.WriteLine(mass[0]);
-        }*/
+       
         static void Main(string[] args)
         {
-
-            int[] massInt = new int[2];
-            PrintCollection(massInt);
+            
+            
 
         }
     }
