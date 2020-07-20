@@ -13,11 +13,15 @@ namespace DYNAMIC_ARRAY
     {
         private T[] MyArray { get; set; }
 
-        public  int Lenght
+        public  int Length
         {
             get
             {
                 return  MyArray.Length;
+            }
+            set
+            {
+                Length = value;
             }
             
         }
@@ -27,9 +31,22 @@ namespace DYNAMIC_ARRAY
             {
                 return MyArray.Length;
             }
-            set
+             set
             {
-
+                if(MyArray == null)
+                {
+                    MyArray = new T[value];
+                }
+                else if(value>= Length)
+                {
+                    T[] myTempArray = MyArray;
+                    MyArray = new T[value];
+                    myTempArray.CopyTo(MyArray, 0);
+                }
+                else
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
             }
         }
 
@@ -41,6 +58,7 @@ namespace DYNAMIC_ARRAY
         public DynamicArray(int n)
         {
             MyArray = new T[n];
+            Capacity = n;
         }
 
         public DynamicArray(IEnumerable<T> myCollection)
@@ -53,11 +71,18 @@ namespace DYNAMIC_ARRAY
                 MyArray[i] = myC;
                 i++;
             }
+            Capacity = Size;
         }
 
         public void  Add(T item)
         {
-                
+            if(Length == Capacity)
+            {
+                Capacity = Capacity * 2;
+            }
+
+            MyArray[Length] = item;
+            Length++;
 
         }
 
