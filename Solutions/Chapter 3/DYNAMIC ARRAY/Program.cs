@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Dynamic;
 using System.Linq;
@@ -85,7 +86,13 @@ namespace DYNAMIC_ARRAY
             Length++;
 
         }
-
+        public void AddRange(ICollection<T> myCollection)
+        {
+            if(myCollection.Count>=Capacity)
+            {
+                Capacity = Capacity + myCollection.Count;
+            }
+        }
         public object Clone()
         {
             throw new NotImplementedException();
@@ -109,8 +116,14 @@ namespace DYNAMIC_ARRAY
        
         static void Main(string[] args)
         {
-            
-            
+
+            Collection<int> c = new Collection<int>();
+            c.Add(1);
+            DynamicArray<IEnumerable> collection = new DynamicArray<IEnumerable>();
+            Console.WriteLine(collection.Capacity);
+
+            DynamicArray<int> d = new DynamicArray<int>(9);
+            Console.WriteLine(d.Capacity);
 
         }
     }
