@@ -143,13 +143,13 @@ namespace DYNAMIC_ARRAY
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < Length; i++)
+            {
+                yield return MyArray[i];
+            }
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
         public T this[int index]
         {
             get
