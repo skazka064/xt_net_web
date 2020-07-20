@@ -26,7 +26,7 @@ namespace DYNAMIC_ARRAY
             {
                 foreach (var item in MyArray)
                 {
-                    _length = _length++;
+                    _length = _length+1;
                 }
             }
             
@@ -36,12 +36,7 @@ namespace DYNAMIC_ARRAY
             get => _capacity;
             set
             {
-               if(_capacity < _length)
-                {
-                    throw new ArgumentOutOfRangeException("qqqqq");
-                }
-              
-               else if(_capacity >= _length)
+              if(Length>=_capacity)
                 {
                     T[] myTempArray = new T[_capacity*_capacity];
                     int i = _capacity;
@@ -49,6 +44,7 @@ namespace DYNAMIC_ARRAY
                     foreach (T item in MyArray)
                     {
                         myTempArray[i] = item;
+                        _capacity++;
                         i++;
                     }
                    
@@ -56,6 +52,10 @@ namespace DYNAMIC_ARRAY
                     MyArray = new T[_capacity * _capacity];
                     myTempArray.CopyTo(MyArray,0);
 
+                }
+                else
+                {
+                    _capacity = _capacity + 8;
                 }
             }
         }
