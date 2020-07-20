@@ -138,7 +138,12 @@ namespace DYNAMIC_ARRAY
 
         public object Clone()
         {
-            throw new NotImplementedException();
+            T[] myCloneArray = new T[Capacity];
+            for (int i = 0; i < MyArray.Length; i++)
+            {
+                myCloneArray[i] = MyArray[i];
+            }
+            return myCloneArray;
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -149,7 +154,10 @@ namespace DYNAMIC_ARRAY
             }
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
         public T this[int index]
         {
             get
