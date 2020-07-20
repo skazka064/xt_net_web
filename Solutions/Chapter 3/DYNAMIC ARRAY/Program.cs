@@ -12,7 +12,15 @@ namespace DYNAMIC_ARRAY
     public class DynamicArray<T> : IEnumerable<T>, IEnumerable, ICloneable
     {
         private T[] MyArray { get; set; }
-        public int Length { get; set; }
+
+        public  int Lenght
+        {
+            get
+            {
+                return  MyArray.Length;
+            }
+            
+        }
         public int Capacity
         {
             get
@@ -21,12 +29,14 @@ namespace DYNAMIC_ARRAY
             }
             set
             {
-                MyArray = new T[value];
+
             }
         }
+
         public DynamicArray()
         {
             MyArray = new T[8];
+            Capacity = 8;
         }
         public DynamicArray(int n)
         {
@@ -47,7 +57,7 @@ namespace DYNAMIC_ARRAY
 
         public void  Add(T item)
         {
-                if Lenght == Capacity
+                
 
         }
 
