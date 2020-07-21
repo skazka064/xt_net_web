@@ -11,175 +11,81 @@ using System.Threading.Tasks;
 
 namespace DYNAMIC_ARRAY
 {
-    public class DynamicArray<T> : IEnumerable<T>, IEnumerable, ICloneable
+    public class DynamicArray<T> : IEnumerable<T>, IEnumerable
     {
-        private T[] MyArray { get; set; }
-       
-        private int _length;
-        private int _capacity;
 
-        public  int Length
-        {
-            get => _length;
-          
-            set
-            {
-                foreach (var item in MyArray)
-                {
-                    _length = _length+1;
-                }
-            }
-            
-        }
+        private int _length = 0;
+        private int _capacity = 8;
+        private T[] _array;
+
+       
         public int Capacity
         {
             get => _capacity;
-            set
-            {
-              if(Length>=_capacity)
-                {
-                    T[] myTempArray = new T[_capacity*_capacity];
-                    int i = _capacity;
-                    
-                    foreach (T item in MyArray)
-                    {
-                        myTempArray[i] = item;
-                        _capacity++;
-                        i++;
-                    }
-                   
-                    
-                    MyArray = new T[_capacity * _capacity];
-                    myTempArray.CopyTo(MyArray,0);
-
-                }
-                else
-                {
-                    _capacity = _capacity + 8;
-                }
-            }
+            protected set => _capacity = value;
         }
-
+        public int Length
+        {
+            get => _length;
+            protected set => _length = value;
+        }
         public DynamicArray()
         {
-            MyArray = new T[8];
-            Capacity = 8;
+            _array = new T[_capacity];
             
         }
         public DynamicArray(int n)
         {
-            MyArray = new T[n];
-            Capacity = n;
+            _capacity = n;
+            _array = new T[n];
             
         }
 
         public DynamicArray(IEnumerable<T> myCollection)
         {
-
-            int Size = myCollection.Count();
-            MyArray = new T[Size];
-            int i = 0;
-            foreach(var myC in myCollection)
+            int i = 0; 
+            foreach(var item in myCollection)
             {
-                MyArray[i] = myC;
+                _array[i] = item;
                 i++;
+                Length++;
+                _capacity++;
             }
-            Capacity = Size;
+           
         }
 
         public void  Add(T item)
         {
-            if(Length == Capacity)
+            if (Length==Capacity)
             {
-                T[] myTempArray = new T[Capacity * 2];
-                MyArray.CopyTo(myTempArray, 0);
-                myTempArray[Length] = item;
-                MyArray = myTempArray;
-                Capacity = Capacity * 2;
-            }
-            else if (Capacity > Length)
-            {
-                MyArray[Length] = item;
-            }
-            Length++;
+                T[] new_array = new T[Capacity * 2];
 
-        }
-        public void AddRange(ICollection<T> myCollection)
-        {
-            if(myCollection.Count>=Capacity)
-            {
-                Capacity = Capacity + myCollection.Count;
-            }
-            foreach(var myItem in myCollection)
-            {
-                MyArray[Length] = myItem;
-                Length++;
-            }
-        }
-        public bool Remove(T myItem)
-        {
-            for(int i =0; i < Length; i++)
-            {
-                if (MyArray[i].Equals(myItem))
+                for (int i = 0; i < _array.Length; i++)
                 {
-                    for(int j=i; j<Length -1; j++)
-                    {
-                        MyArray[i] = MyArray[j + 1];
-
-                    }
-                    Length = Length - 1;
-                    return true;
+                    new_array[i] = _array[i];
+                    
                 }
-                
-            }
-            return false;
-        }
+                _array = new_array;
 
-
-        public object Clone()
-        {
-            T[] myCloneArray = new T[Capacity];
-            for (int i = 0; i < MyArray.Length; i++)
-            {
-                myCloneArray[i] = MyArray[i];
             }
-            return myCloneArray;
+            _array[Length] = item;
+            Length++;
+           
+           
+
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            for (int i = 0; i < Length; i++)
+            foreach (T i in _array)
             {
-                yield return MyArray[i];
+                yield return i;
             }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return GetEnumerator();
-        }
-        public T this[int index]
-        {
-            get
-            {
-                if (index < -Length || index > Length - 1)
-                    throw new ArgumentOutOfRangeException("ArgumentOutOfRangeException");
-                else
-                    if (index < 0)
-                    return MyArray[index + Length];
-                else
-                    return MyArray[index];
-            }
-            set
-            {
-                if (index < -Length || index > Length - 1)
-                    throw new ArgumentOutOfRangeException("ArgumentOutOfRangeException");
-                else
-                    if (index < 0)
-                    MyArray[index + Length] = value;
-                else
-                    MyArray[index] = value;
-            }
+            throw new NotImplementedException();
         }
     }
 
@@ -194,9 +100,23 @@ namespace DYNAMIC_ARRAY
 
 
             DynamicArray<int> myArr = new DynamicArray<int>();
+            myArr.Add(3);
+            myArr.Add(1);
+            myArr.Add(3);
+            myArr.Add(4);
+            myArr.Add(3);
+            myArr.Add(4);
+            myArr.Add(3);
+            myArr.Add(6);
+            myArr.Add(6);
 
-          
-          
+            foreach (var item in myArr)
+            {
+                    Console.WriteLine(item);
+            }
+           
+
+
 
         }
     }
