@@ -70,10 +70,58 @@ namespace DYNAMIC_ARRAY
             }
             _array[Length] = item;
             Length++;
-           
-           
 
         }
+        public void AddRange(IEnumerable<T> item)
+        {
+            int tempCount = 0;
+            foreach(var i in item)
+            {
+                tempCount++;
+            }
+            if ((Length + tempCount) > Capacity)
+            {
+                T[] new_array = new T[Length + tempCount];
+                for (int i = 0; i < _array.Length; i++)
+                {
+                    new_array[i] = _array[i];
+                }
+                _array = new_array;
+            }
+            int anotherCount = Length + tempCount;
+            foreach (var i in item)
+            {
+                _array[anotherCount] = (T)item;
+                anotherCount++;
+                Length++;
+
+            }
+
+        }
+
+        public bool Remove(T item)
+        {
+            int i = 0;
+            foreach (var arr in _array)
+            {
+               
+                if (arr.Equals(item))
+                {
+                    T[] new_array = new T[i];
+                    for (int j = 0; j < _array.Length; j++)
+                    {
+                        new_array[j] = _array[j];
+
+                    }
+                    
+
+                }
+                i++;
+            }
+            return false;
+        }
+
+
 
         public IEnumerator<T> GetEnumerator()
         {
@@ -92,13 +140,9 @@ namespace DYNAMIC_ARRAY
     
 
     class Program
-    {
-       
+    {       
         static void Main(string[] args)
         {
-
-
-
             DynamicArray<int> myArr = new DynamicArray<int>();
             myArr.Add(3);
             myArr.Add(1);
@@ -109,12 +153,14 @@ namespace DYNAMIC_ARRAY
             myArr.Add(3);
             myArr.Add(6);
             myArr.Add(6);
-
             foreach (var item in myArr)
             {
                     Console.WriteLine(item);
             }
-           
+
+            
+
+
 
 
 
