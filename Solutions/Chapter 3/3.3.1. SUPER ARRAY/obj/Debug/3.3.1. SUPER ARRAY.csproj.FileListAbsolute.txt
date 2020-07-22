@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\bin\Debug\_3._3._1.SUPER_ARRAY.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\bin\Debug\_3._3._1.SUPER_ARRAY.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\bin\Debug\_3._3._1.SUPER_ARRAY.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\obj\Debug\3.3.1. SUPER ARRAY.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\obj\Debug\3.3.1. SUPER ARRAY.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\obj\Debug\_3._3._1.SUPER_ARRAY.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.1. SUPER ARRAY\obj\Debug\_3._3._1.SUPER_ARRAY.pdb
