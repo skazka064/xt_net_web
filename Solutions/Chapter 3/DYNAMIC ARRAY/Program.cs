@@ -120,6 +120,21 @@ namespace DYNAMIC_ARRAY
             }
             return false;
         }
+        public T this[int index]
+        {
+            set
+            {
+                if (index > Length) throw new ArgumentOutOfRangeException("The argument is out of range");
+                
+                _array[index] = value;
+            }
+
+            get
+            {
+                if (index > Length) throw new ArgumentOutOfRangeException("The argument is out of range");
+                return _array[index];
+            }
+        }
 
 
 
@@ -153,6 +168,7 @@ namespace DYNAMIC_ARRAY
             myArr.Add(3);
             myArr.Add(6);
             myArr.Add(6);
+            Console.WriteLine(myArr[55]);
             foreach (var item in myArr)
             {
                     Console.WriteLine(item);
