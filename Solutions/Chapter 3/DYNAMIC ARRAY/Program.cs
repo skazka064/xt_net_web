@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DYNAMIC_ARRAY
 {
-    public class DynamicArray<T> : IEnumerable<T>, IEnumerable
+    public class DynamicArray<T> : IEnumerable<T>, IEnumerable,ICloneable
     {
 
         private int _length = 0;
@@ -99,26 +99,55 @@ namespace DYNAMIC_ARRAY
 
         }
 
+        // 
         public bool Remove(T item)
         {
-            int i = 0;
-            foreach (var arr in _array)
-            {
-               
-                if (arr.Equals(item))
-                {
-                    T[] new_array = new T[i];
-                    for (int j = 0; j < _array.Length; j++)
-                    {
-                        new_array[j] = _array[j];
 
-                    }
-                    
+            for (int i = 0; i < Length; i++)
+            {
+                if (_array[i].Equals(item))
+                {
+                    for (int j = i; j < Length-1; j++)
+                    {
+                        _array[j] = _array[j + 1];                      
+                    }                   
+                    return true;                    
+                }
+            }            
+            return false;
+        }
+        public bool Insert(int index, T item)
+        {
+            if (index >= Capacity)
+            {
+                T[] new_array = new T[Capacity * 2];
+                for (int i = 0; i < _array.Length; i++)
+                {
+                    new_array[i] = _array[i];
 
                 }
-                i++;
+                _array = new_array;
+                _array[Length + 1] = item;
+                return true;
             }
-            return false;
+            else if (index < Length)
+            {
+                for (int i = 0; i < _array.Length; i++)
+                {
+                    if (i == index)
+                    {
+                        for (int j = i; j < Length - 1; j++)
+                        {
+                            _array[j + 1] = _array[j];
+                        }
+                        _array[Length+1] = item;
+
+                    }
+                }
+                return true;
+            }
+            else return false;
+
         }
         public T this[int index]
         {
@@ -126,13 +155,13 @@ namespace DYNAMIC_ARRAY
             {
                 if (index > Length) throw new ArgumentOutOfRangeException("The argument is out of range");
                 
-                _array[index] = value;
+                else _array[index] = value;
             }
 
             get
             {
                 if (index > Length) throw new ArgumentOutOfRangeException("The argument is out of range");
-                return _array[index];
+               else return _array[index];
             }
         }
 
@@ -150,34 +179,38 @@ namespace DYNAMIC_ARRAY
         {
             throw new NotImplementedException();
         }
-    }
 
-    
+        public object Clone()
+        {
+            T[] new_array = new T[Capacity ];
+            for (int i = 0; i < _array .Length; i++)
+            {
+                new_array[i] = _array[i];
+              }
+            return new DynamicArray<T>(new_array);
+        }
+    }
 
     class Program
     {       
         static void Main(string[] args)
         {
             DynamicArray<int> myArr = new DynamicArray<int>();
-            myArr.Add(3);
             myArr.Add(1);
+            myArr.Add(2);
             myArr.Add(3);
             myArr.Add(4);
-            myArr.Add(3);
-            myArr.Add(4);
-            myArr.Add(3);
+            myArr.Add(5);
             myArr.Add(6);
-            myArr.Add(6);
-            Console.WriteLine(myArr[55]);
+            myArr.Add(7);
+            myArr.Add(8);
+
+            myArr.Remove(6);
+
             foreach (var item in myArr)
             {
                     Console.WriteLine(item);
             }
-
-            
-
-
-
 
 
         }
