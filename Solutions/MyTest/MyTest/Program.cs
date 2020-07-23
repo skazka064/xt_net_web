@@ -17,8 +17,9 @@ namespace MyTest
         static void Main(string[] args)
         {
             int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            
-            ApplyToMass(arr, Sqrt);
+
+            Program pr = new Program();
+            ApplyToMass(arr, Square);
             
             foreach (var item in arr)
             {
@@ -26,18 +27,17 @@ namespace MyTest
             }
         }
 
-        static int MultiplyToTwo(int A) => A * 2;
-        static int Square(int A) => A * A;
-        static int Sqrt(int A) => (int) Math.Round(Math. Sqrt(A));
-        static void ApplyToMass(int[] arr, Function function)
-        {
+         static  int MultiplyToTwo(int A) => A * 2;
+         static  int Square(int A) => A * A;
+         static  int Sqrt(int A) => (int) Math.Round(Math. Sqrt(A));
+          static  void ApplyToMass(int[] arr, Function function)
+         {
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = function(arr[i]);
             }
-            
-
-        }
+             
+         }
     }   
 
 }
