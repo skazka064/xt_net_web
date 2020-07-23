@@ -11,45 +11,33 @@ namespace MyTest
 {
     class Program
     {
+        public delegate int Function(int x);
+        
 
         static void Main(string[] args)
         {
+            int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             
+            ApplyToMass(arr, Sqrt);
+            
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
         }
-    }
-    
-    public class SpaceShipFactory<T> where T : AbsrtactSpaceShip, new()
-    {
-        public T CreateShip()
+
+        static int MultiplyToTwo(int A) => A * 2;
+        static int Square(int A) => A * A;
+        static int Sqrt(int A) => (int) Math.Round(Math. Sqrt(A));
+        static void ApplyToMass(int[] arr, Function function)
         {
-            return new T();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = function(arr[i]);
+            }
+            
+
         }
-    }
-
-    public abstract class AbsrtactSpaceShip
-    {
-
-    }
-    public abstract  class AbstractFighter: AbsrtactSpaceShip
-    {
-
-    }
-    public class MachineGunFighter : AbsrtactSpaceShip
-    {
-
-    }
-    public class MachineGunComander : MachineGunFighter
-    {
-
-    }
-    public class Engineer: AbsrtactSpaceShip
-    {
-
-    }
-
-    public interface IShipFactory<T>
-    {
-        T CreateShip();
-    }
+    }   
 
 }
