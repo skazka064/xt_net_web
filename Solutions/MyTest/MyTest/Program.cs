@@ -6,38 +6,40 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace MyTest
 {
     class Program
-    {
-        public delegate int Function(int x);
+    {      
         
-
+        static int TestDelegate(CountDelegate method, string testString)
+        {
+            return method(testString);
+        }
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            StringHelper helper = new StringHelper();
+            CountDelegate d1 = helper.GetCount;
+            CountDelegate d2 = helper.GetCountSymbolA;
+            string testString = "LAMP";
+            Console.WriteLine("Общее количество символов: {0} ", TestDelegate(d1, testString));
+            Console.WriteLine("Количество символов А : {0}", TestDelegate(d2, testString));
 
-            Program pr = new Program();
-            ApplyToMass(arr, Square);
-            
-            foreach (var item in arr)
-            {
-                Console.WriteLine(item);
-            }
+
+        }
+    }
+
+    public delegate int CountDelegate(string message);
+    public class StringHelper
+    {
+        public int GetCount(string inputString)
+        {
+            return inputString.Length;
         }
 
-         static  int MultiplyToTwo(int A) => A * 2;
-         static  int Square(int A) => A * A;
-         static  int Sqrt(int A) => (int) Math.Round(Math. Sqrt(A));
-          static  void ApplyToMass(int[] arr, Function function)
-         {
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = function(arr[i]);
-            }
-             
-         }
-    }   
+        public int GetCountSymbolA(string inputString)
+        {
+            return inputString.Count(c => c == 'A');
+        }
 
+    }
 }
