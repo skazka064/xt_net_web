@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace MyTest
 {
     class Program
-    {      
-        
+    {   
         
         static int TestDelegate(CountDelegate method, string testString)
         {
