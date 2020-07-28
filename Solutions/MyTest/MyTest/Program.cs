@@ -10,41 +10,50 @@ namespace MyTest
 {
     class Program
     {   
-        
-        static int TestDelegate(CountDelegate method, string testString)
+        // Ковариантность и контравариантность
+        // Унас имеются два типа счета Account / DepositAccount
+        //Первый тип Account
+        class Account
         {
-            return method(testString);
+            public virtual void DoTransfer(int sum)
+            {
+                Console.WriteLine($"Клиент положил на счет {sum} долларов");
+            }
+
+          
+        }
+
+        // Второй тип DepositAccount унаследованный от Account
+          class DepositAccount : Account
+            {
+                public override void DoTransfer(int sum)
+                {
+                    Console.WriteLine($"Клиент положил на депозитный счет {sum} долларов");
+                }
+            }
+
+        // Ковариантный интерфейс
+        interface IBank<out T>
+        {
+            T CreateAccount(int sum);
+        }
+
+        // Класс, использующий ковариантный интерфейс
+        class Bank<T> : IBank<T> where T : Account, new()
+        {
+            public T CreateAccount(int sum)
+            {
+                T acc = new T(); // Создаем счет. На момент определения интерфейса мы не знаем, какой тип будет представлять счет.
+                acc.DoTransfer(sum);
+                return acc;
+            }
         }
         static void Main(string[] args)
         {
-           // Создаем объект, т.к. без создания объекта работают только статические классы
-            StringHelper helper = new StringHelper();
-            // Создаем два объекта типа CountDelegate и кладем в них ссылки объекта типа StringHelper
-            CountDelegate d1 = helper.GetCount;
-            CountDelegate d2 = helper.GetCountSymbolA;
-            string testString = "LAMP";
-            Console.WriteLine("Общее количество символов: {0} ", TestDelegate(d1, testString));
-            Console.WriteLine("Количество символов А : {0}", TestDelegate(d2, testString));
+            IBank<DepositAccount> depositBank = new Bank<DepositAccount>();
 
 
         }
     }
 
-    // Создаем делегат
-    public delegate int CountDelegate(string message);
-    
-    // Здесь тестовые методы, берем их отсюда
-    public class StringHelper
-    {
-        public int GetCount(string inputString)
-        {
-            return inputString.Length;
-        }
-
-        public int GetCountSymbolA(string inputString)
-        {
-            return inputString.Count(c => c == 'A');
-        }
-
-    }
 }
