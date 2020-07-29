@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3._3._1.SUPER_ARRAY
 {
-
-    class Program
+    class Class1
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
