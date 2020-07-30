@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\bin\Debug\_3._3._2.SUPER_STRING.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\bin\Debug\_3._3._2.SUPER_STRING.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\bin\Debug\_3._3._2.SUPER_STRING.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\obj\Debug\3.3.2. SUPER STRING.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\obj\Debug\3.3.2. SUPER STRING.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\obj\Debug\_3._3._2.SUPER_STRING.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.2. SUPER STRING\obj\Debug\_3._3._2.SUPER_STRING.pdb
