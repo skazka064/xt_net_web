@@ -15,7 +15,7 @@ namespace _3._3._1.SUPER_ARRAY
             Console.WriteLine(SuperArray.RecurringElement(teams));
             Console.WriteLine(SuperArray.Avg(teams));
             Console.WriteLine(SuperArray.Sum(teams));
-            /*SuperArray.mySuper(teams, SuperArray.Sum);*/
+            
         }
     }
 }

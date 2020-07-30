@@ -9,7 +9,7 @@ namespace _3._3._1.SUPER_ARRAY
 {
     public static  class SuperArray
     {
-        internal static void mySuper(int[] myArray, Func<int, int> function)
+        internal static void Action(this int[] myArray, Func<int, int> function)
         {
             if (myArray == null)
             {
