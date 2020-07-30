@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace _3._3._1.SUPER_ARRAY
 {
-    class SuperArray
+    public static  class SuperArray
     {
-       public static void mySuper(int[] myArray, Func<int, int> function)
+        internal static void mySuper(int[] myArray, Func<int, int> function)
         {
-            if(myArray == null)
+            if (myArray == null)
             {
                 throw new ArgumentNullException();
             }
@@ -23,6 +23,28 @@ namespace _3._3._1.SUPER_ARRAY
                 }
             }
         }
+
+
+
+        public static int Sum(this int[] array)
+        {
+            int sum = 0;
+            foreach (int item in array)
+            {
+                sum += item;
+            }
+            return sum;
+        }
+
+        public static int Avg(this int [] array) => array.Sum() / array.Length;
+        public static int RecurringElement(int[] array)
+        {
+            var groups = array.GroupBy(v => v);
+            int maxCount = groups.Max(g => g.Count());
+            return groups.First(g => g.Count() == maxCount).Key;
+        }
+
+
 
 
 

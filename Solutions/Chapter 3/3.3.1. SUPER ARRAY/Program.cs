@@ -11,7 +11,11 @@ namespace _3._3._1.SUPER_ARRAY
     {
         static void Main(string[] args)
         {
-
+            int[] teams = { 1, 1, 1, 2, 2, 3, 4, 7, 8 };
+            Console.WriteLine(SuperArray.RecurringElement(teams));
+            Console.WriteLine(SuperArray.Avg(teams));
+            Console.WriteLine(SuperArray.Sum(teams));
+            /*SuperArray.mySuper(teams, SuperArray.Sum);*/
         }
     }
 }
