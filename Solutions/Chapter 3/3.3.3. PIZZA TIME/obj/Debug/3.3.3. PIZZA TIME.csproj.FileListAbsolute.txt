@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\bin\Debug\_3._3._3.PIZZA_TIME.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\bin\Debug\_3._3._3.PIZZA_TIME.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\bin\Debug\_3._3._3.PIZZA_TIME.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\obj\Debug\3.3.3. PIZZA TIME.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\obj\Debug\3.3.3. PIZZA TIME.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\obj\Debug\_3._3._3.PIZZA_TIME.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 3\3.3.3. PIZZA TIME\obj\Debug\_3._3._3.PIZZA_TIME.pdb
