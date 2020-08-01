@@ -10,8 +10,6 @@ namespace _3._3._3.PIZZA_TIME
      class Pizza
     {
         public delegate void delegatePizza();
-
-        
         public event delegatePizza pizzaReady;
         public void makePiza()
         {

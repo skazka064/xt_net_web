@@ -16,12 +16,6 @@ namespace _3._3._3.PIZZA_TIME
             p.pizzaReady+= u.GoToReadyPizza;
             p.makePiza();
             p.pizzaReady-= u.GoToReadyPizza;
-           
-
-
-
-
-
         }
     }
 }
