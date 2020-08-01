@@ -10,6 +10,18 @@ namespace _3._3._3.PIZZA_TIME
     {
         static void Main(string[] args)
         {
+            Pizza p = new Pizza();
+            User u = new User();
+            
+            p.pizzaReady+= u.GoToReadyPizza;
+            p.makePiza();
+            p.pizzaReady-= u.GoToReadyPizza;
+           
+
+
+
+
+
         }
     }
 }

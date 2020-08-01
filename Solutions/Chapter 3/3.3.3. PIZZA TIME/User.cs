@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace _3._3._3.PIZZA_TIME
 {
-    class User
+     class User
     {
+        public void GoToReadyPizza()
+        {
+            Console.WriteLine("Пора забирать пиццу.");
+        }
 
     }
 }
