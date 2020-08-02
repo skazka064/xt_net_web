@@ -1,0 +1,10 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\obj\Debug\4.1.1 FILE MANAGEMENT SYSTEM.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\obj\Debug\4.1.1 FILE MANAGEMENT SYSTEM.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\bin\Debug\4.1.1 FILE MANAGEMENT SYSTEM.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\bin\Debug\4.1.1 FILE MANAGEMENT SYSTEM.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\bin\Debug\4.1.1 FILE MANAGEMENT SYSTEM.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\obj\Debug\4.1.1 FILE MANAGEMENT SYSTEM.csproj.CopyComplete
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\obj\Debug\4.1.1 FILE MANAGEMENT SYSTEM.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter 4\4.1.1 FILE MANAGEMENT SYSTEM\obj\Debug\4.1.1 FILE MANAGEMENT SYSTEM.pdb

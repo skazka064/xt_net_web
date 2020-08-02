@@ -1,26 +1,21 @@
 ﻿using System;
 using System.IO;
-using System.Security.Permissions;
 using Newtonsoft.Json;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Security.Permissions;
 
 namespace _4._1._1_FILE_MANAGEMENT_SYSTEM
 {
-
-    class StructureLog
+    class Watching
     {
-        public string DateTime { get; set; }
-        public string File { get; set; }
-        public string Action { get; set; }
-
-    }
-    public class Surveillance
-    {
-        static StructureLog fileLog = new StructureLog();
+        static Log fileLog = new Log();
         static string path;
-        static string pathLog = @"D:\Backup storage";
+        static string pathLog = @"C:\distrib\backup";
         static string filter = "*.txt";
 
-        public Surveillance(string newPath)
+        public Watching(string newPath)
         {
             path = newPath;
 
