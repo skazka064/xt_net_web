@@ -11,7 +11,8 @@ namespace myTest2
         {
             var ship = new Spaceship() { Name = "Hunter", Damage = 150, Scores = new int[] { 5, 15, 45, 10 } };
 
-            JsonSerializer serializer = new JsonSerializer();
+            // Сериализация
+            /*JsonSerializer serializer = new JsonSerializer();
             serializer.Converters.Add(new JavaScriptDateTimeConverter());
             serializer.NullValueHandling = NullValueHandling.Ignore;
             using (StreamWriter sw = new StreamWriter(@"c:\distrib\myJson.txt"))
@@ -20,8 +21,12 @@ namespace myTest2
                 serializer.Serialize(writer, ship);
             }
             
-            Console.WriteLine(JsonConvert.SerializeObject(ship));
+            Console.WriteLine(JsonConvert.SerializeObject(ship));*/
 
+            // Строковое представление
+            var strObj = JsonConvert.SerializeObject(ship);
+            // Десериализация
+            var shipConverted = JsonConvert.DeserializeObject<Spaceship>(strObj);
         }
         public class Spaceship
         {
