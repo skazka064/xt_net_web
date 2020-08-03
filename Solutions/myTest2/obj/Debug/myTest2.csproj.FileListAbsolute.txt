@@ -5,3 +5,6 @@ C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\obj\Debug\myTest2.csp
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\obj\Debug\myTest2.csproj.CoreCompileInputs.cache
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\obj\Debug\myTest2.exe
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\obj\Debug\myTest2.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest2\obj\Debug\myTest2.csproj.CopyComplete
