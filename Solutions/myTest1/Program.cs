@@ -8,8 +8,16 @@ namespace myTest1
 {
     class Program
     {
+        static void DoSomething(object o)
+        {
+
+        }
         static void Main(string[] args)
         {
+            for (int i = 0; i < 1000000; i++)
+            {
+                DoSomething(5);
+            }
             Worker worker = new Worker();
             int A = 5;
             object obj1 = A;
@@ -26,6 +34,8 @@ namespace myTest1
 
         }
     }
+
+
 
     class Human
     {
