@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\bin\Debug\myTest3.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\bin\Debug\myTest3.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\bin\Debug\myTest3.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\obj\Debug\myTest3.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\obj\Debug\myTest3.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\obj\Debug\myTest3.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest3\obj\Debug\myTest3.pdb
