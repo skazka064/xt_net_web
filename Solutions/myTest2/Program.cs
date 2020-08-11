@@ -13,36 +13,27 @@ namespace myTest2
        
         static void Main(string[] args)
         {
-            
+             
         }
-        
-    }
-    public class Loader
-    {
-        public UserData[] LoadData()
+         
+        public class Human
         {
-            //todo connect to database
-            //todo getting data from database
-
-            return new UserData[]
+            protected int Age;
+        }
+        public class Worker : Human
+        {
+            void DoDo()
             {
-                new UserData (){Name = "Anton" , Id =Guid.NewGuid(),Files = new File []{ } },
-                new UserData (){Name = "Vasya" , Id =Guid.NewGuid(),Files = new File []{ }},
-                new UserData (){Name = "Petya" , Id =Guid.NewGuid(),Files  = new File []{ }}
-            };
+                Age = 5;
+            }
+        }
+        public class SuperWorker : Worker
+        {
+            void DoDo()
+            {
+                Age = 6;
+            }
         }
     }
-
-    public class UserData
-    {
-        public string Name { get; set; }
-        public  Guid Id { get; set; }
-        public IEnumerable<File> Files { get; set; }
-       
-
-    }
-    public class File
-    {
-        //TODO
-    }
+    
 }
