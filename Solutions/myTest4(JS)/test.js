@@ -1,4 +1,4 @@
 var arr= ["Apple","Orange","Pozza"];
-arr.forEach(function(item, i, arr){
-console.log(i+": "+item+ " (massive:"+arr+")");
+arr.forEach(function(chItem, i){
+console.log(i+": "+chItem+ " (massive:"+arr+")");
 });
