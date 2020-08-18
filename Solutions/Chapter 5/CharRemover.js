@@ -17,6 +17,7 @@ function charRemover(str) {
         }); 
     });
 
+    console.log(myNewArr);
     result = str.split('').filter(function (char) { 
         return !myNewArr[char];
     }).join('');
