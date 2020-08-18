@@ -9,9 +9,9 @@ function charRemover(str) {
     let result; 
 
     myStr.forEach(function(getWord){ // Берем каждое слово из строки
-        getWord.split('').forEach(function(getChar, index){ // Берем каждый символ из слова
+        getWord.split('').forEach(function(getChar, i){ // Берем каждый символ из слова
             
-            if (getWord.indexOf(getChar, index + 1) != -1) { // Ищем совпадения
+            if (getWord.indexOf(getChar, i + 1) != -1) { // Ищем совпадения
                 myNewArr[getChar] = 1;
             }        
         }); 
