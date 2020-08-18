@@ -1,5 +1,5 @@
 
-let str = `У попа была собака`;
+
 
 function charRemover(str) {
 
@@ -18,11 +18,11 @@ function charRemover(str) {
     });
 
     console.log(myNewArr);
-    result = str.split('').filter(function (char) { 
+    res = str.split('').filter(function (char) { 
         return !myNewArr[char];
     }).join('');
     
-    console.log(result);
+    console.log(res);
 }
-
+var str = "У попа была собака";
 charRemover(str);
