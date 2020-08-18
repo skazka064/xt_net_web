@@ -8,10 +8,10 @@ function charRemover(str) {
     let emptyStr = {};
     let result; 
 
-    strChar.forEach(function(item){ // get each words
-        item.split('').forEach(function(charItem, index){ // get char in each words
+    strChar.forEach(function(item){ // Берем каждое слово из строки
+        item.split('').forEach(function(charItem, index){ // Берем каждый символ из слова
             
-            if (item.indexOf(charItem, index + 1) != -1) { // looking for coincidence
+            if (item.indexOf(charItem, index + 1) != -1) { // Ищем совпадения
                 emptyStr[charItem] = 1;
             }        
         }); 
