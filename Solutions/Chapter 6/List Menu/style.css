@@ -14,13 +14,15 @@ div {
     font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif;
     font-size: 17px;
     box-shadow: 5px 5px;
-    margin: 0 auto;
+    
 }
 ul{
     list-style-type:none;
     padding: 2px;
+    margin: 0 auto;
 }
 li{
     padding: 2px;
+    
    
 }
