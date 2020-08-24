@@ -1,0 +1,28 @@
+.container{
+    width: 200px;
+    height: 200px;
+    border:10px solid lightgreen;
+    padding: 20px;
+    margin: 30px;
+}
+p{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+}
+.line-b{
+    width: 260px;
+    margin-left: 30px;
+    background: lightblue;
+}
+.line-s{
+    width: 200px;
+    margin-left: 60px;
+    background: pink;
+}
+.line{
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid black;
+}

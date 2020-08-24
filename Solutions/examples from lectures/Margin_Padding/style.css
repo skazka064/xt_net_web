@@ -1,0 +1,19 @@
+.wrap{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+    margin-top: 20px;
+}
+.wrap div{
+    background: lightgreen;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 0;
+}
+.wrap .padding{
+    padding: 10px 20px;
+    background: lightblue;
+}
+.wrap .margin{
+    margin: 10px 20px;
+    background: orange;
+}

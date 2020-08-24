@@ -1,0 +1,14 @@
+div{
+    width: 100px;
+    height: 100px;
+    border:  1px solid #000;
+}
+div#left{
+margin: 20px auto 10px 0;
+}   
+div#Center{
+margin: auto;
+} 
+div#right{
+    margin: 20px 0 10px auto;
+}
