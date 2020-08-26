@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<link href="colors.css" rel="stylesheet" />
+	<style type="text/css">
+		/* Просто настройка контейнера для элемента */
+		/* У контейнера плавающие размеры */
+		.main {
+			position: absolute;
+			width: 50%;
+			top: 0;
+			bottom: 300px;
+		}
+
+		.center {
+			/* Известны линейные размеры */
+			width: 300px;
+			height: 200px;
+            /*padding: 20px;*/
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -150px; /* (width)/2 */
+			margin-top: -100px; /* (height)/2 */
+		}
+
+		/** { box-sizing: content-box; }*/
+	</style>
+</head>
+<body>
+	<div class="main __color1">
+		<div class="center __color2">
+
+			<!-- Какой-то контент -->
+			<p style="white-space: nowrap">Element Text Some text</p>
+			<p style="white-space: nowrap">Element Text Some text</p>
+			<p style="white-space: nowrap">Element Text Some text</p>
+
+		</div>
+	</div>
+</body>
+</html>

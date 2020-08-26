@@ -1,0 +1,13 @@
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.DAL.dll
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.DAL.pdb
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.csprojAssemblyReference.cache
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.csproj.CoreCompileInputs.cache
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.dll
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.pdb
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.DAL.Common.dll
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.Entities.dll
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.DAL.Common.pdb
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Notes.Entities.pdb
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.csproj.CopyComplete

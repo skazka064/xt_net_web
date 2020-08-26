@@ -1,0 +1,7 @@
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\bin\Debug\Lesson 17.exe.config
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\bin\Debug\Lesson 17.exe
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\bin\Debug\Lesson 17.pdb
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\obj\Debug\Lesson 17.csprojAssemblyReference.cache
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\obj\Debug\Lesson 17.csproj.CoreCompileInputs.cache
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\obj\Debug\Lesson 17.exe
+C:\Users\CatElio\source\repos\Lesson 17\Lesson 17\obj\Debug\Lesson 17.pdb
