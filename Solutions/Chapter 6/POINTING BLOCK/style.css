@@ -1,0 +1,38 @@
+
+body{
+    background: #333333;
+}
+
+.talk{
+    position: absolute;    
+    background: #88b7d5;
+    border: 8px solid #bfe3f9;
+    margin: 70px auto auto 10px;
+    color:#fff;
+}
+.text{    
+    font-size: 23px;
+    margin: 40px 130px;
+}
+.talk::before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+    border: 65px solid;
+    border-color: transparent transparent #bfe3f9 transparent;
+	bottom: 100%;
+	left: 40%;
+	margin-left: -10px;
+}
+.talk::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+    border: 53px solid;
+    border-color: transparent transparent #88b7d5 transparent;
+	bottom: 100%;
+	left: 42.2%;
+	margin-left: -10px;
+}
