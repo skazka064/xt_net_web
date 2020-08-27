@@ -1,14 +1,17 @@
 body{
     background: #4e627a;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .wrap{
+    
     width: 840px;
     height: 220px;
     background: #fff;
     font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif;
-    border-radius:  10px;
-    box-shadow: 10px 40px  rgba(0,0,0,0.02); 
-
+    border-radius:  6px;
+    box-shadow: 0 20px 30px #33414c, 0 5px 5px #33414c;
+ 
+   
 }
 img{
     width: 60px;
@@ -16,15 +19,45 @@ img{
     margin-left: 10px;
 
 }
-.inner1, .inner2, .inner3{
-    float: left;
+.inner1, .inner2, .inner3{    
+    float: left;    
+    margin: 10px auto;
+    text-align: center;
     
-    margin: 10px 80px auto 60px;
+}
+.inner1{
+  width: 270px; 
+  border-right: 2px solid #ccc;
+}
+.inner2{
+  width: 270px; 
+  border-right: 2px solid #ccc;
+}
+.inner3{
+  width: 270px; 
 }
 .name1,.name2,.name3{
+    font-weight: 1000;
     margin: 25px auto;
+    color:#e87057;
+    font-size: 23px;
 }
 .cost1,.cost2,.cost3{
-    margin: 0 0 18px 0;
+    margin: 0 0 14px 0;
+    color:#52514d;
+    font-size: 18px;
+    font-weight: 1000;
 
 }
+button{
+    background: #fb5f36;
+    border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius:  6px;
+}
+
