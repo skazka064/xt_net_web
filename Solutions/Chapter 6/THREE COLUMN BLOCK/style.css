@@ -1,0 +1,26 @@
+body{
+    background: #4e627a;
+}
+.wrap{
+    width: 840px;
+    height: 220px;
+    background: #fff;
+    font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+    border-radius:  10px;
+    box-shadow: 10px 40px  rgba(0,0,0,0.02); 
+
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+
+}
+.inner1, .inner2, .inner3{
+    float: left;
+    border: 1px solid #000;
+}
+span{
+
+    float: bottom;
+}
