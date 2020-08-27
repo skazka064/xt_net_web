@@ -9,9 +9,7 @@ body{
     background: #fff;
     font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif;
     border-radius:  6px;
-    box-shadow: 0 20px 30px #33414c, 0 5px 5px #33414c;
- 
-   
+    box-shadow: 0 5px 5px #33414c, 0 10px 10px #33414c, 0 15px 15px #33414c;
 }
 img{
     width: 60px;
