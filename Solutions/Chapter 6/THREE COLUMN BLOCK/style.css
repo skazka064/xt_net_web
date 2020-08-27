@@ -18,9 +18,13 @@ img{
 }
 .inner1, .inner2, .inner3{
     float: left;
-    border: 1px solid #000;
+    
+    margin: 10px 80px auto 60px;
 }
-span{
+.name1,.name2,.name3{
+    margin: 25px auto;
+}
+.cost1,.cost2,.cost3{
+    margin: 0 0 18px 0;
 
-    float: bottom;
 }
