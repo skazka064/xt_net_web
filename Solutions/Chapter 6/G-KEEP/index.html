@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="./js/MiniCrud.js"></script>
+    <script src="./js/script.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -12,14 +14,17 @@
                  <div class="wrap-search">
                     
                     <img id="buttonSearch" src="img/search1.png" />
-        <input  class="search"  type="text"  maxlength="256"  placeholder="Поиск" />  
-                 </div>  
-                           
+                    <input  class="search"  type="search"  placeholder="Поиск" oninput="mySearch(this.value)" />  
+                 </div> 
         
+            <button class="add"  onclick=addPlus()>+</button>
         
-            <button class="add" id="add">+</button>
+    </div>
+    <div class="container">
         
     </div>
    
+    
+    
 </body>
 </html>

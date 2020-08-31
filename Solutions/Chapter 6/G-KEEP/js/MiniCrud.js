@@ -35,7 +35,8 @@ class Service {
 
 }
 
-let storage = new Service();
+/*let storage = new Service();
 let obj1 = storage.add({name:"Ivan"});
 let all= storage.getAll();
 console.log(all);
+*/
