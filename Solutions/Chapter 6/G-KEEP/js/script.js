@@ -8,7 +8,7 @@ var mkBtn = document.getElementById("mkBtn");
 var modalBody = document.getElementById("modalBody");
 var modalHead = document.getElementById("modalHead");
 mkBtn.onclick = function(){
-  
+ 
 modalBody.value="";
 modalHead.value="";
 }
