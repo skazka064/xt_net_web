@@ -1,14 +1,21 @@
 let service = new Service();
-class myRecord {
-    constructor(head, body) {
-      this.head = head;
-      this.body = body;
-    }
-  }
+// Модальное окно +
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var addBtn = document.getElementById("myBtn");
+var closeBtn = document.getElementById("closeBtn");
 var span = document.getElementsByClassName("close")[0];
-btn.onclick = function(){
+var mkBtn = document.getElementById("mkBtn");
+var modalBody = document.getElementById("modalBody");
+var modalHead = document.getElementById("modalHead");
+mkBtn.onclick = function(){
+  
+modalBody.value="";
+modalHead.value="";
+}
+closeBtn.onclick=function(){
+  modal.style.display="none";
+}
+addBtn.onclick = function(){
   modal.style.display="block";
 }
 span.onclick= function(){
@@ -19,4 +26,3 @@ window.onclick = function(event){
     modal.style.display="none";
   }
 }
-  
