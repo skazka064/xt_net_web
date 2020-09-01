@@ -5,23 +5,18 @@ class myRecord {
       this.body = body;
     }
   }
-
-  function createRec() {
-    let head = document.getElementById("noteHeadCreate").value;
-    let body = document.getElementById("noteTextCreate").textContent;
-    
-      let record = new  myRecord(head, body);
-      showModalWindow();
-      service.add(record);
-      printNote(record);
-      let noteId = document.getElementById(note.id);
-      noteId.addEventListener("click", openChangeWindow);
-   
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function(){
+  modal.style.display="block";
+}
+span.onclick= function(){
+  modal.style.display="none";
+}
+window.onclick = function(event){
+  if(event.target==modal){
+    modal.style.display="none";
   }
-function addPlus() {  
-    
-     
 }
-function mySearch(input){
-    
-}
+  

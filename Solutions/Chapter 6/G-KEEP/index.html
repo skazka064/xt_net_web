@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./js/MiniCrud.js"></script>
-    <script src="./js/script.js"></script>
+    
 
     <title>Document</title>
 </head>
@@ -14,17 +13,27 @@
                  <div class="wrap-search">
                     
                     <img id="buttonSearch" src="img/search1.png" />
-                    <input  class="search"  type="search"  placeholder="Поиск" oninput="mySearch(this.value)" />  
-                 </div> 
-        
-            <button class="add"  onclick=addPlus()>+</button>
-        
+                    <input  class="search"  type="search"  placeholder="Поиск"  />  
+                 </div>         
+            <button class="add" id="myBtn"  >+</button>        
     </div>
-    <div class="container">
-        
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">
+                &times;
+            </span>
+            
+              <div>  <input  class="modal-head"  type="text"  placeholder="Введите заголовок"  /></div>
+                <div><textarea cols="65"  class="modal-body"  type="text"  placeholder="Текст заметки"  ></textarea></div>
+               <div class="div-modal-btn"> <button class="modal-btn">Создать</button><button class="modal-btn">Закрыть</button></div>
+            </div>
+        </div>
+
     </div>
    
     
-    
+    <script src="./js/MiniCrud.js"></script>
+    <script src="./js/script.js"></script>     
 </body>
 </html>
