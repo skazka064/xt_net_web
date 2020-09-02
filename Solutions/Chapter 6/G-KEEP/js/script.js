@@ -5,17 +5,29 @@ var addBtn = document.getElementById("myBtn");
 var closeBtn = document.getElementById("closeBtn");
 var span = document.getElementsByClassName("close")[0];
 var mkBtn = document.getElementById("mkBtn");
-var modalBody = document.getElementById("modalBody");
 var modalHead = document.getElementById("modalHead");
+var modalBody = document.getElementById("modalBody");
 var list = document.querySelector("#list");
-mkBtn.onclick = function(){ 
-var myDiv = document.createElement('div');
-myDiv.classList.add("myNote");
 
-myDiv.innerHTML=modalBody.value;
-list.appendChild(myDiv);
-modalBody.value="";
+mkBtn.onclick = function(){ 
+var containerDiv = document.createElement('div');
+var HeadDiv = document.createElement('div');
+var BodyDiv = document.createElement('div');
+
+containerDiv.classList.add("containerDiv");
+var temp ="<p>"+modalHead.value+"</p>"+"<p>"+modalBody.value+"</p>"+'<div class="wrapDeleteImg"><img id="imgDelete" src="img/delete.png" alt="Удалить заметку" /></div>';
+
+containerDiv.innerHTML=temp;
+
+
+list.append(containerDiv);
+
+
+
 modalHead.value="";
+modalBody.value="";
+
+modal.style.display="none";
 }
 closeBtn.onclick=function(){
   modal.style.display="none";
