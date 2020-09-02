@@ -7,8 +7,13 @@ var span = document.getElementsByClassName("close")[0];
 var mkBtn = document.getElementById("mkBtn");
 var modalBody = document.getElementById("modalBody");
 var modalHead = document.getElementById("modalHead");
-mkBtn.onclick = function(){
- 
+var list = document.querySelector("#list");
+mkBtn.onclick = function(){ 
+var myDiv = document.createElement('div');
+myDiv.classList.add("myNote");
+
+myDiv.innerHTML=modalBody.value;
+list.appendChild(myDiv);
 modalBody.value="";
 modalHead.value="";
 }
