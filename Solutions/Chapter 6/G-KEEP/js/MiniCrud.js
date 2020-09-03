@@ -15,7 +15,7 @@ class Service {
         map.has(key)? map.get(key):null;
     }
     getAll(){
-        return this.map.values();
+        return this.map;
     }
     deleteById(key){
         this.map.delete(key);
@@ -35,8 +35,10 @@ class Service {
 
 }
 
-/*let storage = new Service();
-let obj1 = storage.add({name:"Ivan"});
-let all= storage.getAll();
-console.log(all);
-*/
+let storage = new Service();
+let obj1 = storage.add(["Ivan"]);
+
+
+
+
+
