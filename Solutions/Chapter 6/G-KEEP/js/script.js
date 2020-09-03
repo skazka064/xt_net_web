@@ -16,17 +16,10 @@ var BodyDiv = document.createElement('div');
 
 containerDiv.classList.add("containerDiv");
 var temp ="<p>"+modalHead.value+"</p>"+"<p>"+modalBody.value+"</p>"+'<div class="wrapDeleteImg"><img id="imgDelete" src="img/delete.png" alt="Удалить заметку" /></div>';
-
 containerDiv.innerHTML=temp;
-
-
 list.append(containerDiv);
-
-
-
 modalHead.value="";
 modalBody.value="";
-
 modal.style.display="none";
 }
 closeBtn.onclick=function(){
