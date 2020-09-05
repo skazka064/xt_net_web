@@ -16,9 +16,9 @@ var containerDiv = document.createElement('div');
 var myTitle = modalHead.value;
 var myText = modalBody.value;
 if((myText==false)||(myTitle==false)){alert("Вы не ввели данные"); return false;} 
-//containerDiv.id = modalHead.value; 
+containerDiv.id = "containerDiv__"+myTitle; 
 containerDiv.classList.add("containerDiv");  
-var temp ="<p class='p-title'>"+myTitle+"</p>"+"<p onclick='myUpdate(this)' class='p-text'>"+myText+"</p>"+'<img onclick="myDelete(this)" id='+myTitle+' class="imgDelete" src="img/delete.png" alt="Удалить заметку" />';
+var temp ="<p class='p-title'>"+myTitle+"</p>"+"<p onclick='myUpdate(this)' class='p-text'>"+myText+"</p>"+'<img onclick="myDelete(this)" id='+"img__"+myTitle+' class="imgDelete" src="img/delete.png" alt="Удалить заметку" />';
 containerDiv.innerHTML=temp;
 list.append(containerDiv);
 modalHead.value="";
@@ -29,7 +29,7 @@ modal.style.display="none";
 closeBtn.onclick=function(){
   modal.style.display="none";
 }
-//Открытие модального окна
+//Открытие модального окна при нажатии на кнопке плюсик
 addBtn.onclick = function(){
   modal.style.display="block";
 }
@@ -56,7 +56,11 @@ function myUpdate(el){
   var id =el.id;
   let qua = confirm('Вы действительно хотите изменить заметку?');
         if(qua) {
-          alert("OK");
+          modal.style.display="block";
+          var myTitle = modalHead.value;
+          var myText = modalBody.value;
+          
+        console.log(el.parentElement);
         } 
 }
 
