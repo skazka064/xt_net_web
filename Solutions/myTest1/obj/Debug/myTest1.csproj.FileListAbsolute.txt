@@ -1,7 +1,0 @@
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\bin\Debug\myTest1.exe.config
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\bin\Debug\myTest1.exe
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\bin\Debug\myTest1.pdb
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\obj\Debug\myTest1.csprojAssemblyReference.cache
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\obj\Debug\myTest1.csproj.CoreCompileInputs.cache
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\obj\Debug\myTest1.exe
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\obj\Debug\myTest1.pdb
