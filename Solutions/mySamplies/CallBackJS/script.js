@@ -6,7 +6,5 @@
 function second(a,b){
     console.log(a*b);
 }
-first(function(){
-    console.log(100+4);
-}); 
+first(function(){}); 
 //second(7,4);
