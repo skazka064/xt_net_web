@@ -40,58 +40,7 @@
     height: 65px;
     font-size: 28px;
 }
-.modal{
-  display: none;
-  position:fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(235,235,235,0.8);
- 
-  
-}
-.modal-content{
-  background: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 800px;
-  border-radius:10px;
-}
-.close{
-  color:#aaa;
-  float:right;
-  font-size: 28px;
-  font-weight: bold;
 
-}
-.div-modal-btn{
-  text-align: right; 
-  margin: 10px 20px;
-}
-.modal-btn{
-  padding: 11px 27px;
-  border-radius:4px;
-  margin: 0 10px;
-  border:0px;
-}
-.modalHead {
-  border: 1px;
-  font-size: 28px; 
-  width: 80%;
- padding: 10px;
-
-}
-.modalBody{
-  border: none;
-  font-size: 14px;
-  margin-top: 30px;
-  width: 80%;
-  
-}
 textarea{
   padding: 10px;
   white-space: pre-wrap;
@@ -135,4 +84,3 @@ textarea{
     padding: 15px 15px;
     
   }
-
