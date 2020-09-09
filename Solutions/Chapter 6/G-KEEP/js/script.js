@@ -80,10 +80,10 @@ function myUpdate(el){
   let qua = confirm('Вы действительно хотите изменить заметку?');
     if(qua) {
       myModalUpdate.style.display="block";
-      var oldTitle=el.parentElement.getElementsByTagName("p")[0].innerHTML;
-      var oldText= el.parentElement.getElementsByTagName("p")[1].innerHTML; 
+      const oldTitle=el.parentElement.getElementsByTagName("p")[0].innerHTML;
+      const oldText= el.parentElement.getElementsByTagName("p")[1].innerHTML; 
       modalHeadUpdate.value= oldTitle;
-      modalTextUpdate.innerHTML=oldText;
+      modalTextUpdate.value=oldText;
       mkBtnUpdate.onclick=function(){                    
         el.parentElement.getElementsByTagName("p")[0].innerHTML=modalHeadUpdate.value;
         el.parentElement.getElementsByTagName("p")[1].innerHTML=modalTextUpdate.value;
