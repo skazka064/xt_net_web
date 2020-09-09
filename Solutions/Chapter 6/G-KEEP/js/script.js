@@ -1,5 +1,6 @@
 
 // Ищем элементы и присваиваем переменным ссылки на них
+'use strict';
 var modal = document.getElementById("myModal");
 var myModalUpdate =document.getElementById("myModalUpdate");
 var addBtn = document.getElementById("myBtn");
@@ -75,24 +76,21 @@ window.onclick = function(event){
 }
 //Изменение заметки
 function myUpdate(el){
-  
+  var id =el.id;
   let qua = confirm('Вы действительно хотите изменить заметку?');
-        if(qua) {
-          myModalUpdate.style.display="block";
-          modalHeadUpdate.value= el.parentElement.getElementsByTagName("p")[0].innerHTML;
-          modalTextUpdate.innerHTML=el.parentElement.getElementsByTagName("p")[1].innerHTML;
-          
-          
-        mkBtnUpdate.onclick=function(){
-                       
-          el.parentElement.getElementsByTagName("p")[0].innerHTML=modalHeadUpdate.value;
-          el.parentElement.getElementsByTagName("p")[1].innerHTML=modalTextUpdate.value;
-          
-          myModalUpdate.style.display="none";
+    if(qua) {
+      myModalUpdate.style.display="block";
+      var oldTitle=el.parentElement.getElementsByTagName("p")[0].innerHTML;
+      var oldText= el.parentElement.getElementsByTagName("p")[1].innerHTML; 
+      modalHeadUpdate.value= oldTitle;
+      modalTextUpdate.innerHTML=oldText;
+      mkBtnUpdate.onclick=function(){                    
+        el.parentElement.getElementsByTagName("p")[0].innerHTML=modalHeadUpdate.value;
+        el.parentElement.getElementsByTagName("p")[1].innerHTML=modalTextUpdate.value;
+        myModalUpdate.style.display="none";
 
         }
-        } 
-       
+    }        
 }
 
 
