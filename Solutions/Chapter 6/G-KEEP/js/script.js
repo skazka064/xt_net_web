@@ -14,6 +14,29 @@ var modalHeadUpdate=document.getElementById("modalHeadUpdate");
 var modalTextUpdate= document.getElementById("modalBodyUpdate");
 var list = document.querySelector("#list");
 var imgDelete =document.querySelector(".imgDelete");
+var stringSearch = document.getElementsByClassName("search");
+
+//Поиск
+function mySearch(el){
+  
+  const t=el.parentElement.getElementsByTagName("input")[0].value;
+  const arr = document.getElementsByTagName("p");
+  if(t==""){
+    for(var i=0; i<arr.length;i++){
+      arr[i].classList.remove("find");
+    }
+  }
+  
+  for(var i=0; i<arr.length;i++){
+    if(t==arr[i].innerText){
+      arr[i].classList.add("find");
+    }
+    
+  }
+  console.log(t);
+ 
+  
+}
 //-------------------------------------------------
 // Собираем заметку
 mkBtn.onclick = function(){ 
