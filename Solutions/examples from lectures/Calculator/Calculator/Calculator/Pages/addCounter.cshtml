@@ -1,0 +1,8 @@
+﻿@using Calculator.Models;
+@using System.Threading;
+
+@{
+    Thread.Sleep(TimeSpan.FromSeconds(2));
+    CounterLogic.Increase();
+    Response.Redirect("/");
+}

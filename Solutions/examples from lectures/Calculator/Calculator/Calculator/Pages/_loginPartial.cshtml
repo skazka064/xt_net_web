@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+
+    <div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="alert-info">Hello, @User.Identity.Name</div>
+            <div><a href="~/Pages/signOut.cshtml">Sign Out</a></div>
+        }
+        else
+        {
+            <div class="alert-info">Hello, guest!</div>
+            <div><a href="~/Pages/signIn.cshtml">Sign In</a></div>
+        }
+    </div>

@@ -7,3 +7,12 @@ C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL
 C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CopyComplete
 C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.dll
 C:\Users\CatElio\source\repos\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\bin\Debug\Notes.Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\bin\Debug\Notes.Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CopyComplete
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.pdb

@@ -1,0 +1,90 @@
+﻿@{
+    double? result = null;
+
+    double? a = null;
+    double? b = null;
+
+    string errorMessage = null;
+
+    if(IsPost)
+    {
+        try
+        {
+            a = double.Parse(Request["a"]);
+
+            b = double.Parse(Request["b"]);
+
+            result = a + b;
+        }
+        catch(FormatException e)
+        {
+            errorMessage = "Incorrect value of A or B";
+        }
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @RenderPage("~/Pages/_loginPartial.cshtml")
+    <p></p>
+
+    @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+    {
+        <div>
+            @if (IsPost)
+            {
+                if (errorMessage == null)
+                {
+                    <div class="alert-info">
+                        Result: @result
+                    </div>
+                }
+                else
+                {
+                    <div class="alert-warning">
+                        Error: @errorMessage
+                    </div>
+                }
+
+            }
+            <form action="/" method="post" class="form">
+                <div>
+                    <label>A:</label>
+                    <input type="text" name="a" value="" />
+                </div>
+                <div>
+                    <label>B:</label>
+                    <input type="text" name="b" value="" />
+                </div>
+                <button class="btn-info">+</button>
+            </form>
+        </div>
+    }
+    else
+    {
+        <div>Sorry, calculator isn't available for guests!</div>
+    }
+
+    @*<p></p>
+    <div>
+        <label class="alert-info">Counter: @Calculator.Models.CounterLogic.Counter</label>
+    </div>
+    <div>
+        <button id="addCounter">Increase</button>
+    </div>*@
+
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script>
+        $('#addCounter').click(function () {
+            location.href = '/Pages/addCounter'
+        });
+    </script>
+</body>
+</html>

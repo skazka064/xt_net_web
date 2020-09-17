@@ -4,3 +4,9 @@ C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entit
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.csproj.CoreCompileInputs.cache
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.dll
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\bin\Debug\Notes.Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\bin\Debug\Notes.Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\examples from lectures\Notes_Manager\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.pdb
