@@ -17,3 +17,5 @@ C:\Users\CatElio\source\repos\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.csproj
 C:\Users\CatElio\source\repos\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.csproj.CopyComplete
 C:\Users\CatElio\source\repos\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.dll
 C:\Users\CatElio\source\repos\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.BLL\obj\Debug\Notes.BLL.csproj.CoreCompileInputs.cache

@@ -1,0 +1,9 @@
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\obj\Debug\Epam.Nodes.BLL.Intefaces.csprojAssemblyReference.cache
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\obj\Debug\Epam.Nodes.BLL.Intefaces.csproj.CoreCompileInputs.cache
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\bin\Debug\Epam.Nodes.BLL.Intefaces.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\bin\Debug\Epam.Nodes.BLL.Intefaces.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\bin\Debug\Epam.Nodes.Entities.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\bin\Debug\Epam.Nodes.Entities.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\obj\Debug\Epam.Nodes.BLL.Intefaces.csproj.CopyComplete
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\obj\Debug\Epam.Nodes.BLL.Intefaces.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Nodes.BLL.Intefaces\obj\Debug\Epam.Nodes.BLL.Intefaces.pdb

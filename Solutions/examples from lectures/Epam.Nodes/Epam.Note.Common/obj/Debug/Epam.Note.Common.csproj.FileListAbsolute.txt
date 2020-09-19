@@ -1,0 +1,17 @@
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\obj\Debug\Epam.Note.Common.csprojAssemblyReference.cache
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\obj\Debug\Epam.Note.Common.csproj.CoreCompileInputs.cache
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Note.Common.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Note.Common.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.BLL.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.BLL.Intefaces.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.DAL.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.DAL.Intefaces.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.Entities.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.BLL.Intefaces.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.BLL.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.DAL.Intefaces.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.DAL.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\bin\Debug\Epam.Nodes.Entities.pdb
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\obj\Debug\Epam.Note.Common.csproj.CopyComplete
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\obj\Debug\Epam.Note.Common.dll
+C:\Users\Viktor_Isaikin\source\repos\Epam.Nodes\Epam.Note.Common\obj\Debug\Epam.Note.Common.pdb

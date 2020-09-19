@@ -1,0 +1,2 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.Json.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.DAL\obj\Debug\Notes.DAL.Json.csproj.CoreCompileInputs.cache

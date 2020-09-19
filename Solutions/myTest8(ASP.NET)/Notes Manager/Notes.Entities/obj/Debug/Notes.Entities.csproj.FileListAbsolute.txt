@@ -4,3 +4,8 @@ C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entit
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.csproj.CoreCompileInputs.cache
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.dll
 C:\Users\CatElio\source\repos\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.Entities\bin\Debug\Notes.Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.Entities\bin\Debug\Notes.Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest8(ASP.NET)\Notes Manager\Notes.Entities\obj\Debug\Notes.Entities.pdb
