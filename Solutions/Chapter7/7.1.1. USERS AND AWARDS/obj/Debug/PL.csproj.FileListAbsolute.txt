@@ -5,3 +5,8 @@ C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWA
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\obj\Debug\PL.csproj.CoreCompileInputs.cache
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\obj\Debug\_7._1._1.USERS_AND_AWARDS.exe
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\obj\Debug\_7._1._1.USERS_AND_AWARDS.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\bin\Debug\Entities.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\bin\Debug\Entities.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7\7.1.1. USERS AND AWARDS\obj\Debug\PL.csproj.CopyComplete
