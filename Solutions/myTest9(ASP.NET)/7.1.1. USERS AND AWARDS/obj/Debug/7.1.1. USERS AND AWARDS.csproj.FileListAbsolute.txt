@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\bin\Debug\_7._1._1.USERS_AND_AWARDS.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\bin\Debug\_7._1._1.USERS_AND_AWARDS.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\bin\Debug\_7._1._1.USERS_AND_AWARDS.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\obj\Debug\7.1.1. USERS AND AWARDS.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\obj\Debug\7.1.1. USERS AND AWARDS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\obj\Debug\_7._1._1.USERS_AND_AWARDS.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest9(ASP.NET)\7.1.1. USERS AND AWARDS\obj\Debug\_7._1._1.USERS_AND_AWARDS.pdb
