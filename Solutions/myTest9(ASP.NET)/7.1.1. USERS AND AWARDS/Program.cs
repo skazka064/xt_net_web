@@ -14,7 +14,7 @@ namespace _7._1._1.USERS_AND_AWARDS
         public static string LocalDataPath => "Data\\";
         public static IEnumerable<User> GetAllUser()
         {
-            var directory = new DirectoryInfo(Environment.CurrentDirectory + "\\" + "Data");
+            var directory = new DirectoryInfo(Environment.CurrentDirectory + "\\" +  LocalDataPath);
             foreach (var file in directory.GetFiles())
                 using (var reader = new StreamReader(file.FullName))
                     yield return JsonConvert.DeserializeObject<User>(reader.ReadToEnd());
@@ -33,8 +33,12 @@ namespace _7._1._1.USERS_AND_AWARDS
         }
         static void Main(string[] args)
         {
-            var user1 = new User("Sergio", "26.07.1976", "44");
-            SaveUser(user1);
+           
+            //var user = new User("Ivan", "26.07.2000", "20");
+            //SaveUser(user);
+            var user = GetAllUser().ToList();
+            Console.WriteLine(user);
+            Console.ReadKey();
 
         }
     }
