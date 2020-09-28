@@ -1,6 +1,0 @@
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\bin\Debug\Notes.PL.Common.dll
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\bin\Debug\Notes.PL.Common.pdb
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\obj\Debug\Notes.PL.Common.csprojAssemblyReference.cache
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\obj\Debug\Notes.PL.Common.csproj.CoreCompileInputs.cache
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\obj\Debug\Notes.PL.Common.dll
-C:\Users\CatElio\source\repos\Notes Manager\Notes.PL.Common\obj\Debug\Notes.PL.Common.pdb
