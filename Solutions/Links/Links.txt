@@ -1,0 +1,58 @@
+*** Редактирование текста
+https://glvrd.ru/
+https://neprivet.ru/
+*** c#
+https://professorweb.ru/
+*** Для WEB
+http://htmlbook.ru/
+http://www.webremeslo.ru/
+***Менеджер пакетов для JS
+https://www.npmjs.com/
+***Иконки
+http://www.flaticon.com
+*** Сложный JS простым языком
+https://www.youtube.com/playlist?list=PLqKQF2ojwm3l4oPjsB9chrJmlhZ-zOzWT
+Плагины для VS Code
+All Autocomplete
+Auto Close Tag
+Auto Complete Tag
+Auto Rename Tag
+Beautify
+Code Runner
+Import Cost
+JavaScript (ES6) code snippets
+jshint
+Multiple clipboards for  VS Code
+Sass
+Theme - Oceanic Next
+vscode-icons
+ESLin
+Bracket Pair Colorizer 2
+Mithril Emmet/Elm Emmet/Emmet
+HTML Snippets
+TODO Highlight
+***
+***Нормализация баз данных
+https://habr.com/ru/post/254773/
+*** Работа с SQL видео на английском
+ https://www.youtube.com/playlist?list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt
+*** Dependency injection
+https://habr.com/ru/post/350068/
+***CSS
+https://html5css.ru/css/css3_buttons.php 
+*** ASP.NET MVC 4
+https://smarly.net/pro-asp-net-mvc-4
+*** Верстка
+https://www.youtube.com/watch?v=7gjxE_VEA_4&feature=emb_logo
+*** Логирование
+https://habr.com/ru/post/354962/
+https://habr.com/ru/post/98638/
+*** Магические сигнатуры методов в C#
+https://habr.com/p/509082/
+*** Ковариантность
+https://habr.com/ru/post/218753/
+https://metanit.com/sharp/tutorial/3.27.php
+*** SOLID в картинках
+https://habr.com/ru/company/digital-ecosystems/blog/505430/
+*** Строки в C#
+https://habr.com/ru/post/172627/

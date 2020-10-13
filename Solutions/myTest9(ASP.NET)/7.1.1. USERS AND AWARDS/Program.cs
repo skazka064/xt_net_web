@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace _7._1._1.USERS_AND_AWARDS
 {
-    class Program
+    static  class Tools
     {
-        public static string LocalDataPath => "Data\\";
-        public static IEnumerable<User> GetAllUser()
+  public static string LocalDataPath => "Data\\";
+       public  static IEnumerable<User> GetAllUser()
         {
             var directory = new DirectoryInfo(Environment.CurrentDirectory + "\\" +  LocalDataPath);
             foreach (var file in directory.GetFiles())
@@ -31,12 +31,16 @@ namespace _7._1._1.USERS_AND_AWARDS
             
             
         }
+    }
+    class Program
+    {
+       
         static void Main(string[] args)
         {
            
             //var user = new User("Ivan", "26.07.2000", "20");
             //SaveUser(user);
-            var user = GetAllUser().ToList();
+            var user = Tools.GetAllUser().ToList();
             Console.WriteLine(user);
             Console.ReadKey();
 

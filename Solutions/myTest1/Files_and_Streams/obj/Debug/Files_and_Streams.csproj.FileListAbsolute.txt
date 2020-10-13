@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\bin\Debug\Files_and_Streams.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\bin\Debug\Files_and_Streams.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\bin\Debug\Files_and_Streams.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\obj\Debug\Files_and_Streams.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\obj\Debug\Files_and_Streams.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\obj\Debug\Files_and_Streams.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\myTest1\Files_and_Streams\obj\Debug\Files_and_Streams.pdb

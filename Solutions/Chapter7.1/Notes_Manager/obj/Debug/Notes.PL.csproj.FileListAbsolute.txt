@@ -1,0 +1,14 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes_Manager.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes_Manager.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes_Manager.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\obj\Debug\Notes.PL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\obj\Debug\Notes_Manager.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\obj\Debug\Notes_Manager.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\obj\Debug\Notes.PL.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes.Entites.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Notes.Entites.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes_Manager\obj\Debug\Notes.PL.csproj.CopyComplete
