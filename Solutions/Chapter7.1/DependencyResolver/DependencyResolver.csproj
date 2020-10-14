@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DE5AF59-B7FC-47F3-A576-07D0D7F70D36}</ProjectGuid>
+    <ProjectGuid>{752237F2-FDD4-420F-BA97-85646A7A7306}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Notes.Common</RootNamespace>
-    <AssemblyName>Notes.Common</AssemblyName>
+    <RootNamespace>DependencyResolver</RootNamespace>
+    <AssemblyName>DependencyResolver</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,13 +45,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Notes.Entites\Notes.Entites.csproj">
-      <Project>{60a417bc-4f08-49cb-99d6-4e4b368fad7b}</Project>
-      <Name>Notes.Entites</Name>
+    <ProjectReference Include="..\Notes.BLL.Common\Notes.BLL.Common.csproj">
+      <Project>{706F262C-2A5A-4335-93E5-AC68046825C5}</Project>
+      <Name>Notes.BLL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes.BLL\Notes.BLL.csproj">
+      <Project>{a600fbf2-395f-42a2-b515-b8f1b6e7e7cf}</Project>
+      <Name>Notes.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes.DAL.Common\Notes.DAL.Common.csproj">
+      <Project>{DD9F5E92-27C9-4576-8B73-5099AD7F2080}</Project>
+      <Name>Notes.DAL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes.DAL\Notes.DAL.csproj">
+      <Project>{65EBA8EA-C555-4DE7-A52E-458CC585E985}</Project>
+      <Name>Notes.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Notes.PL.Common\Notes.PL.Common.csproj">
       <Project>{BC8C0323-2BB6-43F9-861F-6DCE441EAF75}</Project>
       <Name>Notes.PL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes_Manager\Notes.PL.csproj">
+      <Project>{79E83A97-E67B-43A9-BC51-809E3F3CBDA3}</Project>
+      <Name>Notes.PL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

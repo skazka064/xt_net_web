@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using Notes.Common;
 using Notes.Entites;
 using System.Linq;
-
-
-
+using Notes.DAL.Common;
 
 namespace Notes.DAL
 {
@@ -15,6 +12,17 @@ namespace Notes.DAL
     public class JsonNotesDAO : INotesDAL
     {
         public static string LocalDataPath => "Data\\";
+
+        public bool AddUser()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DisplayAllUsers()
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<User> GetAllUser()
         {
             var directory = new DirectoryInfo(Environment.CurrentDirectory + "\\" + LocalDataPath);
@@ -23,8 +31,14 @@ namespace Notes.DAL
                     yield return JsonConvert.DeserializeObject<User>(reader.ReadToEnd());
         }
 
-        public User  GetNoteByID(Guid id) => GetAllUser().FirstOrDefault(n => n.ID == id);
-       
+        public User GetNoteByID(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User  GetUserByID(Guid id) => GetAllUser().FirstOrDefault(n => n.ID == id);
+
+    
         public void SaveUser(User user)
         {
             if (user == null)

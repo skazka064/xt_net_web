@@ -55,13 +55,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Notes.Common\Notes.Common.csproj">
-      <Project>{4de5af59-b7fc-47f3-a576-07d0d7f70d36}</Project>
-      <Name>Notes.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Notes.Entites\Notes.Entites.csproj">
       <Project>{60a417bc-4f08-49cb-99d6-4e4b368fad7b}</Project>
       <Name>Notes.Entites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes.PL.Common\Notes.PL.Common.csproj">
+      <Project>{BC8C0323-2BB6-43F9-861F-6DCE441EAF75}</Project>
+      <Name>Notes.PL.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

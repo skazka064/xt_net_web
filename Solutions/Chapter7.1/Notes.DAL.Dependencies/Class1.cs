@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Notes.Common;
 
-namespace Notes.Common
+namespace Notes.DAL.Dependencies
 {
-    public interface INotesPL
+    public class Class1
     {
-        void DisplayAllUsers();
-        bool AddUser();
     }
 }

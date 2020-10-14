@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Notes.Common;
+using Notes.BLL.Common;
 using Notes.Entites;
 
 namespace Notes.BLL
 {
-    class NotesManager : INotesBLL
+    public class NotesManager : INotesBLL
 
     {
         public IEnumerable<User> GetAllUser()
