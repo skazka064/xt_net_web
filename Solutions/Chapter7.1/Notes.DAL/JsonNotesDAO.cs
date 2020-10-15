@@ -31,11 +31,11 @@ namespace Notes.DAL
                     yield return JsonConvert.DeserializeObject<User>(reader.ReadToEnd());
         }
 
-        public User GetNoteByID(Guid id)
-        {
-            throw new NotImplementedException();
-        }
 
+        User INotesDAL.GetNoteByID(Guid id)
+        {
+            return GetAllUser().FirstOrDefault(n => n.ID == id);
+        }
         public User  GetUserByID(Guid id) => GetAllUser().FirstOrDefault(n => n.ID == id);
 
     
@@ -49,5 +49,7 @@ namespace Notes.DAL
             using (var writer = new StreamWriter(LocalDataPath + userName))
                 writer.Write(userStr);
         }
+
+        
     }
 }

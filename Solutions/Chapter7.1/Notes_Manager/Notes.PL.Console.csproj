@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{752237F2-FDD4-420F-BA97-85646A7A7306}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DependencyResolver</RootNamespace>
-    <AssemblyName>DependencyResolver</AssemblyName>
+    <ProjectGuid>{79E83A97-E67B-43A9-BC51-809E3F3CBDA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Notes_Manager</RootNamespace>
+    <AssemblyName>Notes_Manager</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,33 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyResolver.cs" />
+    <Compile Include="ConsoleNotesPL.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Notes.BLL.Common\Notes.BLL.Common.csproj">
-      <Project>{706F262C-2A5A-4335-93E5-AC68046825C5}</Project>
+      <Project>{706f262c-2a5a-4335-93e5-ac68046825c5}</Project>
       <Name>Notes.BLL.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Notes.BLL\Notes.BLL.csproj">
-      <Project>{a600fbf2-395f-42a2-b515-b8f1b6e7e7cf}</Project>
-      <Name>Notes.BLL</Name>
+    <ProjectReference Include="..\Notes.BLL.Dependencies\Notes.BLL.Dependencies.csproj">
+      <Project>{91160d7f-bde7-4b8a-8086-61ee1fcf1778}</Project>
+      <Name>Notes.BLL.Dependencies</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Notes.DAL.Common\Notes.DAL.Common.csproj">
-      <Project>{DD9F5E92-27C9-4576-8B73-5099AD7F2080}</Project>
-      <Name>Notes.DAL.Common</Name>
+    <ProjectReference Include="..\Notes.DAL.Dependencies\Notes.DAL.Dependencies.csproj">
+      <Project>{BABE0A00-A475-429A-81A2-0D42E7ABDA9C}</Project>
+      <Name>Notes.DAL.Dependencies</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Notes.DAL\Notes.DAL.Json.csproj">
-      <Project>{65EBA8EA-C555-4DE7-A52E-458CC585E985}</Project>
-      <Name>Notes.DAL.Json</Name>
+    <ProjectReference Include="..\Notes.Entites\Notes.Entites.csproj">
+      <Project>{60a417bc-4f08-49cb-99d6-4e4b368fad7b}</Project>
+      <Name>Notes.Entites</Name>
     </ProjectReference>
     <ProjectReference Include="..\Notes.PL.Common\Notes.PL.Common.csproj">
       <Project>{BC8C0323-2BB6-43F9-861F-6DCE441EAF75}</Project>
       <Name>Notes.PL.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Notes_Manager\Notes.PL.Console.csproj">
-      <Project>{79E83A97-E67B-43A9-BC51-809E3F3CBDA3}</Project>
-      <Name>Notes.PL.Console</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

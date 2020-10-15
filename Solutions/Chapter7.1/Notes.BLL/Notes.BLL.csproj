@@ -49,6 +49,14 @@
       <Project>{706F262C-2A5A-4335-93E5-AC68046825C5}</Project>
       <Name>Notes.BLL.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Notes.DAL.Common\Notes.DAL.Common.csproj">
+      <Project>{dd9f5e92-27c9-4576-8b73-5099ad7f2080}</Project>
+      <Name>Notes.DAL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notes.DAL.Dependencies\Notes.DAL.Dependencies.csproj">
+      <Project>{BABE0A00-A475-429A-81A2-0D42E7ABDA9C}</Project>
+      <Name>Notes.DAL.Dependencies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Notes.Entites\Notes.Entites.csproj">
       <Project>{60a417bc-4f08-49cb-99d6-4e4b368fad7b}</Project>
       <Name>Notes.Entites</Name>

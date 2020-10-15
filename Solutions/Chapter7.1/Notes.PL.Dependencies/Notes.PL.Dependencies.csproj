@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="NotesPLDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,9 +49,9 @@
       <Project>{BC8C0323-2BB6-43F9-861F-6DCE441EAF75}</Project>
       <Name>Notes.PL.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Notes_Manager\Notes.PL.csproj">
+    <ProjectReference Include="..\Notes_Manager\Notes.PL.Console.csproj">
       <Project>{79E83A97-E67B-43A9-BC51-809E3F3CBDA3}</Project>
-      <Name>Notes.PL</Name>
+      <Name>Notes.PL.Console</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

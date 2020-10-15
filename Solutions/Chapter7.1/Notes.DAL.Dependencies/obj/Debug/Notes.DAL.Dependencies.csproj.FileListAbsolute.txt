@@ -1,0 +1,15 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.Dependencies.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.Dependencies.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.Entites.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.DAL.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.Entites.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.csproj.CopyComplete
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.pdb

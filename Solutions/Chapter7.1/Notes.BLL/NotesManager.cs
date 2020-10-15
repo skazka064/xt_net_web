@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Notes.BLL.Common;
+using Notes.DAL.Common;
+using Notes.DAL.Dependencies;
 using Notes.Entites;
 
 namespace Notes.BLL
@@ -8,19 +10,36 @@ namespace Notes.BLL
     public class NotesManager : INotesBLL
 
     {
+       
+        private INotesDAL _notesDAO;
+        public NotesManager()
+        {
+            _notesDAO = NotesDALDependencies.NotesDAL;
+        }
+
+
         public IEnumerable<User> GetAllUser()
         {
-            throw new NotImplementedException();
+            return _notesDAO.GetAllUser();
         }
 
         public User GetUserByID(Guid id)
         {
-            throw new NotImplementedException();
+            return _notesDAO.GetNoteByID(id);
         }
 
-        public void SaveUser(User user)
+        public bool SaveUser(User user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _notesDAO.SaveUser( user);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+             
         }
     }
 }

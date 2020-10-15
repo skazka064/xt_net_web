@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Notes.DAL.Dependencies;
+using Notes.PL.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,14 @@ namespace Notes_Manager
     {
         static void Main(string[] args)
         {
-            
+            var pl = new ConsoleNotesPL();
+            /*pl.AddUser();
+            pl.AddUser();
+            pl.AddUser();*/
+            pl.DisplayAllUsers();
+
+
         }
+
     }
 }

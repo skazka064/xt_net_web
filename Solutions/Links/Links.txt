@@ -56,3 +56,8 @@ https://metanit.com/sharp/tutorial/3.27.php
 https://habr.com/ru/company/digital-ecosystems/blog/505430/
 *** Строки в C#
 https://habr.com/ru/post/172627/
+*** Рефакторинг
+https://refactoring.guru/ru/refactoring/course
+*** Музыка
+freshrecords.ru
+https://jesteipool.ru/
