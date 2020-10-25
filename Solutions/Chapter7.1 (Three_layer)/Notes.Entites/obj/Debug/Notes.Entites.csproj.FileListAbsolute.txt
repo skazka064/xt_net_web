@@ -1,9 +1,0 @@
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\bin\Debug\Notes.Entites.dll
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\bin\Debug\Notes.Entites.pdb
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\bin\Debug\Newtonsoft.Json.dll
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\bin\Debug\Newtonsoft.Json.xml
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\obj\Debug\Notes.Entites.csprojAssemblyReference.cache
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\obj\Debug\Notes.Entites.csproj.CoreCompileInputs.cache
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\obj\Debug\Notes.Entites.csproj.CopyComplete
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\obj\Debug\Notes.Entites.dll
-C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.Entites\obj\Debug\Notes.Entites.pdb

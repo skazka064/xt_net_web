@@ -1,0 +1,18 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\bin\Debug\Notes.Entites.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\bin\Debug\Notes.Entites.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CopyComplete
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\bin\Debug\Notes.DAL.Common.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\bin\Debug\Notes.Entites.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\bin\Debug\Notes.Entites.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.csproj.CopyComplete
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Common\obj\Debug\Notes.DAL.Common.pdb
