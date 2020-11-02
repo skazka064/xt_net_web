@@ -58,6 +58,10 @@
       <Project>{BABE0A00-A475-429A-81A2-0D42E7ABDA9C}</Project>
       <Name>Notes.DAL.Dependencies</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Notes.DAL\Notes.DAL.Json.csproj">
+      <Project>{65eba8ea-c555-4de7-a52e-458cc585e985}</Project>
+      <Name>Notes.DAL.Json</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Notes.Entites\Notes.Entites.csproj">
       <Project>{60a417bc-4f08-49cb-99d6-4e4b368fad7b}</Project>
       <Name>Notes.Entites</Name>

@@ -8,13 +8,13 @@ namespace Notes.Entites
 {
     public class Award
     {
-        public Guid IDAward { get; set; }
+        public Guid ID { get; set; }
 
         public string Title { get; set; }
 
-        protected Award()
+        public Award()
         {
-            IDAward = Guid.NewGuid();
+            ID = Guid.NewGuid();
         }
         public Award(string title) : this()
         {

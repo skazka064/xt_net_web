@@ -11,6 +11,7 @@ namespace Notes.BLL.Dependencies
 
 
         public static INotesBLL NotesBLL => _notesBLL ?? (_notesBLL = new NotesManager());
+       
         public static IAwardBLL AwardBLL => _awardBLL ?? (_awardBLL = new AwardBLL());
 
 

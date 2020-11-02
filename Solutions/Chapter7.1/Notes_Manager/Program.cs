@@ -20,7 +20,7 @@ namespace Notes_Manager
 
             ConsoleNotesPL user = new ConsoleNotesPL();
             ConsoleAwardPL award = new ConsoleAwardPL();
-            ConsoleRewardPL reward = new ConsoleRewardPL();
+           // ConsoleRewardPL reward = new ConsoleRewardPL();
 
             while (true)
             {
@@ -53,7 +53,7 @@ namespace Notes_Manager
 
                         case 3:
 
-                            user.DeleteUser();
+                           // user.DeleteUser();
                             break;
 
                         case 4:
@@ -71,13 +71,13 @@ namespace Notes_Manager
                             break;
 
                         case 7:
-                            Guid selectUser = user.SelectedUser();
-                            Guid selectAward = award.SelectedAward();
-                            reward.RewardUser(selectUser, selectAward);
+                            //Guid selectUser = user.SelectedUser();
+                            //Guid selectAward = award.SelectedAward();
+                           // reward.RewardUser(selectUser, selectAward);
                             break;
 
                         case 8:
-                            reward.DisplayAllRewards();
+                           // reward.DisplayAllRewards();
                             break;
 
                         default:
@@ -94,4 +94,4 @@ namespace Notes_Manager
     }
 
     }
-}
+

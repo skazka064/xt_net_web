@@ -15,3 +15,5 @@ C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependen
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.pdb
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.csprojAssemblyReference.cache
 C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1 (Three_layer)\Notes.DAL.Dependencies\obj\Debug\Notes.DAL.Dependencies.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.BLL.Common.dll
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\Chapter7.1\Notes.DAL.Dependencies\bin\Debug\Notes.BLL.Common.pdb

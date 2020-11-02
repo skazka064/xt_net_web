@@ -62,7 +62,7 @@ namespace Notes_Manager
                 {
                     Console.WriteLine(string.Format("Награда №{0}. Название: {1}",
                         serialNumber, item.Title));
-                    ID.Add(serialNumber, item.IDAward);
+                    ID.Add(serialNumber, item.ID);
                     serialNumber++;
                 }
 

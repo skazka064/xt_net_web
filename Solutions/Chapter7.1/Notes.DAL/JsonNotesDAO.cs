@@ -11,18 +11,11 @@ namespace Notes.DAL
     
     public class JsonNotesDAO : INotesDAL
     {
+        
         public static string LocalDataPath => "Data\\";
 
-        public bool AddUser()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DisplayAllUsers()
-        {
-            throw new NotImplementedException();
-        }
-
+       
+               
         public IEnumerable<User> GetAllUser()
         {
             var directory = new DirectoryInfo(Environment.CurrentDirectory + "\\" + LocalDataPath);

@@ -1,18 +1,21 @@
-﻿using Notes.Entites;
+﻿using Notes.BLL.Common;
+using Notes.DAL.Common;
+using Notes.DAL.Dependencies;
+using Notes.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notes.BLL
+namespace Notes.BLL 
 {
-    class AwardBLL
+   public class AwardBLL :IAwardBLL
     {
         private IAwardDAL _awardDAL;
-        public AwardsBLL()
+        public AwardBLL()
         {
-            _awardDAL = DependenciesDAL.AwardDAL;
+            _awardDAL = NotesDALDependencies.AwardDAL;
         }
 
         public bool DeleteAward(Guid id)
