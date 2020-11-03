@@ -53,7 +53,7 @@ namespace Notes_Manager
 
                         case 3:
 
-                           // user.DeleteUser();
+                            user.DeleteUser();
                             break;
 
                         case 4:

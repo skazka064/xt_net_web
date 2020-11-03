@@ -1,6 +1,7 @@
 ﻿using Notes.BLL.Common;
 using Notes.BLL.Dependencies;
 using Notes.DAL.Dependencies;
+using Notes.Entites;
 using Notes.PL.Common;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,12 @@ namespace Notes_Manager
            
             
         }
+        public bool DeleteUser()
+        {
+            Console.WriteLine("Удаление пользователя..." + Environment.NewLine);
+            Guid id = SelectedUser();
+            return _bll.DeleteUser(id);
+        }
 
         public void DisplayAllUsers()
         {
@@ -43,5 +50,19 @@ namespace Notes_Manager
                 Console.WriteLine(string.Format("User. ID:{0}, Age: {1},Escho chtoto: {2}", user.ID , user.Age, user.DateOfBirth));
             }
         }
-    }
+        public Guid SelectedUser()
+        {
+            var users = _bll.GetAllUser();
+            Console.WriteLine("Выберите пользователя:" + Environment.NewLine);
+
+            foreach(User user in users)
+            {
+                Console.WriteLine(string.Format("Имя пользователя :{0} ID : {1} ",user.Name, user.ID));
+
+            }
+            Guid id= Guid.Parse(Console.ReadLine());
+            return id;
+
+        }
+        }
 }

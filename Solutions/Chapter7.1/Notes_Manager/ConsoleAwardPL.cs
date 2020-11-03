@@ -52,29 +52,30 @@ namespace Notes_Manager
 
             public Guid SelectedAward()
             {
-                Dictionary<int, Guid> ID = new Dictionary<int, Guid>();
+               // Dictionary<string, Guid> ID = new Dictionary<string, Guid>();
                 var awards = _bll.GetAllAwards();
 
                 Console.WriteLine("Выберите награду:" + Environment.NewLine);
-                int serialNumber = 1;
+                //int serialNumber = 1;
 
                 foreach (Award item in awards)
                 {
-                    Console.WriteLine(string.Format("Награда №{0}. Название: {1}",
-                        serialNumber, item.Title));
-                    ID.Add(serialNumber, item.ID);
-                    serialNumber++;
+                    Console.WriteLine(string.Format(" Название: {0}. ID: {1}",  item.Title, item.ID));
+                    
+                   
                 }
+             Guid number= Guid.Parse(Console.ReadLine()) ;
+            return number;
 
-                if (int.TryParse(Console.ReadLine(), out int number) && number > 0 && number < serialNumber)
-                {
-                    return ID[number];
-                }
-                else
-                {
-                    throw new ArgumentOutOfRangeException("number");
-                }
-
+            /*if (int.TryParse(Console.ReadLine(), out int number) && number > 0 && number < serialNumber)
+            {
+                return ID[number];
             }
+            else
+            {
+                throw new ArgumentOutOfRangeException("number");
+            }*/
+
+        }
         }
 }

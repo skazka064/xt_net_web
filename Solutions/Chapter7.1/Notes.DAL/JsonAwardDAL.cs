@@ -12,10 +12,11 @@ namespace Notes.DAL
 {
    public class JsonAwardDAL : IAwardDAL
     {
-        public static string LocalDataPath => "Data\\";
+        public static string LocalDataPath => "Data\\Awards\\";
         public void DeleteAward(Guid id)
         {
-            throw new NotImplementedException();
+            string awardString = LocalDataPath + "Award_" + id + ".json";
+            File.Delete(awardString);
         }
 
         public IEnumerable<Award> GetAllAwards()

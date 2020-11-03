@@ -9,5 +9,6 @@ namespace Notes.DAL.Common
         void SaveUser(User user);
         IEnumerable<User> GetAllUser();
         User GetNoteByID(Guid id);
+        void DeleteUser(Guid id);
     }
 }

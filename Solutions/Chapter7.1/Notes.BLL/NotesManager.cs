@@ -17,7 +17,18 @@ namespace Notes.BLL
             _notesDAO = NotesDALDependencies.NotesDAL;
         }
 
-
+        public bool DeleteUser(Guid id)
+        {
+            try
+            {
+                _notesDAO.DeleteUser(id);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public IEnumerable<User> GetAllUser()
         {
             return _notesDAO.GetAllUser();

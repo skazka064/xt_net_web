@@ -12,7 +12,7 @@ namespace Notes.DAL
     public class JsonNotesDAO : INotesDAL
     {
         
-        public static string LocalDataPath => "Data\\";
+        public static string LocalDataPath => "Data\\Users\\";
 
        
                
@@ -43,6 +43,12 @@ namespace Notes.DAL
                 writer.Write(userStr);
         }
 
-        
+   
+
+        public void DeleteUser(Guid id)
+        {
+            string str = LocalDataPath + "User_" + id + ".json";
+            File.Delete(str);
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Notes.BLL.Common
         bool SaveUser(User user);
         IEnumerable<User> GetAllUser();
         User GetUserByID(Guid id);
+        bool DeleteUser(Guid id);
     }
 }
