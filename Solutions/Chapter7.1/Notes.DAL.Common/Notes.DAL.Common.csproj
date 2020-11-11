@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IAwardDAL.cs" />
     <Compile Include="INotesDAL.cs" />
+    <Compile Include="IRewardDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IAwardPL.cs" />
     <Compile Include="INotesPL.cs" />
+    <Compile Include="IRewardPL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

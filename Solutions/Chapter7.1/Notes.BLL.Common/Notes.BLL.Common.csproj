@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IAwardBLL.cs" />
     <Compile Include="INotesBLL.cs" />
+    <Compile Include="IRewardBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

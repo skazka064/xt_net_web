@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="JsonAwardDAL.cs" />
     <Compile Include="JsonNotesDAO.cs" />
+    <Compile Include="JsonRewardDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Notes.Entites
 {
-    class Reward
+    public class Reward
     {
         public User User { get; set; }
         public Award Award { get; set; }

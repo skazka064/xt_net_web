@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ConsoleAwardPL.cs" />
     <Compile Include="ConsoleNotesPL.cs" />
+    <Compile Include="ConsoleRewardPL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
