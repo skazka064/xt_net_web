@@ -1,0 +1,6 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\bin\Debug\EventAndDelegate.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\bin\Debug\EventAndDelegate.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\bin\Debug\EventAndDelegate.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\obj\Debug\EventAndDelegate.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\obj\Debug\EventAndDelegate.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\EventAndDelegete\EventAndDelegate\obj\Debug\EventAndDelegate.pdb
