@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\bin\Debug\ExampleLectionEvent2.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\bin\Debug\ExampleLectionEvent2.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\bin\Debug\ExampleLectionEvent2.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\obj\Debug\ExampleLectionEvent2.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\obj\Debug\ExampleLectionEvent2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\obj\Debug\ExampleLectionEvent2.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionEvent2\obj\Debug\ExampleLectionEvent2.pdb
