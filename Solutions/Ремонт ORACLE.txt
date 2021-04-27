@@ -1,0 +1,149 @@
+﻿***как я восстанавливал пром***
+ORA-01110
+create pfile='/opt/oracle/r64gzk0.ini' from spfile;
+_allow_resetlogs_corruption=TRUE
+startup mount pfile='/opt/oracle/r64gzk0.ini';
+startup mount pfile='/opt/oracle/r64.ini';
+recover database until cancel using backup controlfile;
+alter database open resetlogs;
+
+***неважное***
+select TO_CHAR(resetlogs_change# - 1, '99999999999999') from v$database;
+recover database using backup controlfile until change 11530260376491;
+alter database open resetlogs;
+select file#, TO_CHAR(CHECKPOINT_CHANGE#) from v$datafile_header;
+select file#,status,enabled from v$datafile;
+select group#,status,archived,sequence#,TO_CHAR(first_change#) from v$log;
+create pfile='/opt/oracle/r64gzk0.ini' from spfile;
+startup pfile='/opt/oracle/r64gzk0.ini';
+select incarnation#, TO_CHAR(resetlogs_change#) from v$database_incarnation;
+select TO_CHAR(current_scn) from v$database;
+RUN {
+shutdown immediate;
+startup mount;
+set until scn 11577768972121;
+restore database;
+recover database;
+sql 'alter database open resetlogs';
+}
+LIST INCARNATION OF DATABASE;
+ALTER DATABASE BACKUP CONTROLFILE TO TRACE AS '/opt/oracle/newcontrol.ctl'; 
+
+for file in *.zip; do unzip "${file}"; done
+
+mount -no remount,rw /
+
+SQL> set linesize 200;
+SQL> set pagesize 0;
+SQL> col  name format a100;
+
+
+
+SQL> shutdown immediate;
+SQL> startup mount;
+SQL> ALTER SYSTEM SET log_archive_format='%s_%t_%r.arc' SCOPE=SPFILE;
+SQL> ALTER SYSTEM SET LOG_ARCHIVE_MAX_PROCESSES=10;
+SQL> ALTER SYSTEM SET log_archive_dest_1='LOCATION=/opt/oracle/oradata/arcs_R64GZK0/archivelogs DB_UNIQUE_NAME=R64GZK0';
+SQL> alter database archivelog;
+SQL> alter database force logging;
+SQL> alter database open;
+
+
+
+
+SQL> ALTER SYSTEM SET log_archive_dest_1='/opt/oracle/oradata/arcs_R64GZK0/archivelogs' ;
+SQL> ALTER SYSTEM SET log_archive_format='%t_%s_%r.arc' SCOPE=spfile;
+SQL> SHUTDOWN IMMEDIATE;
+SQL> STARTUP MOUNT;
+SQL> ALTER DATABASE ARCHIVELOG;
+SQL> ALTER DATABASE OPEN;
+
+
+***КАК Я ВКЛЮЧАЛ ARCHIVELOG***
+
+ ALTER SYSTEM SET log_archive_dest_1='LOCATION=/opt/oracle/oradata/arcs_R64GZK0/archivelogs'; 
+"Обычно ошибка ORA-00600: internal error code, arguments: [4194] возникает тогда, когда оракл находит несоответствие между redo и undo. Есть у меня подозрение, что это связано с дисковым кэшем, но пока утверждать ничего не могу."
+ 
+Помогло пересоздание undo
+archive log list;
+select name from v$datafile where NAME like '%UNDO%';
+show parameter undo;
+CREATE UNDO TABLESPACE undotbs DATAFILE '/opt/oracle/oradata/R64GZK0/UNDOTBS102.dbf' SIZE 1024M AUTOEXTEND ON NEXT 1G MAXSIZE 30G;
+ CREATE UNDO TABLESPACE "UNDOTBS2" 
+DATAFILE '/opt/oracle/oradata/R64GZK0/UNDOTBS102.dbf' 
+SIZE 500M 
+AUTOEXTEND ON NEXT 200M 
+MAXSIZE 32767M 
+BLOCKSIZE 8192 
+EXTENT MANAGEMENT LOCAL AUTOALLOCATE; 
+
+Переключаем Базу Данных на использование ново-созданного табличного пространства UNDO:
+ALTER SYSTEM SET undo_tablespace=UNDOTBS2 SCOPE=BOTH;
+
+После того как все транзакции, использующие UNDOTBS1, завершились мы можем его удалить:
+DROP TABLESPACE UNDOTBS1 INCLUDING CONTENTS AND DATAFILES ;
+
+SQL> SHUTDOWN IMMEDIATE;
+SQL> STARTUP MOUNT;
+SQL> alter database set standby database to maximize performance;
+SQL> ALTER DATABASE ARCHIVELOG;
+SQL> ALTER DATABASE OPEN;
+http://10.64.143.240:8090/login
+
+
+ORA-00600: код внутренней ошибки, аргументы: [13011], [758894], [14696701], [24], [14696639], [0], [], [], [], [], [], []
+select object_name,object_type,owner from dba_objects where data_object_id=758894;
+analyze table sysman.mgmt_system_performance_log validate structure cascade
+select dbms_utility.data_block_address_file(14696701) from dual;
+Select name from v$datafile where rfile#=3;
+select index_name from dba_indexes where table_name = 'MGMT_SYSTEM_PERFORMANCE_LOG';
+
+
+**Диагностика**
+select name from v$datafile;
+select name from v$controlfile;
+select member from v$logfile;
+
+***ADRCI***
+show homes
+set home diag/rdbms/r64gzk0/R64GZK0
+SHOW INCIDENT
+SHOW ALERT
+SHOW PROBLEM
+purge -age 320 -type alert
+purge -age 168 -type incident
+
+purge -age 10080 -type ALERT
+purge -age 10080 -type INCIDENT
+purge -age 10080 -type TRACE
+purge -age 10080 -type CDUMP
+purge -age 10080 -type UTSCDMP
+select * from v$diag_info;
+SELECT name, description FROM v$hm_check;
+
+
+
+ORA-00600: ??? ?????????? ??????, ?????????: [2131], [9], [8], [], [], [], [], [], [], [], [], []
+причина
+Эта проблема вызвана повреждением контрольного файла.
+Ошибки ORA-600 [2131] возникают при монтировании базы данных. Это когда экземпляр находит и открывает управляющий файл.
+Решение
+1. Восстановить из резервной копии.
+- Или же-
+2. Восстановите контрольный файл.
+
+
+select
+r.id
+from
+zkoks.reg r,
+zkoks.obj o
+
+WHERE
+o.id = r.obj_id
+and o.cad_num ='64:32:082020:29'
+AND r.id = (select max(id)
+                 from zkoks.reg
+                where obj_id = o.id)
+
+
