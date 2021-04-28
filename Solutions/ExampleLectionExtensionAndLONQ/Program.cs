@@ -56,12 +56,25 @@ namespace ExampleLectionExtensionAndLONQ
                 Console.WriteLine(item);
             }
 
-            var ships = new SpaceShip[]
+            var ships = new AbstractSpaceShip[]
             {
-                new SpaceShip() {Name = "Aurora", Damage =100500},
-                new SpaceShip() {Name = "Hunter ver.1", Damage =500},
-                new SpaceShip() {Name = "Nova", Damage =100}
+                new Fighter() {Name = "Aurora", Damage =100500, Age = 99},
+                new Fighter() {Name = "Hunter ver.1", Damage =500, Age = 15},
+                new Fighter() {Name = "Nova", Damage =100, Age = 1},
+                 new Engineer() {Name = "Buffalo", Damage =7000, Age = 3},
+                  new Fighter() {Name = "Tiget", Damage =3500, Age = 5}
             };
+
+            var ships2 = new AbstractSpaceShip[]
+           {
+                new Fighter() {Name = "Butterfly", Damage =100, Age = 3},
+                new Fighter() {Name = "bug", Damage =500, Age = 2},
+               
+           };
+
+
+
+
             var res = from item in ships
                       where item.Damage == 100
                       select new
@@ -73,14 +86,40 @@ namespace ExampleLectionExtensionAndLONQ
                       };
                      
 
-            var res2 = ships.Where(item => item.Name == "Aurora");
-            var res3 = ships.Select(item => item.Name);
+            var res1 = ships.Where(item => item.Name == "Aurora");
+            var res2 = ships.Select(item => item.Name);
            
-            foreach(var item in res)
+            foreach(var item in res1)
             {
                 Console.WriteLine(item);
             }
 
+            // Where отбор элементов по переданному условию , только корабли, которым 5 лет и меньше
+            var res3 = ships.Where(e => e.Age <= 5);
+
+            // Count подсчет количества элементов IEnumerable<T>
+            var res4 = ships.Where(e => e.Age <= 5).Count();
+
+            // Select - проекция одной сущности в другую
+            var res5 = ships.Select(e => new { e.Name, e.Damage });
+           
+            // OfType выборка по типу
+            var res6 = ships.OfType<Fighter>();
+
+            foreach (var item in res6)
+            {
+                Console.WriteLine(new {item.Name,item.Damage, item.Age  });
+            }
+
+            var res7 = ships.Union(ships2);
+            foreach (var item in res7)
+            {
+                Console.WriteLine(item.Name);
+
+            } 
+
+
+           
             // Формируем источники данных для JOIN
             var groups = new List<Group>
             {
@@ -185,10 +224,20 @@ namespace ExampleLectionExtensionAndLONQ
 
     }
 
-    public class SpaceShip
+    public class AbstractSpaceShip
     {
         public string Name { get; set; }
         public int Damage { get; set; }
+        public int Age { get; set; }
+
+    }
+    public class Fighter : AbstractSpaceShip
+    {
+
+    }
+
+    public class Engineer : AbstractSpaceShip
+    {
 
     }
     class Students
