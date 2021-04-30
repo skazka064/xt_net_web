@@ -177,8 +177,10 @@ namespace ExampleLectionExtensionAndLONQ
             Console.WriteLine(res18);
             #endregion
 
-            var count = ships.Count();
-            Console.WriteLine(count);
+            var count = ships.Count(e=>e.Age>5);
+            ships[2].Age = 15;
+
+            Console.WriteLine("Count - {0}",count);
 
             // Формируем источники данных для JOIN
             var groups = new List<Group>
