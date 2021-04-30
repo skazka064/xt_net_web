@@ -55,10 +55,11 @@ namespace ExampleLectionExtensionAndLONQ
             {
                 Console.WriteLine(item);
             }
+            var playerShip = new Fighter() { Name = "Aurora", Damage = 100500, Age = 99 };
 
             var ships = new AbstractSpaceShip[]
             {
-                new Fighter() {Name = "Aurora", Damage =100500, Age = 99},
+                playerShip,
                 new Fighter() {Name = "Hunter ver.1", Damage =500, Age = 15},
                 new Fighter() {Name = "Nova", Damage =100, Age = 1},
                  new Engineer() {Name = "Buffalo", Damage =7000, Age = 3},
@@ -67,6 +68,7 @@ namespace ExampleLectionExtensionAndLONQ
 
             var ships2 = new AbstractSpaceShip[]
            {
+               playerShip,
                 new Fighter() {Name = "Butterfly", Damage =100, Age = 3},
                 new Fighter() {Name = "bug", Damage =500, Age = 2},
                
@@ -94,11 +96,12 @@ namespace ExampleLectionExtensionAndLONQ
                 Console.WriteLine(item);
             }
 
+#region EXAMPLES 
             // Where отбор элементов по переданному условию , только корабли, которым 5 лет и меньше
             var res3 = ships.Where(e => e.Age <= 5);
 
             // Count подсчет количества элементов IEnumerable<T>
-            var res4 = ships.Where(e => e.Age <= 5).Count();
+            var res4 = ships.Where(e => e.Age <= 5).Count(); 
 
             // Select - проекция одной сущности в другую
             var res5 = ships.Select(e => new { e.Name, e.Damage });
@@ -111,15 +114,72 @@ namespace ExampleLectionExtensionAndLONQ
                 Console.WriteLine(new {item.Name,item.Damage, item.Age  });
             }
 
+            // Union - объединение коллекций
             var res7 = ships.Union(ships2);
             foreach (var item in res7)
             {
                 Console.WriteLine(item.Name);
+               
+            }   
+            
+            // Intersect -  пересечение коллекций
+            var res8 = ships.Intersect(ships2);
+            foreach (var item in res8)
+            {
+                
+                Console.WriteLine(item.Name + " - Пересечение");
+            }
 
-            } 
+            // Except - исключение из первой коллекции элементов, присутствующих во второй коллекции
+            var res9 = ships.Except(ships2);
+            foreach (var item in res9)
+            {
 
+                Console.WriteLine(item.Name+" - Разность");
+            }
 
+            //First - первый элемент последовательности
+            var res10 = ships.First();
+            
+            //Last - последний элемент последовательности
+            var res11 = ships.Last();
+
+            //FirstOrDefault - первый элемент последовательности , default(T) для типа в случае пустой коллекции
+            var res12 = ships.FirstOrDefault();
+
+            //LastOrDefault - последний элемент последовательности
+            var res13 = ships.LastOrDefault();
+
+            // Max, Min - максимальное/ минимальное значение атрибута коллекции
+            var res14 = ships.Where(s=>s.Damage == ships.Min(e=>e.Damage));
+         
+            foreach (var item in res14)
+            {
+                Console.WriteLine("Ship whith Min Damage: {0}", item.Name);
+            }
+
+            var res15 = ships.Where(s => s.Damage == ships.Max(e => e.Damage));
            
+            foreach (var item in res15)
+            {
+                Console.WriteLine("Ship whith Max Damage: {0}", item.Name);
+            }
+
+            // пример выбора элемента с максимальным значением элемента
+            var res16 = ships.OrderBy(s => s.Age).LastOrDefault();
+
+            // проверка соответствия хоть одного элемента переданному условию
+            var res17 = ships.Any(e => e.Damage > 1000);
+            Console.WriteLine(res17);
+
+            // проверка коллекции на непустоту
+            var res18 = ships.Any();
+            Console.WriteLine(res18);
+            #endregion
+
+            var count = ships.Count();
+            Console.WriteLine(count);
+
             // Формируем источники данных для JOIN
             var groups = new List<Group>
             {
