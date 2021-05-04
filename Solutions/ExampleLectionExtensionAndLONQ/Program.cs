@@ -38,6 +38,7 @@ namespace ExampleLectionExtensionAndLONQ
         {
           
 
+            
 
 
             int[] mass = new int[] { 1, -2, 3, 4, 5, 6, 12 };
@@ -249,6 +250,14 @@ namespace ExampleLectionExtensionAndLONQ
                     Console.WriteLine(item.Name );
                 }
             }
+
+
+            var shipsTemp = ships.Where(e => e.Age > 6);
+            Console.WriteLine("Count: "+shipsTemp.Count());
+            ships[3].Age = 44;
+            Console.WriteLine("Count: "+shipsTemp.Count());
+
+
         }
 
         
