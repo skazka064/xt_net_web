@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\bin\Debug\ExampleLectionAsyncAndLazy.exe.config
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\bin\Debug\ExampleLectionAsyncAndLazy.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\bin\Debug\ExampleLectionAsyncAndLazy.pdb
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\obj\Debug\ExampleLectionAsyncAndLazy.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\obj\Debug\ExampleLectionAsyncAndLazy.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\obj\Debug\ExampleLectionAsyncAndLazy.exe
+C:\Users\admin\Documents\Epam\xt_net_web\Solutions\ExampleLectionAsyncAndLazy\obj\Debug\ExampleLectionAsyncAndLazy.pdb
