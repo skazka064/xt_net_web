@@ -11,6 +11,13 @@ namespace ExampleLectionAsyncAndLazy
     {
         static void Main(string[] args)
         {
+            Loader loader = new Loader();
+            // Внимание: очень очень медленно
+            var data = loader.LoadDataOptimized();
+            foreach (var item in data)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 
