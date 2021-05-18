@@ -63,3 +63,5 @@ freshrecords.ru
 https://jesteipool.ru/
 
 https://pay.ebay.com/rxo?action=success&sessionid=1565821897017
+
+https://info-comp.ru/database-normalization
