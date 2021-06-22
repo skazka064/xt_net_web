@@ -65,3 +65,5 @@ https://jesteipool.ru/
 https://pay.ebay.com/rxo?action=success&sessionid=1565821897017
 
 https://info-comp.ru/database-normalization
+//Видео 10 часов подготовка к экзамену по OCI
+https://learn.oracle.com/ols/course/oracle-cloud-infrastructure-architect-associate-workshop/35644/80259
