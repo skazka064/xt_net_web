@@ -67,3 +67,14 @@ https://pay.ebay.com/rxo?action=success&sessionid=1565821897017
 https://info-comp.ru/database-normalization
 //Видео 10 часов подготовка к экзамену по OCI
 https://learn.oracle.com/ols/course/oracle-cloud-infrastructure-architect-associate-workshop/35644/80259
+//Test
+https://learn.oracle.com/ols/module/practice-exam-for-oracle-cloud-infrastructure-2020-architect-associate/35644/78125
+
+Первый экзамен
+Вот ссылка на онлайн обучение по Project Manager сертификации:https://login.oracle.com/oamfed/idp/initiatesso?providerid=https://sso.netexam.com/prep&returnurl=/saml/netexam/authenticate-sp.php?destination=:ct37093
+А вот ссылка на оналайн серттификацию: https://login.oracle.com/oamfed/idp/initiatesso?providerid=https://sso.netexam.com/prep&returnurl=/saml/netexam/authenticate-sp.php?destination=:cs100066
+
+Второй
+Вот ссылка на экспертизу, по которой говорили вчера: 
+https://www.oracle.com/partnernetwork/expertise/service/cloud-vmware-solution/
+Надо получить обязательно до июля сертификацию по https://education.oracle.com/oracle-cloud-infrastructure-2020-architect-associate/pexam_1Z0-1072-20
