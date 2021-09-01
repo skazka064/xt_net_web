@@ -79,3 +79,16 @@ https://learn.oracle.com/ols/module/practice-exam-for-oracle-cloud-infrastructur
 Вот ссылка на экспертизу, по которой говорили вчера: 
 https://www.oracle.com/partnernetwork/expertise/service/cloud-vmware-solution/
 Надо получить обязательно до июля сертификацию по https://education.oracle.com/oracle-cloud-infrastructure-2020-architect-associate/pexam_1Z0-1072-20
+
+Arenadata
+https://docs.arenadata.io/adb/
+https://docs.arenadata.io/adh/
+https://docs.arenadata.io/adqm/
+https://docs.arenadata.io/ads/
+https://docs.arenadata.io/adcm/
+
+Коллеги, ваучеры:
+Your Electronic Voucher Numbers:
+ORKB54690275          
+ORKB5479045B
+
